@@ -1,0 +1,5870 @@
+{
+  "40-681-9981": {
+    "name": "Arabica Coffee",
+    "category": "Beverages",
+    "full_price": 20.0,
+    "cost_price": 12.0,
+    "shelf_life": 10,
+    "base_stock": 45,
+    "popularity": 1.4425054854635218
+  },
+  "57-437-1828": {
+    "name": "Plum",
+    "category": "Produce",
+    "full_price": 4.0,
+    "cost_price": 2.4,
+    "shelf_life": 10,
+    "base_stock": 37,
+    "popularity": 1.0521804717498628
+  },
+  "39-629-5554": {
+    "name": "Egg (Goose)",
+    "category": "Dairy",
+    "full_price": 2.5,
+    "cost_price": 1.5,
+    "shelf_life": 10,
+    "base_stock": 44,
+    "popularity": 0.35638370817334064
+  },
+  "66-268-8345": {
+    "name": "Greek Yogurt",
+    "category": "Dairy",
+    "full_price": 3.0,
+    "cost_price": 1.7999999999999998,
+    "shelf_life": 10,
+    "base_stock": 91,
+    "popularity": 0.9503565551289084
+  },
+  "46-452-9419": {
+    "name": "Egg (Duck)",
+    "category": "Dairy",
+    "full_price": 1.0,
+    "cost_price": 0.6,
+    "shelf_life": 10,
+    "base_stock": 43,
+    "popularity": 0.4582076247942951
+  },
+  "75-094-1179": {
+    "name": "Rye Bread",
+    "category": "Bakery",
+    "full_price": 3.0,
+    "cost_price": 1.7999999999999998,
+    "shelf_life": 10,
+    "base_stock": 26,
+    "popularity": 0.7976206801974767
+  },
+  "11-073-0189": {
+    "name": "Plum",
+    "category": "Produce",
+    "full_price": 4.0,
+    "cost_price": 2.4,
+    "shelf_life": 10,
+    "base_stock": 95,
+    "popularity": 1.1709750411409765
+  },
+  "22-621-2774": {
+    "name": "Strawberries",
+    "category": "Produce",
+    "full_price": 6.0,
+    "cost_price": 3.5999999999999996,
+    "shelf_life": 10,
+    "base_stock": 54,
+    "popularity": 1.069151124520022
+  },
+  "39-449-0772": {
+    "name": "Feta Cheese",
+    "category": "Dairy",
+    "full_price": 7.0,
+    "cost_price": 4.2,
+    "shelf_life": 10,
+    "base_stock": 94,
+    "popularity": 0.33941305540318156
+  },
+  "82-041-7211": {
+    "name": "Swiss Cheese",
+    "category": "Dairy",
+    "full_price": 8.0,
+    "cost_price": 4.8,
+    "shelf_life": 10,
+    "base_stock": 49,
+    "popularity": 1.323710916072408
+  },
+  "48-414-6162": {
+    "name": "Arabica Coffee",
+    "category": "Beverages",
+    "full_price": 20.0,
+    "cost_price": 12.0,
+    "shelf_life": 10,
+    "base_stock": 55,
+    "popularity": 0.7806500274273176
+  },
+  "25-349-7974": {
+    "name": "Spinach",
+    "category": "Produce",
+    "full_price": 2.5,
+    "cost_price": 1.5,
+    "shelf_life": 10,
+    "base_stock": 72,
+    "popularity": 1.3915935271530444
+  },
+  "66-627-9752": {
+    "name": "Trout",
+    "category": "Meat",
+    "full_price": 12.0,
+    "cost_price": 7.199999999999999,
+    "shelf_life": 10,
+    "base_stock": 49,
+    "popularity": 0.8824739440482721
+  },
+  "78-614-4402": {
+    "name": "Green Beans",
+    "category": "Produce",
+    "full_price": 2.0,
+    "cost_price": 1.2,
+    "shelf_life": 10,
+    "base_stock": 81,
+    "popularity": 0.33941305540318156
+  },
+  "67-025-1245": {
+    "name": "Cabbage",
+    "category": "Produce",
+    "full_price": 1.0,
+    "cost_price": 0.6,
+    "shelf_life": 10,
+    "base_stock": 88,
+    "popularity": 1.2388576522216128
+  },
+  "68-418-6724": {
+    "name": "Parmesan Cheese",
+    "category": "Dairy",
+    "full_price": 12.0,
+    "cost_price": 7.199999999999999,
+    "shelf_life": 10,
+    "base_stock": 63,
+    "popularity": 1.0012685134393857
+  },
+  "02-508-3777": {
+    "name": "Egg (Quail)",
+    "category": "Dairy",
+    "full_price": 0.8,
+    "cost_price": 0.48,
+    "shelf_life": 10,
+    "base_stock": 97,
+    "popularity": 1.6461533187054307
+  },
+  "79-741-0770": {
+    "name": "Mushrooms",
+    "category": "Produce",
+    "full_price": 6.0,
+    "cost_price": 3.5999999999999996,
+    "shelf_life": 10,
+    "base_stock": 72,
+    "popularity": 1.5952413603949533
+  },
+  "31-211-5803": {
+    "name": "Oatmeal Biscuit",
+    "category": "Bakery",
+    "full_price": 5.0,
+    "cost_price": 3.0,
+    "shelf_life": 10,
+    "base_stock": 16,
+    "popularity": 0.8485326385079539
+  },
+  "16-499-5059": {
+    "name": "Pear",
+    "category": "Produce",
+    "full_price": 4.5,
+    "cost_price": 2.6999999999999997,
+    "shelf_life": 10,
+    "base_stock": 77,
+    "popularity": 1.0352098189797039
+  },
+  "76-340-4432": {
+    "name": "Cucumber",
+    "category": "Produce",
+    "full_price": 1.75,
+    "cost_price": 1.05,
+    "shelf_life": 10,
+    "base_stock": 19,
+    "popularity": 0.5260902358749314
+  },
+  "38-732-7667": {
+    "name": "Pineapple",
+    "category": "Produce",
+    "full_price": 3.5,
+    "cost_price": 2.1,
+    "shelf_life": 10,
+    "base_stock": 18,
+    "popularity": 0.7127674163466813
+  },
+  "79-136-9840": {
+    "name": "Herbal Tea",
+    "category": "Beverages",
+    "full_price": 30.0,
+    "cost_price": 18.0,
+    "shelf_life": 10,
+    "base_stock": 77,
+    "popularity": 0.42426631925397695
+  },
+  "73-401-5721": {
+    "name": "Haddock",
+    "category": "Meat",
+    "full_price": 9.0,
+    "cost_price": 5.3999999999999995,
+    "shelf_life": 10,
+    "base_stock": 46,
+    "popularity": 1.1030924300603402
+  },
+  "91-848-0606": {
+    "name": "Onion",
+    "category": "Produce",
+    "full_price": 2.0,
+    "cost_price": 1.2,
+    "shelf_life": 10,
+    "base_stock": 39,
+    "popularity": 1.0182391662095447
+  },
+  "70-612-2531": {
+    "name": "Pineapple",
+    "category": "Produce",
+    "full_price": 3.45,
+    "cost_price": 2.07,
+    "shelf_life": 10,
+    "base_stock": 48,
+    "popularity": 0.865503291278113
+  },
+  "26-161-6692": {
+    "name": "Zucchini",
+    "category": "Produce",
+    "full_price": 2.5,
+    "cost_price": 1.5,
+    "shelf_life": 10,
+    "base_stock": 61,
+    "popularity": 1.3406815688425673
+  },
+  "11-316-8405": {
+    "name": "Mango",
+    "category": "Produce",
+    "full_price": 5.0,
+    "cost_price": 3.0,
+    "shelf_life": 10,
+    "base_stock": 24,
+    "popularity": 0.661855458036204
+  },
+  "34-086-3222": {
+    "name": "Lemon",
+    "category": "Produce",
+    "full_price": 2.3,
+    "cost_price": 1.38,
+    "shelf_life": 10,
+    "base_stock": 12,
+    "popularity": 1.1200630828304992
+  },
+  "21-816-1004": {
+    "name": "Black Coffee",
+    "category": "Beverages",
+    "full_price": 15.0,
+    "cost_price": 9.0,
+    "shelf_life": 10,
+    "base_stock": 84,
+    "popularity": 0.42426631925397695
+  },
+  "43-693-2092": {
+    "name": "Butter",
+    "category": "Dairy",
+    "full_price": 3.0,
+    "cost_price": 1.7999999999999998,
+    "shelf_life": 10,
+    "base_stock": 51,
+    "popularity": 0.6788261108063631
+  },
+  "63-270-7076": {
+    "name": "Multigrain Bread",
+    "category": "Bakery",
+    "full_price": 3.5,
+    "cost_price": 2.1,
+    "shelf_life": 10,
+    "base_stock": 65,
+    "popularity": 0.5430608886450905
+  },
+  "52-481-5224": {
+    "name": "Kiwi",
+    "category": "Produce",
+    "full_price": 6.0,
+    "cost_price": 3.5999999999999996,
+    "shelf_life": 10,
+    "base_stock": 45,
+    "popularity": 0.7467087218869994
+  },
+  "11-325-7396": {
+    "name": "Mango",
+    "category": "Produce",
+    "full_price": 5.0,
+    "cost_price": 3.0,
+    "shelf_life": 10,
+    "base_stock": 92,
+    "popularity": 0.4072956664838179
+  },
+  "70-854-6891": {
+    "name": "Sourdough Bread",
+    "category": "Bakery",
+    "full_price": 4.0,
+    "cost_price": 2.4,
+    "shelf_life": 10,
+    "base_stock": 41,
+    "popularity": 0.7127674163466813
+  },
+  "91-105-7317": {
+    "name": "Orange",
+    "category": "Produce",
+    "full_price": 3.0,
+    "cost_price": 1.7999999999999998,
+    "shelf_life": 10,
+    "base_stock": 85,
+    "popularity": 1.6122120131651125
+  },
+  "40-751-8635": {
+    "name": "Pineapple",
+    "category": "Produce",
+    "full_price": 3.4,
+    "cost_price": 2.04,
+    "shelf_life": 10,
+    "base_stock": 44,
+    "popularity": 1.6291826659352715
+  },
+  "02-920-4829": {
+    "name": "White Bread",
+    "category": "Bakery",
+    "full_price": 2.5,
+    "cost_price": 1.5,
+    "shelf_life": 10,
+    "base_stock": 92,
+    "popularity": 1.0352098189797039
+  },
+  "36-918-2937": {
+    "name": "Green Coffee",
+    "category": "Beverages",
+    "full_price": 12.0,
+    "cost_price": 7.199999999999999,
+    "shelf_life": 10,
+    "base_stock": 62,
+    "popularity": 0.5939728469555677
+  },
+  "68-761-6907": {
+    "name": "Zucchini",
+    "category": "Produce",
+    "full_price": 2.5,
+    "cost_price": 1.5,
+    "shelf_life": 10,
+    "base_stock": 26,
+    "popularity": 0.9673272078990675
+  },
+  "69-468-5468": {
+    "name": "Sourdough Bread",
+    "category": "Bakery",
+    "full_price": 4.5,
+    "cost_price": 2.6999999999999997,
+    "shelf_life": 10,
+    "base_stock": 59,
+    "popularity": 0.5430608886450905
+  },
+  "27-635-8394": {
+    "name": "Orange",
+    "category": "Produce",
+    "full_price": 2.9,
+    "cost_price": 1.74,
+    "shelf_life": 10,
+    "base_stock": 88,
+    "popularity": 1.069151124520022
+  },
+  "41-729-5410": {
+    "name": "Sardines",
+    "category": "Meat",
+    "full_price": 6.0,
+    "cost_price": 3.5999999999999996,
+    "shelf_life": 10,
+    "base_stock": 91,
+    "popularity": 0.5091195831047723
+  },
+  "11-581-9869": {
+    "name": "Carrot",
+    "category": "Produce",
+    "full_price": 1.5,
+    "cost_price": 0.8999999999999999,
+    "shelf_life": 10,
+    "base_stock": 51,
+    "popularity": 0.7467087218869994
+  },
+  "78-237-0277": {
+    "name": "Black Tea",
+    "category": "Beverages",
+    "full_price": 5.0,
+    "cost_price": 3.0,
+    "shelf_life": 10,
+    "base_stock": 46,
+    "popularity": 1.086121777290181
+  },
+  "75-152-8731": {
+    "name": "Pear",
+    "category": "Produce",
+    "full_price": 4.45,
+    "cost_price": 2.67,
+    "shelf_life": 10,
+    "base_stock": 82,
+    "popularity": 0.5091195831047723
+  },
+  "55-697-5242": {
+    "name": "Ricotta Cheese",
+    "category": "Dairy",
+    "full_price": 6.0,
+    "cost_price": 3.5999999999999996,
+    "shelf_life": 10,
+    "base_stock": 51,
+    "popularity": 0.9164152495885902
+  },
+  "14-844-4138": {
+    "name": "Black Coffee",
+    "category": "Beverages",
+    "full_price": 15.0,
+    "cost_price": 9.0,
+    "shelf_life": 10,
+    "base_stock": 61,
+    "popularity": 1.1370337356006583
+  },
+  "20-225-3930": {
+    "name": "White Tea",
+    "category": "Beverages",
+    "full_price": 25.0,
+    "cost_price": 15.0,
+    "shelf_life": 10,
+    "base_stock": 99,
+    "popularity": 1.5782707076247944
+  },
+  "66-993-4234": {
+    "name": "Cucumber",
+    "category": "Produce",
+    "full_price": 1.8,
+    "cost_price": 1.08,
+    "shelf_life": 10,
+    "base_stock": 13,
+    "popularity": 0.7467087218869994
+  },
+  "87-762-1317": {
+    "name": "Mozzarella Cheese",
+    "category": "Dairy",
+    "full_price": 7.0,
+    "cost_price": 4.2,
+    "shelf_life": 10,
+    "base_stock": 45,
+    "popularity": 1.4085641799232036
+  },
+  "81-844-2979": {
+    "name": "Broccoli",
+    "category": "Produce",
+    "full_price": 4.0,
+    "cost_price": 2.4,
+    "shelf_life": 10,
+    "base_stock": 73,
+    "popularity": 0.7976206801974767
+  },
+  "44-408-7594": {
+    "name": "Eggplant",
+    "category": "Produce",
+    "full_price": 3.0,
+    "cost_price": 1.7999999999999998,
+    "shelf_life": 10,
+    "base_stock": 39,
+    "popularity": 0.865503291278113
+  },
+  "26-010-9519": {
+    "name": "Trout",
+    "category": "Meat",
+    "full_price": 12.0,
+    "cost_price": 7.199999999999999,
+    "shelf_life": 10,
+    "base_stock": 29,
+    "popularity": 1.4425054854635218
+  },
+  "65-464-5070": {
+    "name": "Heavy Cream",
+    "category": "Dairy",
+    "full_price": 4.0,
+    "cost_price": 2.4,
+    "shelf_life": 10,
+    "base_stock": 12,
+    "popularity": 0.33941305540318156
+  },
+  "07-970-9352": {
+    "name": "Bell Pepper",
+    "category": "Produce",
+    "full_price": 4.45,
+    "cost_price": 2.67,
+    "shelf_life": 10,
+    "base_stock": 96,
+    "popularity": 1.2558283049917718
+  },
+  "88-746-9468": {
+    "name": "Onion",
+    "category": "Produce",
+    "full_price": 2.0,
+    "cost_price": 1.2,
+    "shelf_life": 10,
+    "base_stock": 35,
+    "popularity": 1.28976961053209
+  },
+  "06-336-5482": {
+    "name": "Sardines",
+    "category": "Meat",
+    "full_price": 6.0,
+    "cost_price": 3.5999999999999996,
+    "shelf_life": 10,
+    "base_stock": 89,
+    "popularity": 1.0182391662095447
+  },
+  "03-276-3931": {
+    "name": "Mango",
+    "category": "Produce",
+    "full_price": 4.5,
+    "cost_price": 2.6999999999999997,
+    "shelf_life": 10,
+    "base_stock": 60,
+    "popularity": 0.44123697202413603
+  },
+  "12-239-9399": {
+    "name": "Potato",
+    "category": "Produce",
+    "full_price": 1.2,
+    "cost_price": 0.72,
+    "shelf_life": 10,
+    "base_stock": 28,
+    "popularity": 0.5091195831047723
+  },
+  "70-815-4015": {
+    "name": "Butter Biscuit",
+    "category": "Dairy",
+    "full_price": 6.0,
+    "cost_price": 3.5999999999999996,
+    "shelf_life": 10,
+    "base_stock": 38,
+    "popularity": 1.1370337356006583
+  },
+  "11-032-9778": {
+    "name": "Peas",
+    "category": "Produce",
+    "full_price": 3.0,
+    "cost_price": 1.7999999999999998,
+    "shelf_life": 10,
+    "base_stock": 99,
+    "popularity": 0.8485326385079539
+  },
+  "54-374-9986": {
+    "name": "Cream",
+    "category": "Dairy",
+    "full_price": 2.5,
+    "cost_price": 1.5,
+    "shelf_life": 10,
+    "base_stock": 92,
+    "popularity": 1.2218869994514536
+  },
+  "77-312-6317": {
+    "name": "Spinach",
+    "category": "Produce",
+    "full_price": 2.4,
+    "cost_price": 1.44,
+    "shelf_life": 10,
+    "base_stock": 41,
+    "popularity": 1.0012685134393857
+  },
+  "13-844-2178": {
+    "name": "Sardines",
+    "category": "Meat",
+    "full_price": 6.0,
+    "cost_price": 3.5999999999999996,
+    "shelf_life": 10,
+    "base_stock": 44,
+    "popularity": 1.527358749314317
+  },
+  "26-177-5690": {
+    "name": "Cucumber",
+    "category": "Produce",
+    "full_price": 1.8,
+    "cost_price": 1.08,
+    "shelf_life": 10,
+    "base_stock": 85,
+    "popularity": 1.086121777290181
+  },
+  "70-871-4536": {
+    "name": "Swiss Cheese",
+    "category": "Dairy",
+    "full_price": 8.0,
+    "cost_price": 4.8,
+    "shelf_life": 10,
+    "base_stock": 29,
+    "popularity": 1.0012685134393857
+  },
+  "89-543-3456": {
+    "name": "Blueberries",
+    "category": "Produce",
+    "full_price": 10.0,
+    "cost_price": 6.0,
+    "shelf_life": 10,
+    "base_stock": 66,
+    "popularity": 0.4072956664838179
+  },
+  "82-395-5070": {
+    "name": "Chocolate Biscuit",
+    "category": "Bakery",
+    "full_price": 5.0,
+    "cost_price": 3.0,
+    "shelf_life": 10,
+    "base_stock": 75,
+    "popularity": 1.1709750411409765
+  },
+  "14-305-5348": {
+    "name": "Cheese",
+    "category": "Dairy",
+    "full_price": 9.0,
+    "cost_price": 5.3999999999999995,
+    "shelf_life": 10,
+    "base_stock": 53,
+    "popularity": 0.9503565551289084
+  },
+  "25-010-9478": {
+    "name": "Eggplant",
+    "category": "Produce",
+    "full_price": 3.0,
+    "cost_price": 1.7999999999999998,
+    "shelf_life": 10,
+    "base_stock": 74,
+    "popularity": 1.3915935271530444
+  },
+  "13-202-4809": {
+    "name": "Garlic",
+    "category": "Produce",
+    "full_price": 7.0,
+    "cost_price": 4.2,
+    "shelf_life": 10,
+    "base_stock": 27,
+    "popularity": 1.5443294020844762
+  },
+  "80-988-4653": {
+    "name": "Zucchini",
+    "category": "Produce",
+    "full_price": 2.5,
+    "cost_price": 1.5,
+    "shelf_life": 10,
+    "base_stock": 43,
+    "popularity": 1.1200630828304992
+  },
+  "60-343-7973": {
+    "name": "Multigrain Bread",
+    "category": "Bakery",
+    "full_price": 3.2,
+    "cost_price": 1.92,
+    "shelf_life": 10,
+    "base_stock": 56,
+    "popularity": 1.1370337356006583
+  },
+  "34-861-4446": {
+    "name": "Ricotta Cheese",
+    "category": "Dairy",
+    "full_price": 6.0,
+    "cost_price": 3.5999999999999996,
+    "shelf_life": 10,
+    "base_stock": 66,
+    "popularity": 0.7297380691168404
+  },
+  "49-891-4927": {
+    "name": "Cottage Cheese",
+    "category": "Dairy",
+    "full_price": 5.0,
+    "cost_price": 3.0,
+    "shelf_life": 10,
+    "base_stock": 37,
+    "popularity": 1.1540043883708173
+  },
+  "55-522-8242": {
+    "name": "Whipped Cream",
+    "category": "Dairy",
+    "full_price": 4.0,
+    "cost_price": 2.4,
+    "shelf_life": 10,
+    "base_stock": 29,
+    "popularity": 1.0182391662095447
+  },
+  "64-478-4745": {
+    "name": "Lemon",
+    "category": "Produce",
+    "full_price": 2.5,
+    "cost_price": 1.5,
+    "shelf_life": 10,
+    "base_stock": 63,
+    "popularity": 0.9503565551289084
+  },
+  "35-835-5591": {
+    "name": "Tilapia",
+    "category": "Meat",
+    "full_price": 7.0,
+    "cost_price": 4.2,
+    "shelf_life": 10,
+    "base_stock": 95,
+    "popularity": 1.0352098189797039
+  },
+  "26-690-3784": {
+    "name": "Lettuce",
+    "category": "Produce",
+    "full_price": 2.0,
+    "cost_price": 1.2,
+    "shelf_life": 10,
+    "base_stock": 58,
+    "popularity": 0.8994445968184311
+  },
+  "67-625-9704": {
+    "name": "Sardines",
+    "category": "Meat",
+    "full_price": 6.0,
+    "cost_price": 3.5999999999999996,
+    "shelf_life": 10,
+    "base_stock": 33,
+    "popularity": 1.6631239714755897
+  },
+  "31-969-4614": {
+    "name": "Arabica Coffee",
+    "category": "Beverages",
+    "full_price": 20.0,
+    "cost_price": 12.0,
+    "shelf_life": 10,
+    "base_stock": 62,
+    "popularity": 0.3903250137136588
+  },
+  "50-364-5828": {
+    "name": "Coconut",
+    "category": "Produce",
+    "full_price": 5.0,
+    "cost_price": 3.0,
+    "shelf_life": 10,
+    "base_stock": 89,
+    "popularity": 0.644884805266045
+  },
+  "61-827-4098": {
+    "name": "Cod",
+    "category": "Meat",
+    "full_price": 8.0,
+    "cost_price": 4.8,
+    "shelf_life": 10,
+    "base_stock": 23,
+    "popularity": 1.069151124520022
+  },
+  "87-698-0944": {
+    "name": "Banana",
+    "category": "Produce",
+    "full_price": 98.43,
+    "cost_price": 59.058,
+    "shelf_life": 10,
+    "base_stock": 56,
+    "popularity": 0.5939728469555677
+  },
+  "98-556-5323": {
+    "name": "Pomegranate",
+    "category": "Produce",
+    "full_price": 6.0,
+    "cost_price": 3.5999999999999996,
+    "shelf_life": 10,
+    "base_stock": 60,
+    "popularity": 1.6291826659352715
+  },
+  "97-772-2336": {
+    "name": "Pineapple",
+    "category": "Produce",
+    "full_price": 3.5,
+    "cost_price": 2.1,
+    "shelf_life": 10,
+    "base_stock": 70,
+    "popularity": 0.7467087218869994
+  },
+  "19-047-4239": {
+    "name": "Peach",
+    "category": "Produce",
+    "full_price": 4.0,
+    "cost_price": 2.4,
+    "shelf_life": 10,
+    "base_stock": 47,
+    "popularity": 1.5782707076247944
+  },
+  "15-907-3681": {
+    "name": "Plum",
+    "category": "Produce",
+    "full_price": 3.85,
+    "cost_price": 2.31,
+    "shelf_life": 10,
+    "base_stock": 20,
+    "popularity": 1.0352098189797039
+  },
+  "40-860-4532": {
+    "name": "Arabica Coffee",
+    "category": "Beverages",
+    "full_price": 21.0,
+    "cost_price": 12.6,
+    "shelf_life": 10,
+    "base_stock": 74,
+    "popularity": 1.4085641799232036
+  },
+  "44-552-3909": {
+    "name": "Pear",
+    "category": "Produce",
+    "full_price": 4.5,
+    "cost_price": 2.6999999999999997,
+    "shelf_life": 10,
+    "base_stock": 61,
+    "popularity": 0.4072956664838179
+  },
+  "75-029-9003": {
+    "name": "Sourdough Bread",
+    "category": "Bakery",
+    "full_price": 4.0,
+    "cost_price": 2.4,
+    "shelf_life": 10,
+    "base_stock": 34,
+    "popularity": 0.4751782775644542
+  },
+  "74-587-2065": {
+    "name": "Pear",
+    "category": "Produce",
+    "full_price": 4.5,
+    "cost_price": 2.6999999999999997,
+    "shelf_life": 10,
+    "base_stock": 29,
+    "popularity": 0.5260902358749314
+  },
+  "70-149-6756": {
+    "name": "Heavy Cream",
+    "category": "Dairy",
+    "full_price": 4.2,
+    "cost_price": 2.52,
+    "shelf_life": 10,
+    "base_stock": 14,
+    "popularity": 0.4751782775644542
+  },
+  "57-613-5779": {
+    "name": "Gouda Cheese",
+    "category": "Dairy",
+    "full_price": 7.0,
+    "cost_price": 4.2,
+    "shelf_life": 10,
+    "base_stock": 100,
+    "popularity": 0.33941305540318156
+  },
+  "28-956-1320": {
+    "name": "Greek Yogurt",
+    "category": "Dairy",
+    "full_price": 3.0,
+    "cost_price": 1.7999999999999998,
+    "shelf_life": 10,
+    "base_stock": 62,
+    "popularity": 0.8485326385079539
+  },
+  "87-791-5803": {
+    "name": "Tuna",
+    "category": "Meat",
+    "full_price": 18.0,
+    "cost_price": 10.799999999999999,
+    "shelf_life": 10,
+    "base_stock": 25,
+    "popularity": 0.6109434997257268
+  },
+  "14-521-4167": {
+    "name": "Buttermilk",
+    "category": "Dairy",
+    "full_price": 2.5,
+    "cost_price": 1.5,
+    "shelf_life": 10,
+    "base_stock": 47,
+    "popularity": 0.8145913329676358
+  },
+  "51-572-5497": {
+    "name": "Orange",
+    "category": "Produce",
+    "full_price": 3.0,
+    "cost_price": 1.7999999999999998,
+    "shelf_life": 10,
+    "base_stock": 15,
+    "popularity": 0.9503565551289084
+  },
+  "28-840-6096": {
+    "name": "Pomegranate",
+    "category": "Produce",
+    "full_price": 6.0,
+    "cost_price": 3.5999999999999996,
+    "shelf_life": 10,
+    "base_stock": 19,
+    "popularity": 1.0012685134393857
+  },
+  "44-538-3366": {
+    "name": "Tuna",
+    "category": "Meat",
+    "full_price": 18.0,
+    "cost_price": 10.799999999999999,
+    "shelf_life": 10,
+    "base_stock": 58,
+    "popularity": 0.42426631925397695
+  },
+  "51-459-5630": {
+    "name": "Sour Cream",
+    "category": "Dairy",
+    "full_price": 4.0,
+    "cost_price": 2.4,
+    "shelf_life": 10,
+    "base_stock": 11,
+    "popularity": 1.4255348326933626
+  },
+  "96-316-7600": {
+    "name": "Bell Pepper",
+    "category": "Produce",
+    "full_price": 4.5,
+    "cost_price": 2.6999999999999997,
+    "shelf_life": 10,
+    "base_stock": 70,
+    "popularity": 0.3903250137136588
+  },
+  "58-063-8633": {
+    "name": "Bell Pepper",
+    "category": "Produce",
+    "full_price": 4.5,
+    "cost_price": 2.6999999999999997,
+    "shelf_life": 10,
+    "base_stock": 50,
+    "popularity": 1.1709750411409765
+  },
+  "43-703-9939": {
+    "name": "Pineapple",
+    "category": "Produce",
+    "full_price": 3.5,
+    "cost_price": 2.1,
+    "shelf_life": 10,
+    "base_stock": 55,
+    "popularity": 1.3746228743828854
+  },
+  "88-069-5486": {
+    "name": "Cod",
+    "category": "Meat",
+    "full_price": 8.0,
+    "cost_price": 4.8,
+    "shelf_life": 10,
+    "base_stock": 31,
+    "popularity": 0.6957967635765222
+  },
+  "74-845-3299": {
+    "name": "Green Tea",
+    "category": "Beverages",
+    "full_price": 8.0,
+    "cost_price": 4.8,
+    "shelf_life": 10,
+    "base_stock": 63,
+    "popularity": 1.5782707076247944
+  },
+  "81-605-6246": {
+    "name": "Sardines",
+    "category": "Meat",
+    "full_price": 6.0,
+    "cost_price": 3.5999999999999996,
+    "shelf_life": 10,
+    "base_stock": 73,
+    "popularity": 0.3733543609434997
+  },
+  "73-561-2867": {
+    "name": "Sourdough Bread",
+    "category": "Bakery",
+    "full_price": 4.0,
+    "cost_price": 2.4,
+    "shelf_life": 10,
+    "base_stock": 12,
+    "popularity": 1.272798957761931
+  },
+  "27-262-2437": {
+    "name": "Swiss Cheese",
+    "category": "Dairy",
+    "full_price": 8.1,
+    "cost_price": 4.859999999999999,
+    "shelf_life": 10,
+    "base_stock": 80,
+    "popularity": 0.9164152495885902
+  },
+  "39-479-5147": {
+    "name": "Tuna",
+    "category": "Meat",
+    "full_price": 18.0,
+    "cost_price": 10.799999999999999,
+    "shelf_life": 10,
+    "base_stock": 92,
+    "popularity": 0.6788261108063631
+  },
+  "71-085-4290": {
+    "name": "Cucumber",
+    "category": "Produce",
+    "full_price": 1.8,
+    "cost_price": 1.08,
+    "shelf_life": 10,
+    "base_stock": 31,
+    "popularity": 1.5443294020844762
+  },
+  "48-957-6116": {
+    "name": "Eggplant",
+    "category": "Produce",
+    "full_price": 3.0,
+    "cost_price": 1.7999999999999998,
+    "shelf_life": 10,
+    "base_stock": 31,
+    "popularity": 0.7806500274273176
+  },
+  "83-917-7384": {
+    "name": "Garlic",
+    "category": "Produce",
+    "full_price": 7.0,
+    "cost_price": 4.2,
+    "shelf_life": 10,
+    "base_stock": 76,
+    "popularity": 0.8824739440482721
+  },
+  "03-149-9760": {
+    "name": "Whipped Cream",
+    "category": "Dairy",
+    "full_price": 4.0,
+    "cost_price": 2.4,
+    "shelf_life": 10,
+    "base_stock": 92,
+    "popularity": 0.7297380691168404
+  },
+  "53-680-5293": {
+    "name": "Cheddar Cheese",
+    "category": "Dairy",
+    "full_price": 9.0,
+    "cost_price": 5.3999999999999995,
+    "shelf_life": 10,
+    "base_stock": 88,
+    "popularity": 1.3406815688425673
+  },
+  "49-861-7823": {
+    "name": "Coconut",
+    "category": "Produce",
+    "full_price": 5.0,
+    "cost_price": 3.0,
+    "shelf_life": 10,
+    "base_stock": 99,
+    "popularity": 0.6957967635765222
+  },
+  "24-364-3341": {
+    "name": "Egg (Turkey)",
+    "category": "Dairy",
+    "full_price": 2.5,
+    "cost_price": 1.5,
+    "shelf_life": 10,
+    "base_stock": 44,
+    "popularity": 0.865503291278113
+  },
+  "80-374-5711": {
+    "name": "Herbal Tea",
+    "category": "Beverages",
+    "full_price": 31.0,
+    "cost_price": 18.599999999999998,
+    "shelf_life": 10,
+    "base_stock": 48,
+    "popularity": 1.1879456939111355
+  },
+  "53-446-8243": {
+    "name": "Orange",
+    "category": "Produce",
+    "full_price": 3.0,
+    "cost_price": 1.7999999999999998,
+    "shelf_life": 10,
+    "base_stock": 41,
+    "popularity": 1.4934174437739989
+  },
+  "67-473-7093": {
+    "name": "Black Tea",
+    "category": "Beverages",
+    "full_price": 5.0,
+    "cost_price": 3.0,
+    "shelf_life": 10,
+    "base_stock": 56,
+    "popularity": 0.8824739440482721
+  },
+  "97-040-3822": {
+    "name": "Swiss Cheese",
+    "category": "Dairy",
+    "full_price": 8.0,
+    "cost_price": 4.8,
+    "shelf_life": 10,
+    "base_stock": 50,
+    "popularity": 0.7127674163466813
+  },
+  "10-002-6494": {
+    "name": "Mango",
+    "category": "Produce",
+    "full_price": 4.8,
+    "cost_price": 2.88,
+    "shelf_life": 10,
+    "base_stock": 89,
+    "popularity": 0.7806500274273176
+  },
+  "12-998-3882": {
+    "name": "Egg (Turkey)",
+    "category": "Dairy",
+    "full_price": 2.5,
+    "cost_price": 1.5,
+    "shelf_life": 10,
+    "base_stock": 76,
+    "popularity": 1.1709750411409765
+  },
+  "87-097-5691": {
+    "name": "Robusta Coffee",
+    "category": "Beverages",
+    "full_price": 10.0,
+    "cost_price": 6.0,
+    "shelf_life": 10,
+    "base_stock": 62,
+    "popularity": 1.0521804717498628
+  },
+  "40-810-9261": {
+    "name": "Green Coffee",
+    "category": "Beverages",
+    "full_price": 12.5,
+    "cost_price": 7.5,
+    "shelf_life": 10,
+    "base_stock": 75,
+    "popularity": 0.5600315414152496
+  },
+  "46-931-6897": {
+    "name": "Cream",
+    "category": "Dairy",
+    "full_price": 2.5,
+    "cost_price": 1.5,
+    "shelf_life": 10,
+    "base_stock": 29,
+    "popularity": 1.086121777290181
+  },
+  "58-182-6781": {
+    "name": "Oatmeal Biscuit",
+    "category": "Bakery",
+    "full_price": 5.0,
+    "cost_price": 3.0,
+    "shelf_life": 10,
+    "base_stock": 34,
+    "popularity": 1.3067402633022491
+  },
+  "06-706-6490": {
+    "name": "Green Tea",
+    "category": "Beverages",
+    "full_price": 8.0,
+    "cost_price": 4.8,
+    "shelf_life": 10,
+    "base_stock": 15,
+    "popularity": 1.0182391662095447
+  },
+  "18-199-5799": {
+    "name": "Cheddar Cheese",
+    "category": "Dairy",
+    "full_price": 9.0,
+    "cost_price": 5.3999999999999995,
+    "shelf_life": 10,
+    "base_stock": 40,
+    "popularity": 0.6788261108063631
+  },
+  "83-704-6367": {
+    "name": "Arabica Coffee",
+    "category": "Beverages",
+    "full_price": 21.0,
+    "cost_price": 12.6,
+    "shelf_life": 10,
+    "base_stock": 21,
+    "popularity": 0.33941305540318156
+  },
+  "01-144-5960": {
+    "name": "Trout",
+    "category": "Meat",
+    "full_price": 12.0,
+    "cost_price": 7.199999999999999,
+    "shelf_life": 10,
+    "base_stock": 75,
+    "popularity": 1.510388096544158
+  },
+  "96-774-0457": {
+    "name": "Cod",
+    "category": "Meat",
+    "full_price": 8.0,
+    "cost_price": 4.8,
+    "shelf_life": 10,
+    "base_stock": 56,
+    "popularity": 1.6800946242457488
+  },
+  "24-310-9184": {
+    "name": "Rye Bread",
+    "category": "Bakery",
+    "full_price": 3.0,
+    "cost_price": 1.7999999999999998,
+    "shelf_life": 10,
+    "base_stock": 69,
+    "popularity": 1.6631239714755897
+  },
+  "53-080-8252": {
+    "name": "Sourdough Bread",
+    "category": "Bakery",
+    "full_price": 4.5,
+    "cost_price": 2.6999999999999997,
+    "shelf_life": 10,
+    "base_stock": 30,
+    "popularity": 0.5430608886450905
+  },
+  "14-681-7035": {
+    "name": "White Tea",
+    "category": "Beverages",
+    "full_price": 25.0,
+    "cost_price": 15.0,
+    "shelf_life": 10,
+    "base_stock": 36,
+    "popularity": 0.5939728469555677
+  },
+  "96-503-7712": {
+    "name": "White Bread",
+    "category": "Bakery",
+    "full_price": 2.5,
+    "cost_price": 1.5,
+    "shelf_life": 10,
+    "base_stock": 93,
+    "popularity": 1.28976961053209
+  },
+  "98-064-4465": {
+    "name": "Mozzarella Cheese",
+    "category": "Dairy",
+    "full_price": 7.0,
+    "cost_price": 4.2,
+    "shelf_life": 10,
+    "base_stock": 96,
+    "popularity": 1.2218869994514536
+  },
+  "18-278-2383": {
+    "name": "Gouda Cheese",
+    "category": "Dairy",
+    "full_price": 7.0,
+    "cost_price": 4.2,
+    "shelf_life": 10,
+    "base_stock": 97,
+    "popularity": 0.7297380691168404
+  },
+  "20-054-3716": {
+    "name": "Chocolate Biscuit",
+    "category": "Bakery",
+    "full_price": 5.0,
+    "cost_price": 3.0,
+    "shelf_life": 10,
+    "base_stock": 11,
+    "popularity": 1.4934174437739989
+  },
+  "63-822-5278": {
+    "name": "Pomegranate",
+    "category": "Produce",
+    "full_price": 6.0,
+    "cost_price": 3.5999999999999996,
+    "shelf_life": 10,
+    "base_stock": 14,
+    "popularity": 1.4594761382336807
+  },
+  "47-554-5780": {
+    "name": "Haddock",
+    "category": "Meat",
+    "full_price": 9.0,
+    "cost_price": 5.3999999999999995,
+    "shelf_life": 10,
+    "base_stock": 93,
+    "popularity": 1.323710916072408
+  },
+  "97-710-2449": {
+    "name": "Rye Bread",
+    "category": "Bakery",
+    "full_price": 2.8,
+    "cost_price": 1.68,
+    "shelf_life": 10,
+    "base_stock": 28,
+    "popularity": 0.5260902358749314
+  },
+  "90-492-0564": {
+    "name": "Pomegranate",
+    "category": "Produce",
+    "full_price": 6.0,
+    "cost_price": 3.5999999999999996,
+    "shelf_life": 10,
+    "base_stock": 92,
+    "popularity": 0.5430608886450905
+  },
+  "63-956-0739": {
+    "name": "Robusta Coffee",
+    "category": "Beverages",
+    "full_price": 10.0,
+    "cost_price": 6.0,
+    "shelf_life": 10,
+    "base_stock": 68,
+    "popularity": 0.661855458036204
+  },
+  "30-832-5429": {
+    "name": "Multigrain Bread",
+    "category": "Bakery",
+    "full_price": 3.5,
+    "cost_price": 2.1,
+    "shelf_life": 10,
+    "base_stock": 46,
+    "popularity": 1.1540043883708173
+  },
+  "38-822-8005": {
+    "name": "Cucumber",
+    "category": "Produce",
+    "full_price": 1.75,
+    "cost_price": 1.05,
+    "shelf_life": 10,
+    "base_stock": 47,
+    "popularity": 0.8315619857377948
+  },
+  "60-285-3783": {
+    "name": "Mushrooms",
+    "category": "Produce",
+    "full_price": 6.0,
+    "cost_price": 3.5999999999999996,
+    "shelf_life": 10,
+    "base_stock": 51,
+    "popularity": 0.8824739440482721
+  },
+  "00-215-7434": {
+    "name": "Egg (Goose)",
+    "category": "Dairy",
+    "full_price": 2.5,
+    "cost_price": 1.5,
+    "shelf_life": 10,
+    "base_stock": 14,
+    "popularity": 1.0012685134393857
+  },
+  "68-734-1585": {
+    "name": "Greek Yogurt",
+    "category": "Dairy",
+    "full_price": 51.17,
+    "cost_price": 30.701999999999998,
+    "shelf_life": 10,
+    "base_stock": 62,
+    "popularity": 1.5613000548546352
+  },
+  "08-703-1382": {
+    "name": "Peach",
+    "category": "Produce",
+    "full_price": 4.0,
+    "cost_price": 2.4,
+    "shelf_life": 10,
+    "base_stock": 40,
+    "popularity": 1.1879456939111355
+  },
+  "65-282-0419": {
+    "name": "White Tea",
+    "category": "Beverages",
+    "full_price": 25.5,
+    "cost_price": 15.299999999999999,
+    "shelf_life": 10,
+    "base_stock": 50,
+    "popularity": 0.49214893033461327
+  },
+  "87-675-1506": {
+    "name": "Strawberries",
+    "category": "Produce",
+    "full_price": 5.9,
+    "cost_price": 3.54,
+    "shelf_life": 10,
+    "base_stock": 31,
+    "popularity": 0.7806500274273176
+  },
+  "67-027-7269": {
+    "name": "Mushrooms",
+    "category": "Produce",
+    "full_price": 6.5,
+    "cost_price": 3.9,
+    "shelf_life": 10,
+    "base_stock": 35,
+    "popularity": 1.4934174437739989
+  },
+  "72-066-4597": {
+    "name": "Broccoli",
+    "category": "Produce",
+    "full_price": 4.0,
+    "cost_price": 2.4,
+    "shelf_life": 10,
+    "base_stock": 31,
+    "popularity": 1.1709750411409765
+  },
+  "31-627-6025": {
+    "name": "White Bread",
+    "category": "Bakery",
+    "full_price": 2.5,
+    "cost_price": 1.5,
+    "shelf_life": 10,
+    "base_stock": 56,
+    "popularity": 0.9503565551289084
+  },
+  "09-286-8107": {
+    "name": "Greek Yogurt",
+    "category": "Dairy",
+    "full_price": 3.0,
+    "cost_price": 1.7999999999999998,
+    "shelf_life": 10,
+    "base_stock": 90,
+    "popularity": 1.1879456939111355
+  },
+  "01-173-0029": {
+    "name": "Blueberries",
+    "category": "Produce",
+    "full_price": 10.0,
+    "cost_price": 6.0,
+    "shelf_life": 10,
+    "base_stock": 42,
+    "popularity": 0.6279141524958859
+  },
+  "79-400-6216": {
+    "name": "Mozzarella Cheese",
+    "category": "Dairy",
+    "full_price": 7.2,
+    "cost_price": 4.32,
+    "shelf_life": 10,
+    "base_stock": 16,
+    "popularity": 0.9503565551289084
+  },
+  "80-072-8774": {
+    "name": "Tuna",
+    "category": "Meat",
+    "full_price": 18.0,
+    "cost_price": 10.799999999999999,
+    "shelf_life": 10,
+    "base_stock": 89,
+    "popularity": 1.28976961053209
+  },
+  "78-689-8958": {
+    "name": "White Tea",
+    "category": "Beverages",
+    "full_price": 25.0,
+    "cost_price": 15.0,
+    "shelf_life": 10,
+    "base_stock": 20,
+    "popularity": 1.2388576522216128
+  },
+  "57-562-2358": {
+    "name": "Black Coffee",
+    "category": "Beverages",
+    "full_price": 15.0,
+    "cost_price": 9.0,
+    "shelf_life": 10,
+    "base_stock": 37,
+    "popularity": 1.5952413603949533
+  },
+  "46-753-8430": {
+    "name": "Feta Cheese",
+    "category": "Dairy",
+    "full_price": 7.0,
+    "cost_price": 4.2,
+    "shelf_life": 10,
+    "base_stock": 98,
+    "popularity": 1.5613000548546352
+  },
+  "48-461-3742": {
+    "name": "Kiwi",
+    "category": "Produce",
+    "full_price": 6.0,
+    "cost_price": 3.5999999999999996,
+    "shelf_life": 10,
+    "base_stock": 37,
+    "popularity": 0.7976206801974767
+  },
+  "16-354-8122": {
+    "name": "Digestive Biscuit",
+    "category": "Bakery",
+    "full_price": 4.0,
+    "cost_price": 2.4,
+    "shelf_life": 10,
+    "base_stock": 97,
+    "popularity": 0.9673272078990675
+  },
+  "76-954-1442": {
+    "name": "Arabica Coffee",
+    "category": "Beverages",
+    "full_price": 20.0,
+    "cost_price": 12.0,
+    "shelf_life": 10,
+    "base_stock": 97,
+    "popularity": 1.2558283049917718
+  },
+  "44-476-0390": {
+    "name": "Lemon",
+    "category": "Produce",
+    "full_price": 2.5,
+    "cost_price": 1.5,
+    "shelf_life": 10,
+    "base_stock": 90,
+    "popularity": 1.2049163466812947
+  },
+  "35-617-3857": {
+    "name": "Arabica Coffee",
+    "category": "Beverages",
+    "full_price": 20.0,
+    "cost_price": 12.0,
+    "shelf_life": 10,
+    "base_stock": 46,
+    "popularity": 1.0012685134393857
+  },
+  "94-029-2717": {
+    "name": "Broccoli",
+    "category": "Produce",
+    "full_price": 4.0,
+    "cost_price": 2.4,
+    "shelf_life": 10,
+    "base_stock": 40,
+    "popularity": 1.4594761382336807
+  },
+  "27-442-3654": {
+    "name": "Herbal Tea",
+    "category": "Beverages",
+    "full_price": 30.0,
+    "cost_price": 18.0,
+    "shelf_life": 10,
+    "base_stock": 59,
+    "popularity": 1.1709750411409765
+  },
+  "32-933-0329": {
+    "name": "Blueberries",
+    "category": "Produce",
+    "full_price": 10.0,
+    "cost_price": 6.0,
+    "shelf_life": 10,
+    "base_stock": 23,
+    "popularity": 0.6788261108063631
+  },
+  "93-813-2419": {
+    "name": "Digestive Biscuit",
+    "category": "Bakery",
+    "full_price": 4.0,
+    "cost_price": 2.4,
+    "shelf_life": 10,
+    "base_stock": 39,
+    "popularity": 1.6631239714755897
+  },
+  "85-440-3667": {
+    "name": "Gouda Cheese",
+    "category": "Dairy",
+    "full_price": 7.0,
+    "cost_price": 4.2,
+    "shelf_life": 10,
+    "base_stock": 68,
+    "popularity": 0.8994445968184311
+  },
+  "60-632-8752": {
+    "name": "Chocolate Biscuit",
+    "category": "Bakery",
+    "full_price": 5.0,
+    "cost_price": 3.0,
+    "shelf_life": 10,
+    "base_stock": 96,
+    "popularity": 0.7636793746571585
+  },
+  "99-561-4871": {
+    "name": "Haddock",
+    "category": "Meat",
+    "full_price": 9.0,
+    "cost_price": 5.3999999999999995,
+    "shelf_life": 10,
+    "base_stock": 17,
+    "popularity": 1.6970652770159078
+  },
+  "61-607-7622": {
+    "name": "Egg (Duck)",
+    "category": "Dairy",
+    "full_price": 1.0,
+    "cost_price": 0.6,
+    "shelf_life": 10,
+    "base_stock": 23,
+    "popularity": 1.4255348326933626
+  },
+  "11-745-3025": {
+    "name": "Peach",
+    "category": "Produce",
+    "full_price": 4.0,
+    "cost_price": 2.4,
+    "shelf_life": 10,
+    "base_stock": 15,
+    "popularity": 0.6279141524958859
+  },
+  "59-075-2457": {
+    "name": "Egg (Goose)",
+    "category": "Dairy",
+    "full_price": 2.5,
+    "cost_price": 1.5,
+    "shelf_life": 10,
+    "base_stock": 97,
+    "popularity": 0.5600315414152496
+  },
+  "40-021-2400": {
+    "name": "Zucchini",
+    "category": "Produce",
+    "full_price": 2.5,
+    "cost_price": 1.5,
+    "shelf_life": 10,
+    "base_stock": 29,
+    "popularity": 0.8994445968184311
+  },
+  "29-017-6255": {
+    "name": "Bell Pepper",
+    "category": "Produce",
+    "full_price": 4.6,
+    "cost_price": 2.76,
+    "shelf_life": 10,
+    "base_stock": 46,
+    "popularity": 1.6291826659352715
+  },
+  "92-291-7089": {
+    "name": "Cheese",
+    "category": "Dairy",
+    "full_price": 9.5,
+    "cost_price": 5.7,
+    "shelf_life": 10,
+    "base_stock": 76,
+    "popularity": 1.0182391662095447
+  },
+  "69-287-9113": {
+    "name": "Zucchini",
+    "category": "Produce",
+    "full_price": 2.5,
+    "cost_price": 1.5,
+    "shelf_life": 10,
+    "base_stock": 59,
+    "popularity": 0.9164152495885902
+  },
+  "76-540-6407": {
+    "name": "Orange",
+    "category": "Produce",
+    "full_price": 3.1,
+    "cost_price": 1.8599999999999999,
+    "shelf_life": 10,
+    "base_stock": 92,
+    "popularity": 1.3406815688425673
+  },
+  "85-561-4694": {
+    "name": "Kiwi",
+    "category": "Produce",
+    "full_price": 6.0,
+    "cost_price": 3.5999999999999996,
+    "shelf_life": 10,
+    "base_stock": 28,
+    "popularity": 1.1879456939111355
+  },
+  "34-928-2775": {
+    "name": "Coconut",
+    "category": "Produce",
+    "full_price": 5.0,
+    "cost_price": 3.0,
+    "shelf_life": 10,
+    "base_stock": 19,
+    "popularity": 1.6291826659352715
+  },
+  "90-773-9557": {
+    "name": "Butter",
+    "category": "Dairy",
+    "full_price": 3.0,
+    "cost_price": 1.7999999999999998,
+    "shelf_life": 10,
+    "base_stock": 85,
+    "popularity": 0.7636793746571585
+  },
+  "28-008-2951": {
+    "name": "Broccoli",
+    "category": "Produce",
+    "full_price": 4.0,
+    "cost_price": 2.4,
+    "shelf_life": 10,
+    "base_stock": 95,
+    "popularity": 0.8824739440482721
+  },
+  "19-214-5762": {
+    "name": "Pear",
+    "category": "Produce",
+    "full_price": 4.5,
+    "cost_price": 2.6999999999999997,
+    "shelf_life": 10,
+    "base_stock": 41,
+    "popularity": 0.9673272078990675
+  },
+  "95-349-0828": {
+    "name": "Feta Cheese",
+    "category": "Dairy",
+    "full_price": 7.0,
+    "cost_price": 4.2,
+    "shelf_life": 10,
+    "base_stock": 97,
+    "popularity": 1.6122120131651125
+  },
+  "00-963-2193": {
+    "name": "Milk",
+    "category": "Dairy",
+    "full_price": 1.0,
+    "cost_price": 0.6,
+    "shelf_life": 10,
+    "base_stock": 43,
+    "popularity": 1.4255348326933626
+  },
+  "24-972-6969": {
+    "name": "Cheese",
+    "category": "Dairy",
+    "full_price": 9.2,
+    "cost_price": 5.52,
+    "shelf_life": 10,
+    "base_stock": 69,
+    "popularity": 0.4751782775644542
+  },
+  "94-190-5193": {
+    "name": "Carrot",
+    "category": "Produce",
+    "full_price": 1.5,
+    "cost_price": 0.8999999999999999,
+    "shelf_life": 10,
+    "base_stock": 67,
+    "popularity": 1.1370337356006583
+  },
+  "84-629-1532": {
+    "name": "Arabica Coffee",
+    "category": "Beverages",
+    "full_price": 21.0,
+    "cost_price": 12.6,
+    "shelf_life": 10,
+    "base_stock": 22,
+    "popularity": 0.5091195831047723
+  },
+  "68-977-2498": {
+    "name": "Grapes",
+    "category": "Produce",
+    "full_price": 5.5,
+    "cost_price": 3.3,
+    "shelf_life": 10,
+    "base_stock": 88,
+    "popularity": 1.5782707076247944
+  },
+  "91-257-3672": {
+    "name": "Tilapia",
+    "category": "Meat",
+    "full_price": 7.0,
+    "cost_price": 4.2,
+    "shelf_life": 10,
+    "base_stock": 78,
+    "popularity": 1.069151124520022
+  },
+  "61-801-8665": {
+    "name": "Robusta Coffee",
+    "category": "Beverages",
+    "full_price": 10.5,
+    "cost_price": 6.3,
+    "shelf_life": 10,
+    "base_stock": 42,
+    "popularity": 0.5770021941854087
+  },
+  "38-296-6634": {
+    "name": "Peas",
+    "category": "Produce",
+    "full_price": 3.0,
+    "cost_price": 1.7999999999999998,
+    "shelf_life": 10,
+    "base_stock": 49,
+    "popularity": 1.3915935271530444
+  },
+  "83-763-5038": {
+    "name": "Buttermilk",
+    "category": "Dairy",
+    "full_price": 2.4,
+    "cost_price": 1.44,
+    "shelf_life": 10,
+    "base_stock": 52,
+    "popularity": 0.35638370817334064
+  },
+  "37-709-3532": {
+    "name": "Mushrooms",
+    "category": "Produce",
+    "full_price": 6.0,
+    "cost_price": 3.5999999999999996,
+    "shelf_life": 10,
+    "base_stock": 79,
+    "popularity": 0.9333859023587493
+  },
+  "98-575-4736": {
+    "name": "Cucumber",
+    "category": "Produce",
+    "full_price": 1.8,
+    "cost_price": 1.08,
+    "shelf_life": 10,
+    "base_stock": 76,
+    "popularity": 0.3733543609434997
+  },
+  "57-861-4379": {
+    "name": "Swiss Cheese",
+    "category": "Dairy",
+    "full_price": 8.0,
+    "cost_price": 4.8,
+    "shelf_life": 10,
+    "base_stock": 93,
+    "popularity": 1.5782707076247944
+  },
+  "28-824-9017": {
+    "name": "Trout",
+    "category": "Meat",
+    "full_price": 11.5,
+    "cost_price": 6.8999999999999995,
+    "shelf_life": 10,
+    "base_stock": 19,
+    "popularity": 1.6291826659352715
+  },
+  "29-756-7042": {
+    "name": "Digestive Biscuit",
+    "category": "Bakery",
+    "full_price": 4.0,
+    "cost_price": 2.4,
+    "shelf_life": 10,
+    "base_stock": 90,
+    "popularity": 1.069151124520022
+  },
+  "41-538-3129": {
+    "name": "Digestive Biscuit",
+    "category": "Bakery",
+    "full_price": 4.0,
+    "cost_price": 2.4,
+    "shelf_life": 10,
+    "base_stock": 77,
+    "popularity": 1.0521804717498628
+  },
+  "26-535-4727": {
+    "name": "Tilapia",
+    "category": "Meat",
+    "full_price": 7.0,
+    "cost_price": 4.2,
+    "shelf_life": 10,
+    "base_stock": 93,
+    "popularity": 1.2218869994514536
+  },
+  "59-857-6577": {
+    "name": "Evaporated Milk",
+    "category": "Dairy",
+    "full_price": 2.0,
+    "cost_price": 1.2,
+    "shelf_life": 10,
+    "base_stock": 23,
+    "popularity": 1.069151124520022
+  },
+  "14-550-2152": {
+    "name": "Green Tea",
+    "category": "Beverages",
+    "full_price": 7.6,
+    "cost_price": 4.56,
+    "shelf_life": 10,
+    "base_stock": 51,
+    "popularity": 1.6291826659352715
+  },
+  "39-315-3936": {
+    "name": "Heavy Cream",
+    "category": "Dairy",
+    "full_price": 4.0,
+    "cost_price": 2.4,
+    "shelf_life": 10,
+    "base_stock": 57,
+    "popularity": 0.3903250137136588
+  },
+  "60-771-0879": {
+    "name": "Blueberries",
+    "category": "Produce",
+    "full_price": 10.0,
+    "cost_price": 6.0,
+    "shelf_life": 10,
+    "base_stock": 89,
+    "popularity": 1.3406815688425673
+  },
+  "00-440-9568": {
+    "name": "Blueberries",
+    "category": "Produce",
+    "full_price": 10.0,
+    "cost_price": 6.0,
+    "shelf_life": 10,
+    "base_stock": 53,
+    "popularity": 0.9333859023587493
+  },
+  "07-074-1196": {
+    "name": "Plum",
+    "category": "Produce",
+    "full_price": 3.9,
+    "cost_price": 2.34,
+    "shelf_life": 10,
+    "base_stock": 11,
+    "popularity": 0.6788261108063631
+  },
+  "69-674-5387": {
+    "name": "Yogurt",
+    "category": "Dairy",
+    "full_price": 1.75,
+    "cost_price": 1.05,
+    "shelf_life": 10,
+    "base_stock": 59,
+    "popularity": 1.5613000548546352
+  },
+  "08-940-8578": {
+    "name": "Onion",
+    "category": "Produce",
+    "full_price": 2.0,
+    "cost_price": 1.2,
+    "shelf_life": 10,
+    "base_stock": 34,
+    "popularity": 1.527358749314317
+  },
+  "94-020-6982": {
+    "name": "Tuna",
+    "category": "Meat",
+    "full_price": 18.0,
+    "cost_price": 10.799999999999999,
+    "shelf_life": 10,
+    "base_stock": 25,
+    "popularity": 0.5260902358749314
+  },
+  "55-631-7937": {
+    "name": "Greek Yogurt",
+    "category": "Dairy",
+    "full_price": 3.0,
+    "cost_price": 1.7999999999999998,
+    "shelf_life": 10,
+    "base_stock": 26,
+    "popularity": 0.42426631925397695
+  },
+  "27-389-3529": {
+    "name": "Haddock",
+    "category": "Meat",
+    "full_price": 9.0,
+    "cost_price": 5.3999999999999995,
+    "shelf_life": 10,
+    "base_stock": 84,
+    "popularity": 1.0182391662095447
+  },
+  "84-272-0790": {
+    "name": "Blueberries",
+    "category": "Produce",
+    "full_price": 10.0,
+    "cost_price": 6.0,
+    "shelf_life": 10,
+    "base_stock": 28,
+    "popularity": 0.8145913329676358
+  },
+  "01-903-5373": {
+    "name": "Strawberries",
+    "category": "Produce",
+    "full_price": 6.0,
+    "cost_price": 3.5999999999999996,
+    "shelf_life": 10,
+    "base_stock": 94,
+    "popularity": 0.6788261108063631
+  },
+  "49-311-3063": {
+    "name": "Kiwi",
+    "category": "Produce",
+    "full_price": 6.0,
+    "cost_price": 3.5999999999999996,
+    "shelf_life": 10,
+    "base_stock": 47,
+    "popularity": 1.1879456939111355
+  },
+  "04-277-5245": {
+    "name": "Coconut Sugar",
+    "category": "Produce",
+    "full_price": 5.0,
+    "cost_price": 3.0,
+    "shelf_life": 10,
+    "base_stock": 20,
+    "popularity": 1.2049163466812947
+  },
+  "42-141-5718": {
+    "name": "Cheese",
+    "category": "Dairy",
+    "full_price": 9.0,
+    "cost_price": 5.3999999999999995,
+    "shelf_life": 10,
+    "base_stock": 100,
+    "popularity": 1.4934174437739989
+  },
+  "89-602-6755": {
+    "name": "Milk",
+    "category": "Dairy",
+    "full_price": 1.0,
+    "cost_price": 0.6,
+    "shelf_life": 10,
+    "base_stock": 74,
+    "popularity": 0.4072956664838179
+  },
+  "15-045-8444": {
+    "name": "Green Coffee",
+    "category": "Beverages",
+    "full_price": 12.0,
+    "cost_price": 7.199999999999999,
+    "shelf_life": 10,
+    "base_stock": 27,
+    "popularity": 1.4934174437739989
+  },
+  "15-240-6267": {
+    "name": "Eggplant",
+    "category": "Produce",
+    "full_price": 3.0,
+    "cost_price": 1.7999999999999998,
+    "shelf_life": 10,
+    "base_stock": 91,
+    "popularity": 0.7127674163466813
+  },
+  "05-193-8096": {
+    "name": "Grapes",
+    "category": "Produce",
+    "full_price": 5.5,
+    "cost_price": 3.3,
+    "shelf_life": 10,
+    "base_stock": 82,
+    "popularity": 0.661855458036204
+  },
+  "56-635-6764": {
+    "name": "Sourdough Bread",
+    "category": "Bakery",
+    "full_price": 4.5,
+    "cost_price": 2.6999999999999997,
+    "shelf_life": 10,
+    "base_stock": 12,
+    "popularity": 1.272798957761931
+  },
+  "65-759-3721": {
+    "name": "Butter Biscuit",
+    "category": "Dairy",
+    "full_price": 6.0,
+    "cost_price": 3.5999999999999996,
+    "shelf_life": 10,
+    "base_stock": 33,
+    "popularity": 0.33941305540318156
+  },
+  "08-725-8156": {
+    "name": "Tilapia",
+    "category": "Meat",
+    "full_price": 7.0,
+    "cost_price": 4.2,
+    "shelf_life": 10,
+    "base_stock": 59,
+    "popularity": 0.9673272078990675
+  },
+  "15-679-3935": {
+    "name": "Grapes",
+    "category": "Produce",
+    "full_price": 5.5,
+    "cost_price": 3.3,
+    "shelf_life": 10,
+    "base_stock": 22,
+    "popularity": 0.5770021941854087
+  },
+  "81-578-7404": {
+    "name": "Gouda Cheese",
+    "category": "Dairy",
+    "full_price": 7.0,
+    "cost_price": 4.2,
+    "shelf_life": 10,
+    "base_stock": 67,
+    "popularity": 1.2388576522216128
+  },
+  "82-380-5378": {
+    "name": "Cheese",
+    "category": "Dairy",
+    "full_price": 9.0,
+    "cost_price": 5.3999999999999995,
+    "shelf_life": 10,
+    "base_stock": 78,
+    "popularity": 1.0182391662095447
+  },
+  "78-362-8578": {
+    "name": "Lemon",
+    "category": "Produce",
+    "full_price": 2.45,
+    "cost_price": 1.47,
+    "shelf_life": 10,
+    "base_stock": 72,
+    "popularity": 0.42426631925397695
+  },
+  "32-261-0008": {
+    "name": "Heavy Cream",
+    "category": "Dairy",
+    "full_price": 4.0,
+    "cost_price": 2.4,
+    "shelf_life": 10,
+    "base_stock": 63,
+    "popularity": 0.35638370817334064
+  },
+  "74-943-9034": {
+    "name": "White Bread",
+    "category": "Bakery",
+    "full_price": 2.5,
+    "cost_price": 1.5,
+    "shelf_life": 10,
+    "base_stock": 30,
+    "popularity": 1.6461533187054307
+  },
+  "86-330-0214": {
+    "name": "Arabica Coffee",
+    "category": "Beverages",
+    "full_price": 20.0,
+    "cost_price": 12.0,
+    "shelf_life": 10,
+    "base_stock": 36,
+    "popularity": 1.5443294020844762
+  },
+  "80-334-0215": {
+    "name": "Grapes",
+    "category": "Produce",
+    "full_price": 5.5,
+    "cost_price": 3.3,
+    "shelf_life": 10,
+    "base_stock": 88,
+    "popularity": 0.9673272078990675
+  },
+  "48-957-8596": {
+    "name": "Banana",
+    "category": "Produce",
+    "full_price": 53.82,
+    "cost_price": 32.292,
+    "shelf_life": 10,
+    "base_stock": 95,
+    "popularity": 1.47644679100384
+  },
+  "37-246-0018": {
+    "name": "Broccoli",
+    "category": "Produce",
+    "full_price": 4.0,
+    "cost_price": 2.4,
+    "shelf_life": 10,
+    "base_stock": 30,
+    "popularity": 1.0352098189797039
+  },
+  "17-002-4721": {
+    "name": "Green Beans",
+    "category": "Produce",
+    "full_price": 2.0,
+    "cost_price": 1.2,
+    "shelf_life": 10,
+    "base_stock": 31,
+    "popularity": 1.2049163466812947
+  },
+  "47-802-5023": {
+    "name": "Cod",
+    "category": "Meat",
+    "full_price": 8.0,
+    "cost_price": 4.8,
+    "shelf_life": 10,
+    "base_stock": 16,
+    "popularity": 1.3746228743828854
+  },
+  "95-252-9619": {
+    "name": "Carrot",
+    "category": "Produce",
+    "full_price": 1.6,
+    "cost_price": 0.96,
+    "shelf_life": 10,
+    "base_stock": 92,
+    "popularity": 0.5091195831047723
+  },
+  "06-797-4963": {
+    "name": "Pomegranate",
+    "category": "Produce",
+    "full_price": 6.0,
+    "cost_price": 3.5999999999999996,
+    "shelf_life": 10,
+    "base_stock": 52,
+    "popularity": 0.644884805266045
+  },
+  "39-768-8205": {
+    "name": "Egg (Turkey)",
+    "category": "Dairy",
+    "full_price": 2.5,
+    "cost_price": 1.5,
+    "shelf_life": 10,
+    "base_stock": 56,
+    "popularity": 1.3915935271530444
+  },
+  "03-043-9933": {
+    "name": "Strawberries",
+    "category": "Produce",
+    "full_price": 6.1,
+    "cost_price": 3.6599999999999997,
+    "shelf_life": 10,
+    "base_stock": 16,
+    "popularity": 0.8485326385079539
+  },
+  "29-823-6004": {
+    "name": "Zucchini",
+    "category": "Produce",
+    "full_price": 2.5,
+    "cost_price": 1.5,
+    "shelf_life": 10,
+    "base_stock": 52,
+    "popularity": 0.6109434997257268
+  },
+  "40-462-2952": {
+    "name": "Trout",
+    "category": "Meat",
+    "full_price": 11.5,
+    "cost_price": 6.8999999999999995,
+    "shelf_life": 10,
+    "base_stock": 91,
+    "popularity": 1.3746228743828854
+  },
+  "71-999-2404": {
+    "name": "Mango",
+    "category": "Produce",
+    "full_price": 4.7,
+    "cost_price": 2.82,
+    "shelf_life": 10,
+    "base_stock": 58,
+    "popularity": 1.4425054854635218
+  },
+  "94-525-6925": {
+    "name": "Rye Bread",
+    "category": "Bakery",
+    "full_price": 3.0,
+    "cost_price": 1.7999999999999998,
+    "shelf_life": 10,
+    "base_stock": 50,
+    "popularity": 1.1879456939111355
+  },
+  "08-213-2058": {
+    "name": "Sour Cream",
+    "category": "Dairy",
+    "full_price": 4.0,
+    "cost_price": 2.4,
+    "shelf_life": 10,
+    "base_stock": 43,
+    "popularity": 1.0012685134393857
+  },
+  "51-312-8608": {
+    "name": "Cheddar Cheese",
+    "category": "Dairy",
+    "full_price": 8.9,
+    "cost_price": 5.34,
+    "shelf_life": 10,
+    "base_stock": 68,
+    "popularity": 1.3406815688425673
+  },
+  "67-512-9754": {
+    "name": "Egg (Turkey)",
+    "category": "Dairy",
+    "full_price": 2.5,
+    "cost_price": 1.5,
+    "shelf_life": 10,
+    "base_stock": 19,
+    "popularity": 1.1200630828304992
+  },
+  "45-402-0421": {
+    "name": "Swiss Cheese",
+    "category": "Dairy",
+    "full_price": 8.0,
+    "cost_price": 4.8,
+    "shelf_life": 10,
+    "base_stock": 70,
+    "popularity": 1.2049163466812947
+  },
+  "85-207-4164": {
+    "name": "Eggplant",
+    "category": "Produce",
+    "full_price": 3.0,
+    "cost_price": 1.7999999999999998,
+    "shelf_life": 10,
+    "base_stock": 97,
+    "popularity": 0.49214893033461327
+  },
+  "93-166-3169": {
+    "name": "White Tea",
+    "category": "Beverages",
+    "full_price": 25.0,
+    "cost_price": 15.0,
+    "shelf_life": 10,
+    "base_stock": 58,
+    "popularity": 1.4425054854635218
+  },
+  "21-718-6746": {
+    "name": "Coconut",
+    "category": "Produce",
+    "full_price": 5.0,
+    "cost_price": 3.0,
+    "shelf_life": 10,
+    "base_stock": 16,
+    "popularity": 0.35638370817334064
+  },
+  "93-966-7754": {
+    "name": "Pineapple",
+    "category": "Produce",
+    "full_price": 3.5,
+    "cost_price": 2.1,
+    "shelf_life": 10,
+    "base_stock": 65,
+    "popularity": 0.42426631925397695
+  },
+  "34-110-1040": {
+    "name": "Bell Pepper",
+    "category": "Produce",
+    "full_price": 4.5,
+    "cost_price": 2.6999999999999997,
+    "shelf_life": 10,
+    "base_stock": 75,
+    "popularity": 0.44123697202413603
+  },
+  "82-342-7339": {
+    "name": "Vanilla Biscuit",
+    "category": "Bakery",
+    "full_price": 5.5,
+    "cost_price": 3.3,
+    "shelf_life": 10,
+    "base_stock": 80,
+    "popularity": 1.069151124520022
+  },
+  "43-670-8544": {
+    "name": "Orange",
+    "category": "Produce",
+    "full_price": 2.85,
+    "cost_price": 1.71,
+    "shelf_life": 10,
+    "base_stock": 84,
+    "popularity": 0.8145913329676358
+  },
+  "12-439-8428": {
+    "name": "Eggplant",
+    "category": "Produce",
+    "full_price": 3.0,
+    "cost_price": 1.7999999999999998,
+    "shelf_life": 10,
+    "base_stock": 17,
+    "popularity": 0.8315619857377948
+  },
+  "49-919-8798": {
+    "name": "Evaporated Milk",
+    "category": "Dairy",
+    "full_price": 1.9,
+    "cost_price": 1.14,
+    "shelf_life": 10,
+    "base_stock": 64,
+    "popularity": 1.4425054854635218
+  },
+  "73-567-6194": {
+    "name": "Whipped Cream",
+    "category": "Dairy",
+    "full_price": 4.0,
+    "cost_price": 2.4,
+    "shelf_life": 10,
+    "base_stock": 76,
+    "popularity": 1.1030924300603402
+  },
+  "12-798-9401": {
+    "name": "Cream",
+    "category": "Dairy",
+    "full_price": 2.5,
+    "cost_price": 1.5,
+    "shelf_life": 10,
+    "base_stock": 18,
+    "popularity": 1.323710916072408
+  },
+  "02-895-7781": {
+    "name": "Coconut Sugar",
+    "category": "Produce",
+    "full_price": 5.0,
+    "cost_price": 3.0,
+    "shelf_life": 10,
+    "base_stock": 51,
+    "popularity": 0.35638370817334064
+  },
+  "90-303-1821": {
+    "name": "Onion",
+    "category": "Produce",
+    "full_price": 2.0,
+    "cost_price": 1.2,
+    "shelf_life": 10,
+    "base_stock": 50,
+    "popularity": 0.5091195831047723
+  },
+  "02-275-6061": {
+    "name": "Potato",
+    "category": "Produce",
+    "full_price": 1.2,
+    "cost_price": 0.72,
+    "shelf_life": 10,
+    "base_stock": 26,
+    "popularity": 1.086121777290181
+  },
+  "04-001-1793": {
+    "name": "Green Coffee",
+    "category": "Beverages",
+    "full_price": 12.0,
+    "cost_price": 7.199999999999999,
+    "shelf_life": 10,
+    "base_stock": 43,
+    "popularity": 1.4934174437739989
+  },
+  "57-359-3397": {
+    "name": "Garlic",
+    "category": "Produce",
+    "full_price": 7.0,
+    "cost_price": 4.2,
+    "shelf_life": 10,
+    "base_stock": 43,
+    "popularity": 1.6122120131651125
+  },
+  "46-436-5351": {
+    "name": "Green Tea",
+    "category": "Beverages",
+    "full_price": 8.5,
+    "cost_price": 5.1,
+    "shelf_life": 10,
+    "base_stock": 80,
+    "popularity": 1.3746228743828854
+  },
+  "27-881-1177": {
+    "name": "Green Tea",
+    "category": "Beverages",
+    "full_price": 8.0,
+    "cost_price": 4.8,
+    "shelf_life": 10,
+    "base_stock": 34,
+    "popularity": 1.6461533187054307
+  },
+  "85-237-3505": {
+    "name": "Green Tea",
+    "category": "Beverages",
+    "full_price": 8.0,
+    "cost_price": 4.8,
+    "shelf_life": 10,
+    "base_stock": 88,
+    "popularity": 1.323710916072408
+  },
+  "80-371-3695": {
+    "name": "Cottage Cheese",
+    "category": "Dairy",
+    "full_price": 5.0,
+    "cost_price": 3.0,
+    "shelf_life": 10,
+    "base_stock": 89,
+    "popularity": 1.5952413603949533
+  },
+  "65-644-1394": {
+    "name": "Pear",
+    "category": "Produce",
+    "full_price": 4.5,
+    "cost_price": 2.6999999999999997,
+    "shelf_life": 10,
+    "base_stock": 26,
+    "popularity": 1.5613000548546352
+  },
+  "04-293-6969": {
+    "name": "Peach",
+    "category": "Produce",
+    "full_price": 4.0,
+    "cost_price": 2.4,
+    "shelf_life": 10,
+    "base_stock": 37,
+    "popularity": 1.5782707076247944
+  },
+  "40-997-2786": {
+    "name": "Yogurt",
+    "category": "Dairy",
+    "full_price": 1.75,
+    "cost_price": 1.05,
+    "shelf_life": 10,
+    "base_stock": 76,
+    "popularity": 1.0521804717498628
+  },
+  "91-553-1774": {
+    "name": "Feta Cheese",
+    "category": "Dairy",
+    "full_price": 7.0,
+    "cost_price": 4.2,
+    "shelf_life": 10,
+    "base_stock": 80,
+    "popularity": 1.086121777290181
+  },
+  "13-980-8804": {
+    "name": "Sweet Potato",
+    "category": "Produce",
+    "full_price": 2.0,
+    "cost_price": 1.2,
+    "shelf_life": 10,
+    "base_stock": 100,
+    "popularity": 1.6631239714755897
+  },
+  "19-672-8982": {
+    "name": "Butter",
+    "category": "Dairy",
+    "full_price": 3.1,
+    "cost_price": 1.8599999999999999,
+    "shelf_life": 10,
+    "base_stock": 21,
+    "popularity": 1.086121777290181
+  },
+  "35-299-0889": {
+    "name": "Coconut Oil",
+    "category": "Produce",
+    "full_price": 5.0,
+    "cost_price": 3.0,
+    "shelf_life": 10,
+    "base_stock": 33,
+    "popularity": 1.0182391662095447
+  },
+  "22-849-2551": {
+    "name": "Mushrooms",
+    "category": "Produce",
+    "full_price": 6.2,
+    "cost_price": 3.7199999999999998,
+    "shelf_life": 10,
+    "base_stock": 34,
+    "popularity": 0.9842978606692265
+  },
+  "88-183-5781": {
+    "name": "Whole Wheat Bread",
+    "category": "Bakery",
+    "full_price": 3.5,
+    "cost_price": 2.1,
+    "shelf_life": 10,
+    "base_stock": 17,
+    "popularity": 1.5782707076247944
+  },
+  "98-445-7372": {
+    "name": "Cod",
+    "category": "Meat",
+    "full_price": 8.0,
+    "cost_price": 4.8,
+    "shelf_life": 10,
+    "base_stock": 65,
+    "popularity": 0.9503565551289084
+  },
+  "27-757-4489": {
+    "name": "Egg (Goose)",
+    "category": "Dairy",
+    "full_price": 2.5,
+    "cost_price": 1.5,
+    "shelf_life": 10,
+    "base_stock": 35,
+    "popularity": 1.6122120131651125
+  },
+  "20-325-1965": {
+    "name": "Coconut",
+    "category": "Produce",
+    "full_price": 5.0,
+    "cost_price": 3.0,
+    "shelf_life": 10,
+    "base_stock": 56,
+    "popularity": 0.7127674163466813
+  },
+  "76-090-4411": {
+    "name": "Ricotta Cheese",
+    "category": "Dairy",
+    "full_price": 6.0,
+    "cost_price": 3.5999999999999996,
+    "shelf_life": 10,
+    "base_stock": 49,
+    "popularity": 0.644884805266045
+  },
+  "09-622-7119": {
+    "name": "Haddock",
+    "category": "Meat",
+    "full_price": 9.0,
+    "cost_price": 5.3999999999999995,
+    "shelf_life": 10,
+    "base_stock": 30,
+    "popularity": 1.6800946242457488
+  },
+  "30-996-2526": {
+    "name": "Green Beans",
+    "category": "Produce",
+    "full_price": 2.1,
+    "cost_price": 1.26,
+    "shelf_life": 10,
+    "base_stock": 86,
+    "popularity": 1.6631239714755897
+  },
+  "71-074-6292": {
+    "name": "Sourdough Bread",
+    "category": "Bakery",
+    "full_price": 4.0,
+    "cost_price": 2.4,
+    "shelf_life": 10,
+    "base_stock": 65,
+    "popularity": 1.6970652770159078
+  },
+  "98-909-9395": {
+    "name": "Cottage Cheese",
+    "category": "Dairy",
+    "full_price": 5.0,
+    "cost_price": 3.0,
+    "shelf_life": 10,
+    "base_stock": 67,
+    "popularity": 0.5939728469555677
+  },
+  "61-796-6540": {
+    "name": "Ricotta Cheese",
+    "category": "Dairy",
+    "full_price": 6.0,
+    "cost_price": 3.5999999999999996,
+    "shelf_life": 10,
+    "base_stock": 88,
+    "popularity": 0.3903250137136588
+  },
+  "41-735-9837": {
+    "name": "Robusta Coffee",
+    "category": "Beverages",
+    "full_price": 10.0,
+    "cost_price": 6.0,
+    "shelf_life": 10,
+    "base_stock": 14,
+    "popularity": 0.5430608886450905
+  },
+  "60-343-3288": {
+    "name": "Tilapia",
+    "category": "Meat",
+    "full_price": 6.7,
+    "cost_price": 4.02,
+    "shelf_life": 10,
+    "base_stock": 85,
+    "popularity": 0.9164152495885902
+  },
+  "27-783-5470": {
+    "name": "Feta Cheese",
+    "category": "Dairy",
+    "full_price": 7.0,
+    "cost_price": 4.2,
+    "shelf_life": 10,
+    "base_stock": 74,
+    "popularity": 0.35638370817334064
+  },
+  "60-456-8169": {
+    "name": "Cheddar Cheese",
+    "category": "Dairy",
+    "full_price": 9.0,
+    "cost_price": 5.3999999999999995,
+    "shelf_life": 10,
+    "base_stock": 21,
+    "popularity": 1.1709750411409765
+  },
+  "99-420-3592": {
+    "name": "Butter Biscuit",
+    "category": "Dairy",
+    "full_price": 6.0,
+    "cost_price": 3.5999999999999996,
+    "shelf_life": 10,
+    "base_stock": 22,
+    "popularity": 0.7976206801974767
+  },
+  "35-836-6718": {
+    "name": "Ricotta Cheese",
+    "category": "Dairy",
+    "full_price": 6.0,
+    "cost_price": 3.5999999999999996,
+    "shelf_life": 10,
+    "base_stock": 91,
+    "popularity": 0.8485326385079539
+  },
+  "51-273-4240": {
+    "name": "Multigrain Bread",
+    "category": "Bakery",
+    "full_price": 3.5,
+    "cost_price": 2.1,
+    "shelf_life": 10,
+    "base_stock": 85,
+    "popularity": 0.5091195831047723
+  },
+  "38-924-3007": {
+    "name": "Peas",
+    "category": "Produce",
+    "full_price": 3.0,
+    "cost_price": 1.7999999999999998,
+    "shelf_life": 10,
+    "base_stock": 12,
+    "popularity": 0.7806500274273176
+  },
+  "52-123-8039": {
+    "name": "Pomegranate",
+    "category": "Produce",
+    "full_price": 6.0,
+    "cost_price": 3.5999999999999996,
+    "shelf_life": 10,
+    "base_stock": 43,
+    "popularity": 1.323710916072408
+  },
+  "34-131-8805": {
+    "name": "Yogurt",
+    "category": "Dairy",
+    "full_price": 1.75,
+    "cost_price": 1.05,
+    "shelf_life": 10,
+    "base_stock": 92,
+    "popularity": 0.8485326385079539
+  },
+  "41-594-5069": {
+    "name": "Egg (Duck)",
+    "category": "Dairy",
+    "full_price": 1.0,
+    "cost_price": 0.6,
+    "shelf_life": 10,
+    "base_stock": 77,
+    "popularity": 0.9842978606692265
+  },
+  "94-658-4945": {
+    "name": "Sweet Potato",
+    "category": "Produce",
+    "full_price": 2.0,
+    "cost_price": 1.2,
+    "shelf_life": 10,
+    "base_stock": 65,
+    "popularity": 1.2049163466812947
+  },
+  "69-561-2496": {
+    "name": "Banana",
+    "category": "Produce",
+    "full_price": 15.31,
+    "cost_price": 9.186,
+    "shelf_life": 10,
+    "base_stock": 82,
+    "popularity": 1.3067402633022491
+  },
+  "98-858-6323": {
+    "name": "Swiss Cheese",
+    "category": "Dairy",
+    "full_price": 8.0,
+    "cost_price": 4.8,
+    "shelf_life": 10,
+    "base_stock": 20,
+    "popularity": 0.8485326385079539
+  },
+  "92-995-8689": {
+    "name": "Cheddar Cheese",
+    "category": "Dairy",
+    "full_price": 9.0,
+    "cost_price": 5.3999999999999995,
+    "shelf_life": 10,
+    "base_stock": 31,
+    "popularity": 1.069151124520022
+  },
+  "43-164-5984": {
+    "name": "Butter",
+    "category": "Dairy",
+    "full_price": 2.9,
+    "cost_price": 1.74,
+    "shelf_life": 10,
+    "base_stock": 36,
+    "popularity": 0.44123697202413603
+  },
+  "58-122-2282": {
+    "name": "Black Tea",
+    "category": "Beverages",
+    "full_price": 5.0,
+    "cost_price": 3.0,
+    "shelf_life": 10,
+    "base_stock": 59,
+    "popularity": 0.7636793746571585
+  },
+  "11-922-3342": {
+    "name": "Black Coffee",
+    "category": "Beverages",
+    "full_price": 15.5,
+    "cost_price": 9.299999999999999,
+    "shelf_life": 10,
+    "base_stock": 24,
+    "popularity": 1.3576522216127263
+  },
+  "60-550-4771": {
+    "name": "Haddock",
+    "category": "Meat",
+    "full_price": 9.0,
+    "cost_price": 5.3999999999999995,
+    "shelf_life": 10,
+    "base_stock": 75,
+    "popularity": 0.8315619857377948
+  },
+  "88-951-9038": {
+    "name": "Black Coffee",
+    "category": "Beverages",
+    "full_price": 15.0,
+    "cost_price": 9.0,
+    "shelf_life": 10,
+    "base_stock": 11,
+    "popularity": 1.510388096544158
+  },
+  "70-145-2550": {
+    "name": "Lemon",
+    "category": "Produce",
+    "full_price": 2.4,
+    "cost_price": 1.44,
+    "shelf_life": 10,
+    "base_stock": 91,
+    "popularity": 0.644884805266045
+  },
+  "51-761-6320": {
+    "name": "Egg (Goose)",
+    "category": "Dairy",
+    "full_price": 2.5,
+    "cost_price": 1.5,
+    "shelf_life": 10,
+    "base_stock": 43,
+    "popularity": 0.8145913329676358
+  },
+  "11-815-7923": {
+    "name": "Parmesan Cheese",
+    "category": "Dairy",
+    "full_price": 11.8,
+    "cost_price": 7.08,
+    "shelf_life": 10,
+    "base_stock": 96,
+    "popularity": 1.323710916072408
+  },
+  "65-235-7676": {
+    "name": "Whole Wheat Bread",
+    "category": "Bakery",
+    "full_price": 3.5,
+    "cost_price": 2.1,
+    "shelf_life": 10,
+    "base_stock": 91,
+    "popularity": 1.2558283049917718
+  },
+  "83-553-9523": {
+    "name": "Buttermilk",
+    "category": "Dairy",
+    "full_price": 2.45,
+    "cost_price": 1.47,
+    "shelf_life": 10,
+    "base_stock": 28,
+    "popularity": 1.28976961053209
+  },
+  "40-793-7235": {
+    "name": "Sour Cream",
+    "category": "Dairy",
+    "full_price": 4.0,
+    "cost_price": 2.4,
+    "shelf_life": 10,
+    "base_stock": 92,
+    "popularity": 0.3903250137136588
+  },
+  "74-666-5671": {
+    "name": "Tuna",
+    "category": "Meat",
+    "full_price": 18.0,
+    "cost_price": 10.799999999999999,
+    "shelf_life": 10,
+    "base_stock": 37,
+    "popularity": 0.4582076247942951
+  },
+  "46-255-3073": {
+    "name": "Tilapia",
+    "category": "Meat",
+    "full_price": 7.0,
+    "cost_price": 4.2,
+    "shelf_life": 10,
+    "base_stock": 30,
+    "popularity": 0.8145913329676358
+  },
+  "11-155-7826": {
+    "name": "Arabica Coffee",
+    "category": "Beverages",
+    "full_price": 20.0,
+    "cost_price": 12.0,
+    "shelf_life": 10,
+    "base_stock": 98,
+    "popularity": 0.661855458036204
+  },
+  "99-543-5039": {
+    "name": "Lemon",
+    "category": "Produce",
+    "full_price": 2.5,
+    "cost_price": 1.5,
+    "shelf_life": 10,
+    "base_stock": 65,
+    "popularity": 1.510388096544158
+  },
+  "28-608-0039": {
+    "name": "Lemon",
+    "category": "Produce",
+    "full_price": 2.5,
+    "cost_price": 1.5,
+    "shelf_life": 10,
+    "base_stock": 63,
+    "popularity": 0.5600315414152496
+  },
+  "35-529-2933": {
+    "name": "Broccoli",
+    "category": "Produce",
+    "full_price": 4.0,
+    "cost_price": 2.4,
+    "shelf_life": 10,
+    "base_stock": 85,
+    "popularity": 1.4425054854635218
+  },
+  "83-321-7887": {
+    "name": "Egg (Duck)",
+    "category": "Dairy",
+    "full_price": 1.0,
+    "cost_price": 0.6,
+    "shelf_life": 10,
+    "base_stock": 44,
+    "popularity": 1.6291826659352715
+  },
+  "43-910-2342": {
+    "name": "Plum",
+    "category": "Produce",
+    "full_price": 4.0,
+    "cost_price": 2.4,
+    "shelf_life": 10,
+    "base_stock": 26,
+    "popularity": 0.7976206801974767
+  },
+  "21-633-8696": {
+    "name": "Coconut Sugar",
+    "category": "Produce",
+    "full_price": 5.0,
+    "cost_price": 3.0,
+    "shelf_life": 10,
+    "base_stock": 49,
+    "popularity": 1.5782707076247944
+  },
+  "76-401-7083": {
+    "name": "Pomegranate",
+    "category": "Produce",
+    "full_price": 6.0,
+    "cost_price": 3.5999999999999996,
+    "shelf_life": 10,
+    "base_stock": 59,
+    "popularity": 0.7976206801974767
+  },
+  "76-264-0748": {
+    "name": "Eggplant",
+    "category": "Produce",
+    "full_price": 3.0,
+    "cost_price": 1.7999999999999998,
+    "shelf_life": 10,
+    "base_stock": 47,
+    "popularity": 0.661855458036204
+  },
+  "88-586-8797": {
+    "name": "Grapes",
+    "category": "Produce",
+    "full_price": 5.5,
+    "cost_price": 3.3,
+    "shelf_life": 10,
+    "base_stock": 98,
+    "popularity": 1.0012685134393857
+  },
+  "23-265-8144": {
+    "name": "Yogurt",
+    "category": "Dairy",
+    "full_price": 1.7,
+    "cost_price": 1.02,
+    "shelf_life": 10,
+    "base_stock": 55,
+    "popularity": 1.0521804717498628
+  },
+  "26-134-9069": {
+    "name": "Whipped Cream",
+    "category": "Dairy",
+    "full_price": 4.0,
+    "cost_price": 2.4,
+    "shelf_life": 10,
+    "base_stock": 14,
+    "popularity": 1.527358749314317
+  },
+  "76-623-7844": {
+    "name": "Egg (Quail)",
+    "category": "Dairy",
+    "full_price": 0.8,
+    "cost_price": 0.48,
+    "shelf_life": 10,
+    "base_stock": 29,
+    "popularity": 0.8485326385079539
+  },
+  "88-977-0175": {
+    "name": "Chocolate Biscuit",
+    "category": "Bakery",
+    "full_price": 5.0,
+    "cost_price": 3.0,
+    "shelf_life": 10,
+    "base_stock": 100,
+    "popularity": 0.7976206801974767
+  },
+  "12-714-5135": {
+    "name": "Ricotta Cheese",
+    "category": "Dairy",
+    "full_price": 6.0,
+    "cost_price": 3.5999999999999996,
+    "shelf_life": 10,
+    "base_stock": 49,
+    "popularity": 1.1879456939111355
+  },
+  "95-130-9020": {
+    "name": "Heavy Cream",
+    "category": "Dairy",
+    "full_price": 4.1,
+    "cost_price": 2.4599999999999995,
+    "shelf_life": 10,
+    "base_stock": 82,
+    "popularity": 1.1709750411409765
+  },
+  "82-678-8097": {
+    "name": "Cottage Cheese",
+    "category": "Dairy",
+    "full_price": 4.8,
+    "cost_price": 2.88,
+    "shelf_life": 10,
+    "base_stock": 68,
+    "popularity": 1.527358749314317
+  },
+  "41-237-5498": {
+    "name": "Cheese",
+    "category": "Dairy",
+    "full_price": 9.0,
+    "cost_price": 5.3999999999999995,
+    "shelf_life": 10,
+    "base_stock": 88,
+    "popularity": 0.9503565551289084
+  },
+  "32-987-5559": {
+    "name": "Green Tea",
+    "category": "Beverages",
+    "full_price": 8.0,
+    "cost_price": 4.8,
+    "shelf_life": 10,
+    "base_stock": 39,
+    "popularity": 0.4751782775644542
+  },
+  "63-890-1246": {
+    "name": "Oatmeal Biscuit",
+    "category": "Bakery",
+    "full_price": 5.0,
+    "cost_price": 3.0,
+    "shelf_life": 10,
+    "base_stock": 93,
+    "popularity": 1.28976961053209
+  },
+  "65-368-2479": {
+    "name": "Egg (Turkey)",
+    "category": "Dairy",
+    "full_price": 2.4,
+    "cost_price": 1.44,
+    "shelf_life": 10,
+    "base_stock": 23,
+    "popularity": 1.3746228743828854
+  },
+  "74-562-7431": {
+    "name": "Vanilla Biscuit",
+    "category": "Bakery",
+    "full_price": 5.5,
+    "cost_price": 3.3,
+    "shelf_life": 10,
+    "base_stock": 94,
+    "popularity": 1.2558283049917718
+  },
+  "51-583-6029": {
+    "name": "Digestive Biscuit",
+    "category": "Bakery",
+    "full_price": 4.0,
+    "cost_price": 2.4,
+    "shelf_life": 10,
+    "base_stock": 38,
+    "popularity": 1.2218869994514536
+  },
+  "06-996-3221": {
+    "name": "Evaporated Milk",
+    "category": "Dairy",
+    "full_price": 2.0,
+    "cost_price": 1.2,
+    "shelf_life": 10,
+    "base_stock": 11,
+    "popularity": 0.8145913329676358
+  },
+  "96-334-2593": {
+    "name": "White Tea",
+    "category": "Beverages",
+    "full_price": 25.3,
+    "cost_price": 15.18,
+    "shelf_life": 10,
+    "base_stock": 60,
+    "popularity": 0.7297380691168404
+  },
+  "87-272-6544": {
+    "name": "Egg (Goose)",
+    "category": "Dairy",
+    "full_price": 2.5,
+    "cost_price": 1.5,
+    "shelf_life": 10,
+    "base_stock": 90,
+    "popularity": 0.865503291278113
+  },
+  "15-796-3130": {
+    "name": "Rye Bread",
+    "category": "Bakery",
+    "full_price": 3.0,
+    "cost_price": 1.7999999999999998,
+    "shelf_life": 10,
+    "base_stock": 50,
+    "popularity": 1.4085641799232036
+  },
+  "73-751-4393": {
+    "name": "Onion",
+    "category": "Produce",
+    "full_price": 2.0,
+    "cost_price": 1.2,
+    "shelf_life": 10,
+    "base_stock": 68,
+    "popularity": 0.6279141524958859
+  },
+  "62-100-2245": {
+    "name": "Sourdough Bread",
+    "category": "Bakery",
+    "full_price": 4.2,
+    "cost_price": 2.52,
+    "shelf_life": 10,
+    "base_stock": 22,
+    "popularity": 1.0521804717498628
+  },
+  "08-961-3009": {
+    "name": "Cheese",
+    "category": "Dairy",
+    "full_price": 9.2,
+    "cost_price": 5.52,
+    "shelf_life": 10,
+    "base_stock": 50,
+    "popularity": 1.0182391662095447
+  },
+  "33-440-2588": {
+    "name": "Bell Pepper",
+    "category": "Produce",
+    "full_price": 4.4,
+    "cost_price": 2.64,
+    "shelf_life": 10,
+    "base_stock": 26,
+    "popularity": 1.2388576522216128
+  },
+  "24-009-1208": {
+    "name": "White Tea",
+    "category": "Beverages",
+    "full_price": 25.0,
+    "cost_price": 15.0,
+    "shelf_life": 10,
+    "base_stock": 62,
+    "popularity": 1.510388096544158
+  },
+  "71-300-2191": {
+    "name": "Broccoli",
+    "category": "Produce",
+    "full_price": 4.0,
+    "cost_price": 2.4,
+    "shelf_life": 10,
+    "base_stock": 79,
+    "popularity": 1.1370337356006583
+  },
+  "74-430-8245": {
+    "name": "Peach",
+    "category": "Produce",
+    "full_price": 4.0,
+    "cost_price": 2.4,
+    "shelf_life": 10,
+    "base_stock": 73,
+    "popularity": 1.272798957761931
+  },
+  "68-636-4774": {
+    "name": "Carrot",
+    "category": "Produce",
+    "full_price": 1.45,
+    "cost_price": 0.87,
+    "shelf_life": 10,
+    "base_stock": 18,
+    "popularity": 0.7467087218869994
+  },
+  "16-632-1308": {
+    "name": "Arabica Coffee",
+    "category": "Beverages",
+    "full_price": 20.0,
+    "cost_price": 12.0,
+    "shelf_life": 10,
+    "base_stock": 23,
+    "popularity": 0.5260902358749314
+  },
+  "37-606-0510": {
+    "name": "Milk",
+    "category": "Dairy",
+    "full_price": 1.0,
+    "cost_price": 0.6,
+    "shelf_life": 10,
+    "base_stock": 18,
+    "popularity": 1.2388576522216128
+  },
+  "56-894-3733": {
+    "name": "Yogurt",
+    "category": "Dairy",
+    "full_price": 1.75,
+    "cost_price": 1.05,
+    "shelf_life": 10,
+    "base_stock": 85,
+    "popularity": 0.8315619857377948
+  },
+  "95-356-1566": {
+    "name": "Grapes",
+    "category": "Produce",
+    "full_price": 5.5,
+    "cost_price": 3.3,
+    "shelf_life": 10,
+    "base_stock": 13,
+    "popularity": 0.7127674163466813
+  },
+  "34-291-4939": {
+    "name": "Digestive Biscuit",
+    "category": "Bakery",
+    "full_price": 4.0,
+    "cost_price": 2.4,
+    "shelf_life": 10,
+    "base_stock": 34,
+    "popularity": 1.323710916072408
+  },
+  "35-621-2546": {
+    "name": "Swiss Cheese",
+    "category": "Dairy",
+    "full_price": 8.0,
+    "cost_price": 4.8,
+    "shelf_life": 10,
+    "base_stock": 85,
+    "popularity": 1.1540043883708173
+  },
+  "21-013-3508": {
+    "name": "Cabbage",
+    "category": "Produce",
+    "full_price": 1.0,
+    "cost_price": 0.6,
+    "shelf_life": 10,
+    "base_stock": 12,
+    "popularity": 0.42426631925397695
+  },
+  "38-049-9319": {
+    "name": "Oatmeal Biscuit",
+    "category": "Bakery",
+    "full_price": 5.0,
+    "cost_price": 3.0,
+    "shelf_life": 10,
+    "base_stock": 82,
+    "popularity": 0.35638370817334064
+  },
+  "94-697-2396": {
+    "name": "Sourdough Bread",
+    "category": "Bakery",
+    "full_price": 4.0,
+    "cost_price": 2.4,
+    "shelf_life": 10,
+    "base_stock": 71,
+    "popularity": 0.9842978606692265
+  },
+  "33-807-7247": {
+    "name": "Mozzarella Cheese",
+    "category": "Dairy",
+    "full_price": 7.0,
+    "cost_price": 4.2,
+    "shelf_life": 10,
+    "base_stock": 58,
+    "popularity": 1.0521804717498628
+  },
+  "33-507-9886": {
+    "name": "Pineapple",
+    "category": "Produce",
+    "full_price": 3.5,
+    "cost_price": 2.1,
+    "shelf_life": 10,
+    "base_stock": 68,
+    "popularity": 0.42426631925397695
+  },
+  "06-503-5891": {
+    "name": "Egg (Goose)",
+    "category": "Dairy",
+    "full_price": 2.45,
+    "cost_price": 1.47,
+    "shelf_life": 10,
+    "base_stock": 40,
+    "popularity": 1.28976961053209
+  },
+  "38-555-9147": {
+    "name": "Black Coffee",
+    "category": "Beverages",
+    "full_price": 15.5,
+    "cost_price": 9.299999999999999,
+    "shelf_life": 10,
+    "base_stock": 62,
+    "popularity": 0.5770021941854087
+  },
+  "50-942-2409": {
+    "name": "Peas",
+    "category": "Produce",
+    "full_price": 3.0,
+    "cost_price": 1.7999999999999998,
+    "shelf_life": 10,
+    "base_stock": 75,
+    "popularity": 1.6291826659352715
+  },
+  "44-305-1866": {
+    "name": "Butter",
+    "category": "Dairy",
+    "full_price": 3.0,
+    "cost_price": 1.7999999999999998,
+    "shelf_life": 10,
+    "base_stock": 48,
+    "popularity": 1.6122120131651125
+  },
+  "49-730-0159": {
+    "name": "Cream",
+    "category": "Dairy",
+    "full_price": 2.4,
+    "cost_price": 1.44,
+    "shelf_life": 10,
+    "base_stock": 82,
+    "popularity": 0.8145913329676358
+  },
+  "70-534-7796": {
+    "name": "Zucchini",
+    "category": "Produce",
+    "full_price": 2.5,
+    "cost_price": 1.5,
+    "shelf_life": 10,
+    "base_stock": 43,
+    "popularity": 0.3733543609434997
+  },
+  "95-738-4658": {
+    "name": "Green Coffee",
+    "category": "Beverages",
+    "full_price": 12.0,
+    "cost_price": 7.199999999999999,
+    "shelf_life": 10,
+    "base_stock": 90,
+    "popularity": 1.3746228743828854
+  },
+  "20-405-4865": {
+    "name": "Milk",
+    "category": "Dairy",
+    "full_price": 0.9,
+    "cost_price": 0.54,
+    "shelf_life": 10,
+    "base_stock": 13,
+    "popularity": 0.7806500274273176
+  },
+  "79-428-8753": {
+    "name": "Cabbage",
+    "category": "Produce",
+    "full_price": 1.0,
+    "cost_price": 0.6,
+    "shelf_life": 10,
+    "base_stock": 62,
+    "popularity": 0.5770021941854087
+  },
+  "10-626-8536": {
+    "name": "Coconut Sugar",
+    "category": "Produce",
+    "full_price": 5.0,
+    "cost_price": 3.0,
+    "shelf_life": 10,
+    "base_stock": 17,
+    "popularity": 1.28976961053209
+  },
+  "46-632-8420": {
+    "name": "Whipped Cream",
+    "category": "Dairy",
+    "full_price": 4.1,
+    "cost_price": 2.4599999999999995,
+    "shelf_life": 10,
+    "base_stock": 98,
+    "popularity": 1.510388096544158
+  },
+  "39-192-3521": {
+    "name": "Herbal Tea",
+    "category": "Beverages",
+    "full_price": 30.5,
+    "cost_price": 18.3,
+    "shelf_life": 10,
+    "base_stock": 20,
+    "popularity": 0.7806500274273176
+  },
+  "94-528-8088": {
+    "name": "Haddock",
+    "category": "Meat",
+    "full_price": 9.0,
+    "cost_price": 5.3999999999999995,
+    "shelf_life": 10,
+    "base_stock": 43,
+    "popularity": 1.1200630828304992
+  },
+  "74-305-1263": {
+    "name": "Green Coffee",
+    "category": "Beverages",
+    "full_price": 12.0,
+    "cost_price": 7.199999999999999,
+    "shelf_life": 10,
+    "base_stock": 29,
+    "popularity": 0.4751782775644542
+  },
+  "53-151-5726": {
+    "name": "Grapes",
+    "category": "Produce",
+    "full_price": 5.5,
+    "cost_price": 3.3,
+    "shelf_life": 10,
+    "base_stock": 37,
+    "popularity": 0.5770021941854087
+  },
+  "02-085-7218": {
+    "name": "Cheddar Cheese",
+    "category": "Dairy",
+    "full_price": 8.9,
+    "cost_price": 5.34,
+    "shelf_life": 10,
+    "base_stock": 85,
+    "popularity": 0.9673272078990675
+  },
+  "86-482-6451": {
+    "name": "White Tea",
+    "category": "Beverages",
+    "full_price": 25.0,
+    "cost_price": 15.0,
+    "shelf_life": 10,
+    "base_stock": 91,
+    "popularity": 1.069151124520022
+  },
+  "36-127-4273": {
+    "name": "Ricotta Cheese",
+    "category": "Dairy",
+    "full_price": 6.2,
+    "cost_price": 3.7199999999999998,
+    "shelf_life": 10,
+    "base_stock": 50,
+    "popularity": 1.4934174437739989
+  },
+  "03-061-1344": {
+    "name": "Trout",
+    "category": "Meat",
+    "full_price": 12.0,
+    "cost_price": 7.199999999999999,
+    "shelf_life": 10,
+    "base_stock": 98,
+    "popularity": 1.0521804717498628
+  },
+  "97-300-7511": {
+    "name": "Egg (Duck)",
+    "category": "Dairy",
+    "full_price": 1.0,
+    "cost_price": 0.6,
+    "shelf_life": 10,
+    "base_stock": 37,
+    "popularity": 1.527358749314317
+  },
+  "83-108-1174": {
+    "name": "White Bread",
+    "category": "Bakery",
+    "full_price": 2.5,
+    "cost_price": 1.5,
+    "shelf_life": 10,
+    "base_stock": 78,
+    "popularity": 1.510388096544158
+  },
+  "80-459-5950": {
+    "name": "Arabica Coffee",
+    "category": "Beverages",
+    "full_price": 20.0,
+    "cost_price": 12.0,
+    "shelf_life": 10,
+    "base_stock": 74,
+    "popularity": 1.6970652770159078
+  },
+  "93-015-0811": {
+    "name": "Pineapple",
+    "category": "Produce",
+    "full_price": 3.5,
+    "cost_price": 2.1,
+    "shelf_life": 10,
+    "base_stock": 18,
+    "popularity": 1.4934174437739989
+  },
+  "10-218-2680": {
+    "name": "Egg (Turkey)",
+    "category": "Dairy",
+    "full_price": 2.5,
+    "cost_price": 1.5,
+    "shelf_life": 10,
+    "base_stock": 39,
+    "popularity": 0.44123697202413603
+  },
+  "30-964-2694": {
+    "name": "Peas",
+    "category": "Produce",
+    "full_price": 3.0,
+    "cost_price": 1.7999999999999998,
+    "shelf_life": 10,
+    "base_stock": 48,
+    "popularity": 0.865503291278113
+  },
+  "15-144-9413": {
+    "name": "Strawberries",
+    "category": "Produce",
+    "full_price": 5.9,
+    "cost_price": 3.54,
+    "shelf_life": 10,
+    "base_stock": 58,
+    "popularity": 0.8824739440482721
+  },
+  "17-253-5688": {
+    "name": "Greek Yogurt",
+    "category": "Dairy",
+    "full_price": 3.0,
+    "cost_price": 1.7999999999999998,
+    "shelf_life": 10,
+    "base_stock": 39,
+    "popularity": 0.7976206801974767
+  },
+  "51-934-9117": {
+    "name": "Sardines",
+    "category": "Meat",
+    "full_price": 6.0,
+    "cost_price": 3.5999999999999996,
+    "shelf_life": 10,
+    "base_stock": 30,
+    "popularity": 0.9503565551289084
+  },
+  "45-194-4094": {
+    "name": "Plum",
+    "category": "Produce",
+    "full_price": 3.9,
+    "cost_price": 2.34,
+    "shelf_life": 10,
+    "base_stock": 64,
+    "popularity": 1.0182391662095447
+  },
+  "09-712-3630": {
+    "name": "Grapes",
+    "category": "Produce",
+    "full_price": 5.5,
+    "cost_price": 3.3,
+    "shelf_life": 10,
+    "base_stock": 87,
+    "popularity": 0.3733543609434997
+  },
+  "29-436-6570": {
+    "name": "Digestive Biscuit",
+    "category": "Bakery",
+    "full_price": 4.0,
+    "cost_price": 2.4,
+    "shelf_life": 10,
+    "base_stock": 61,
+    "popularity": 1.2388576522216128
+  },
+  "04-038-1547": {
+    "name": "Rye Bread",
+    "category": "Bakery",
+    "full_price": 2.8,
+    "cost_price": 1.68,
+    "shelf_life": 10,
+    "base_stock": 48,
+    "popularity": 0.4582076247942951
+  },
+  "76-476-9996": {
+    "name": "Chocolate Biscuit",
+    "category": "Bakery",
+    "full_price": 5.0,
+    "cost_price": 3.0,
+    "shelf_life": 10,
+    "base_stock": 37,
+    "popularity": 0.5939728469555677
+  },
+  "43-469-7551": {
+    "name": "Arabica Coffee",
+    "category": "Beverages",
+    "full_price": 20.0,
+    "cost_price": 12.0,
+    "shelf_life": 10,
+    "base_stock": 45,
+    "popularity": 0.6109434997257268
+  },
+  "92-455-2959": {
+    "name": "Robusta Coffee",
+    "category": "Beverages",
+    "full_price": 10.3,
+    "cost_price": 6.180000000000001,
+    "shelf_life": 10,
+    "base_stock": 59,
+    "popularity": 1.527358749314317
+  },
+  "75-672-4378": {
+    "name": "Pomegranate",
+    "category": "Produce",
+    "full_price": 6.0,
+    "cost_price": 3.5999999999999996,
+    "shelf_life": 10,
+    "base_stock": 62,
+    "popularity": 0.7636793746571585
+  },
+  "66-806-6051": {
+    "name": "Yogurt",
+    "category": "Dairy",
+    "full_price": 1.7,
+    "cost_price": 1.02,
+    "shelf_life": 10,
+    "base_stock": 63,
+    "popularity": 0.9503565551289084
+  },
+  "65-527-9488": {
+    "name": "Grapes",
+    "category": "Produce",
+    "full_price": 5.5,
+    "cost_price": 3.3,
+    "shelf_life": 10,
+    "base_stock": 38,
+    "popularity": 1.0012685134393857
+  },
+  "07-389-5740": {
+    "name": "Egg (Quail)",
+    "category": "Dairy",
+    "full_price": 0.8,
+    "cost_price": 0.48,
+    "shelf_life": 10,
+    "base_stock": 34,
+    "popularity": 1.6291826659352715
+  },
+  "13-144-2169": {
+    "name": "Eggplant",
+    "category": "Produce",
+    "full_price": 3.0,
+    "cost_price": 1.7999999999999998,
+    "shelf_life": 10,
+    "base_stock": 25,
+    "popularity": 0.9673272078990675
+  },
+  "13-798-3397": {
+    "name": "Egg (Turkey)",
+    "category": "Dairy",
+    "full_price": 2.5,
+    "cost_price": 1.5,
+    "shelf_life": 10,
+    "base_stock": 86,
+    "popularity": 0.5770021941854087
+  },
+  "85-806-0613": {
+    "name": "Oatmeal Biscuit",
+    "category": "Bakery",
+    "full_price": 5.0,
+    "cost_price": 3.0,
+    "shelf_life": 10,
+    "base_stock": 41,
+    "popularity": 0.8485326385079539
+  },
+  "47-866-6589": {
+    "name": "Egg (Duck)",
+    "category": "Dairy",
+    "full_price": 1.0,
+    "cost_price": 0.6,
+    "shelf_life": 10,
+    "base_stock": 41,
+    "popularity": 0.5091195831047723
+  },
+  "91-127-7489": {
+    "name": "Orange",
+    "category": "Produce",
+    "full_price": 2.95,
+    "cost_price": 1.77,
+    "shelf_life": 10,
+    "base_stock": 44,
+    "popularity": 0.7127674163466813
+  },
+  "01-018-6418": {
+    "name": "Chocolate Biscuit",
+    "category": "Bakery",
+    "full_price": 5.0,
+    "cost_price": 3.0,
+    "shelf_life": 10,
+    "base_stock": 68,
+    "popularity": 1.1879456939111355
+  },
+  "80-375-9075": {
+    "name": "Swiss Cheese",
+    "category": "Dairy",
+    "full_price": 8.0,
+    "cost_price": 4.8,
+    "shelf_life": 10,
+    "base_stock": 96,
+    "popularity": 1.2049163466812947
+  },
+  "80-227-6886": {
+    "name": "Garlic",
+    "category": "Produce",
+    "full_price": 7.0,
+    "cost_price": 4.2,
+    "shelf_life": 10,
+    "base_stock": 33,
+    "popularity": 0.7806500274273176
+  },
+  "80-658-6456": {
+    "name": "Mango",
+    "category": "Produce",
+    "full_price": 5.0,
+    "cost_price": 3.0,
+    "shelf_life": 10,
+    "base_stock": 84,
+    "popularity": 0.5091195831047723
+  },
+  "81-354-4203": {
+    "name": "Haddock",
+    "category": "Meat",
+    "full_price": 9.0,
+    "cost_price": 5.3999999999999995,
+    "shelf_life": 10,
+    "base_stock": 76,
+    "popularity": 0.8824739440482721
+  },
+  "08-573-9997": {
+    "name": "Pomegranate",
+    "category": "Produce",
+    "full_price": 6.0,
+    "cost_price": 3.5999999999999996,
+    "shelf_life": 10,
+    "base_stock": 26,
+    "popularity": 1.3915935271530444
+  },
+  "74-610-2295": {
+    "name": "Green Coffee",
+    "category": "Beverages",
+    "full_price": 12.5,
+    "cost_price": 7.5,
+    "shelf_life": 10,
+    "base_stock": 61,
+    "popularity": 1.6122120131651125
+  },
+  "76-070-1411": {
+    "name": "Evaporated Milk",
+    "category": "Dairy",
+    "full_price": 1.9,
+    "cost_price": 1.14,
+    "shelf_life": 10,
+    "base_stock": 15,
+    "popularity": 1.2049163466812947
+  },
+  "74-548-9313": {
+    "name": "Mango",
+    "category": "Produce",
+    "full_price": 5.0,
+    "cost_price": 3.0,
+    "shelf_life": 10,
+    "base_stock": 99,
+    "popularity": 0.8824739440482721
+  },
+  "63-162-9244": {
+    "name": "Eggplant",
+    "category": "Produce",
+    "full_price": 3.0,
+    "cost_price": 1.7999999999999998,
+    "shelf_life": 10,
+    "base_stock": 49,
+    "popularity": 0.6279141524958859
+  },
+  "91-417-0366": {
+    "name": "Grapes",
+    "category": "Produce",
+    "full_price": 5.5,
+    "cost_price": 3.3,
+    "shelf_life": 10,
+    "base_stock": 25,
+    "popularity": 0.6957967635765222
+  },
+  "36-899-5324": {
+    "name": "Orange",
+    "category": "Produce",
+    "full_price": 2.9,
+    "cost_price": 1.74,
+    "shelf_life": 10,
+    "base_stock": 94,
+    "popularity": 0.9673272078990675
+  },
+  "22-266-9291": {
+    "name": "Sardines",
+    "category": "Meat",
+    "full_price": 6.0,
+    "cost_price": 3.5999999999999996,
+    "shelf_life": 10,
+    "base_stock": 11,
+    "popularity": 1.1709750411409765
+  },
+  "82-948-2298": {
+    "name": "Kiwi",
+    "category": "Produce",
+    "full_price": 5.7,
+    "cost_price": 3.42,
+    "shelf_life": 10,
+    "base_stock": 38,
+    "popularity": 0.8994445968184311
+  },
+  "17-395-1121": {
+    "name": "Plum",
+    "category": "Produce",
+    "full_price": 3.85,
+    "cost_price": 2.31,
+    "shelf_life": 10,
+    "base_stock": 85,
+    "popularity": 0.9842978606692265
+  },
+  "52-029-2382": {
+    "name": "Coconut Oil",
+    "category": "Produce",
+    "full_price": 5.0,
+    "cost_price": 3.0,
+    "shelf_life": 10,
+    "base_stock": 54,
+    "popularity": 0.49214893033461327
+  },
+  "73-010-8323": {
+    "name": "Tuna",
+    "category": "Meat",
+    "full_price": 18.0,
+    "cost_price": 10.799999999999999,
+    "shelf_life": 10,
+    "base_stock": 16,
+    "popularity": 0.5939728469555677
+  },
+  "06-068-6793": {
+    "name": "Buttermilk",
+    "category": "Dairy",
+    "full_price": 2.5,
+    "cost_price": 1.5,
+    "shelf_life": 10,
+    "base_stock": 39,
+    "popularity": 0.7806500274273176
+  },
+  "56-054-8664": {
+    "name": "Lemon",
+    "category": "Produce",
+    "full_price": 2.45,
+    "cost_price": 1.47,
+    "shelf_life": 10,
+    "base_stock": 59,
+    "popularity": 0.5091195831047723
+  },
+  "65-674-6076": {
+    "name": "Egg (Quail)",
+    "category": "Dairy",
+    "full_price": 0.8,
+    "cost_price": 0.48,
+    "shelf_life": 10,
+    "base_stock": 78,
+    "popularity": 0.8315619857377948
+  },
+  "95-449-1286": {
+    "name": "Egg (Chicken)",
+    "category": "Meat",
+    "full_price": 0.2,
+    "cost_price": 0.12,
+    "shelf_life": 10,
+    "base_stock": 10,
+    "popularity": 1.6970652770159078
+  },
+  "08-495-6853": {
+    "name": "Heavy Cream",
+    "category": "Dairy",
+    "full_price": 4.0,
+    "cost_price": 2.4,
+    "shelf_life": 10,
+    "base_stock": 74,
+    "popularity": 1.1030924300603402
+  },
+  "01-050-2246": {
+    "name": "Grapes",
+    "category": "Produce",
+    "full_price": 5.5,
+    "cost_price": 3.3,
+    "shelf_life": 10,
+    "base_stock": 99,
+    "popularity": 1.0012685134393857
+  },
+  "07-858-5487": {
+    "name": "Swiss Cheese",
+    "category": "Dairy",
+    "full_price": 8.0,
+    "cost_price": 4.8,
+    "shelf_life": 10,
+    "base_stock": 64,
+    "popularity": 0.8994445968184311
+  },
+  "20-283-0111": {
+    "name": "Pear",
+    "category": "Produce",
+    "full_price": 4.45,
+    "cost_price": 2.67,
+    "shelf_life": 10,
+    "base_stock": 58,
+    "popularity": 1.0521804717498628
+  },
+  "12-828-1063": {
+    "name": "Mozzarella Cheese",
+    "category": "Dairy",
+    "full_price": 7.1,
+    "cost_price": 4.26,
+    "shelf_life": 10,
+    "base_stock": 36,
+    "popularity": 0.4582076247942951
+  },
+  "72-989-2512": {
+    "name": "Mushrooms",
+    "category": "Produce",
+    "full_price": 6.0,
+    "cost_price": 3.5999999999999996,
+    "shelf_life": 10,
+    "base_stock": 24,
+    "popularity": 1.4425054854635218
+  },
+  "53-667-4109": {
+    "name": "Onion",
+    "category": "Produce",
+    "full_price": 2.0,
+    "cost_price": 1.2,
+    "shelf_life": 10,
+    "base_stock": 16,
+    "popularity": 0.3733543609434997
+  },
+  "93-772-3085": {
+    "name": "Banana",
+    "category": "Produce",
+    "full_price": 13.99,
+    "cost_price": 8.394,
+    "shelf_life": 10,
+    "base_stock": 39,
+    "popularity": 0.9842978606692265
+  },
+  "92-652-3737": {
+    "name": "Zucchini",
+    "category": "Produce",
+    "full_price": 2.5,
+    "cost_price": 1.5,
+    "shelf_life": 10,
+    "base_stock": 89,
+    "popularity": 0.4582076247942951
+  },
+  "19-244-9890": {
+    "name": "Herbal Tea",
+    "category": "Beverages",
+    "full_price": 30.0,
+    "cost_price": 18.0,
+    "shelf_life": 10,
+    "base_stock": 61,
+    "popularity": 1.527358749314317
+  },
+  "58-229-1358": {
+    "name": "Cream",
+    "category": "Dairy",
+    "full_price": 2.35,
+    "cost_price": 1.41,
+    "shelf_life": 10,
+    "base_stock": 21,
+    "popularity": 1.47644679100384
+  },
+  "80-025-6757": {
+    "name": "Grapes",
+    "category": "Produce",
+    "full_price": 5.5,
+    "cost_price": 3.3,
+    "shelf_life": 10,
+    "base_stock": 59,
+    "popularity": 1.2558283049917718
+  },
+  "35-031-1497": {
+    "name": "Green Coffee",
+    "category": "Beverages",
+    "full_price": 12.0,
+    "cost_price": 7.199999999999999,
+    "shelf_life": 10,
+    "base_stock": 20,
+    "popularity": 0.644884805266045
+  },
+  "26-629-5920": {
+    "name": "Rye Bread",
+    "category": "Bakery",
+    "full_price": 3.0,
+    "cost_price": 1.7999999999999998,
+    "shelf_life": 10,
+    "base_stock": 99,
+    "popularity": 0.8315619857377948
+  },
+  "51-000-8113": {
+    "name": "Green Tea",
+    "category": "Beverages",
+    "full_price": 8.0,
+    "cost_price": 4.8,
+    "shelf_life": 10,
+    "base_stock": 24,
+    "popularity": 0.8315619857377948
+  },
+  "48-770-6319": {
+    "name": "Egg (Duck)",
+    "category": "Dairy",
+    "full_price": 1.0,
+    "cost_price": 0.6,
+    "shelf_life": 10,
+    "base_stock": 52,
+    "popularity": 1.3067402633022491
+  },
+  "74-818-3306": {
+    "name": "Spinach",
+    "category": "Produce",
+    "full_price": 2.45,
+    "cost_price": 1.47,
+    "shelf_life": 10,
+    "base_stock": 45,
+    "popularity": 0.42426631925397695
+  },
+  "66-854-5736": {
+    "name": "Kiwi",
+    "category": "Produce",
+    "full_price": 5.8,
+    "cost_price": 3.48,
+    "shelf_life": 10,
+    "base_stock": 63,
+    "popularity": 0.33941305540318156
+  },
+  "60-198-7050": {
+    "name": "Green Tea",
+    "category": "Beverages",
+    "full_price": 8.0,
+    "cost_price": 4.8,
+    "shelf_life": 10,
+    "base_stock": 26,
+    "popularity": 1.5613000548546352
+  },
+  "70-206-4860": {
+    "name": "Egg (Quail)",
+    "category": "Dairy",
+    "full_price": 0.8,
+    "cost_price": 0.48,
+    "shelf_life": 10,
+    "base_stock": 93,
+    "popularity": 0.5091195831047723
+  },
+  "93-218-8108": {
+    "name": "Heavy Cream",
+    "category": "Dairy",
+    "full_price": 4.0,
+    "cost_price": 2.4,
+    "shelf_life": 10,
+    "base_stock": 74,
+    "popularity": 1.6800946242457488
+  },
+  "95-262-6208": {
+    "name": "Black Tea",
+    "category": "Beverages",
+    "full_price": 5.0,
+    "cost_price": 3.0,
+    "shelf_life": 10,
+    "base_stock": 19,
+    "popularity": 1.2218869994514536
+  },
+  "08-226-5155": {
+    "name": "Bell Pepper",
+    "category": "Produce",
+    "full_price": 4.5,
+    "cost_price": 2.6999999999999997,
+    "shelf_life": 10,
+    "base_stock": 49,
+    "popularity": 0.8824739440482721
+  },
+  "47-581-0363": {
+    "name": "Parmesan Cheese",
+    "category": "Dairy",
+    "full_price": 12.0,
+    "cost_price": 7.199999999999999,
+    "shelf_life": 10,
+    "base_stock": 99,
+    "popularity": 1.1709750411409765
+  },
+  "04-104-6993": {
+    "name": "Buttermilk",
+    "category": "Dairy",
+    "full_price": 2.45,
+    "cost_price": 1.47,
+    "shelf_life": 10,
+    "base_stock": 60,
+    "popularity": 0.7127674163466813
+  },
+  "45-380-4627": {
+    "name": "Cabbage",
+    "category": "Produce",
+    "full_price": 0.9,
+    "cost_price": 0.54,
+    "shelf_life": 10,
+    "base_stock": 90,
+    "popularity": 0.8824739440482721
+  },
+  "41-240-8856": {
+    "name": "Haddock",
+    "category": "Meat",
+    "full_price": 9.0,
+    "cost_price": 5.3999999999999995,
+    "shelf_life": 10,
+    "base_stock": 79,
+    "popularity": 0.7636793746571585
+  },
+  "81-573-0943": {
+    "name": "Egg (Chicken)",
+    "category": "Meat",
+    "full_price": 0.2,
+    "cost_price": 0.12,
+    "shelf_life": 10,
+    "base_stock": 22,
+    "popularity": 0.5600315414152496
+  },
+  "55-154-4728": {
+    "name": "Arabica Coffee",
+    "category": "Beverages",
+    "full_price": 20.0,
+    "cost_price": 12.0,
+    "shelf_life": 10,
+    "base_stock": 65,
+    "popularity": 0.4751782775644542
+  },
+  "41-526-4036": {
+    "name": "Whipped Cream",
+    "category": "Dairy",
+    "full_price": 4.0,
+    "cost_price": 2.4,
+    "shelf_life": 10,
+    "base_stock": 55,
+    "popularity": 1.1709750411409765
+  },
+  "98-499-2220": {
+    "name": "Parmesan Cheese",
+    "category": "Dairy",
+    "full_price": 12.0,
+    "cost_price": 7.199999999999999,
+    "shelf_life": 10,
+    "base_stock": 37,
+    "popularity": 0.661855458036204
+  },
+  "88-304-2855": {
+    "name": "Pineapple",
+    "category": "Produce",
+    "full_price": 3.5,
+    "cost_price": 2.1,
+    "shelf_life": 10,
+    "base_stock": 20,
+    "popularity": 1.3576522216127263
+  },
+  "03-441-4252": {
+    "name": "Yogurt",
+    "category": "Dairy",
+    "full_price": 1.75,
+    "cost_price": 1.05,
+    "shelf_life": 10,
+    "base_stock": 12,
+    "popularity": 0.3733543609434997
+  },
+  "97-093-4278": {
+    "name": "Buttermilk",
+    "category": "Dairy",
+    "full_price": 2.55,
+    "cost_price": 1.5299999999999998,
+    "shelf_life": 10,
+    "base_stock": 69,
+    "popularity": 0.49214893033461327
+  },
+  "01-820-5784": {
+    "name": "Egg (Duck)",
+    "category": "Dairy",
+    "full_price": 1.0,
+    "cost_price": 0.6,
+    "shelf_life": 10,
+    "base_stock": 63,
+    "popularity": 0.3903250137136588
+  },
+  "61-317-9944": {
+    "name": "White Bread",
+    "category": "Bakery",
+    "full_price": 2.5,
+    "cost_price": 1.5,
+    "shelf_life": 10,
+    "base_stock": 72,
+    "popularity": 1.47644679100384
+  },
+  "86-672-4191": {
+    "name": "Egg (Goose)",
+    "category": "Dairy",
+    "full_price": 2.5,
+    "cost_price": 1.5,
+    "shelf_life": 10,
+    "base_stock": 88,
+    "popularity": 0.9164152495885902
+  },
+  "50-329-3145": {
+    "name": "Milk",
+    "category": "Dairy",
+    "full_price": 1.0,
+    "cost_price": 0.6,
+    "shelf_life": 10,
+    "base_stock": 12,
+    "popularity": 0.5260902358749314
+  },
+  "02-559-8196": {
+    "name": "Mango",
+    "category": "Produce",
+    "full_price": 5.2,
+    "cost_price": 3.12,
+    "shelf_life": 10,
+    "base_stock": 61,
+    "popularity": 1.2558283049917718
+  },
+  "69-834-2874": {
+    "name": "Oatmeal Biscuit",
+    "category": "Bakery",
+    "full_price": 5.0,
+    "cost_price": 3.0,
+    "shelf_life": 10,
+    "base_stock": 28,
+    "popularity": 0.4751782775644542
+  },
+  "27-474-0056": {
+    "name": "Spinach",
+    "category": "Produce",
+    "full_price": 2.5,
+    "cost_price": 1.5,
+    "shelf_life": 10,
+    "base_stock": 23,
+    "popularity": 1.6122120131651125
+  },
+  "66-378-7532": {
+    "name": "Blueberries",
+    "category": "Produce",
+    "full_price": 10.0,
+    "cost_price": 6.0,
+    "shelf_life": 10,
+    "base_stock": 87,
+    "popularity": 0.9333859023587493
+  },
+  "28-185-7303": {
+    "name": "Robusta Coffee",
+    "category": "Beverages",
+    "full_price": 10.0,
+    "cost_price": 6.0,
+    "shelf_life": 10,
+    "base_stock": 59,
+    "popularity": 0.8145913329676358
+  },
+  "42-175-1648": {
+    "name": "Pomegranate",
+    "category": "Produce",
+    "full_price": 6.0,
+    "cost_price": 3.5999999999999996,
+    "shelf_life": 10,
+    "base_stock": 81,
+    "popularity": 1.5952413603949533
+  },
+  "56-657-4387": {
+    "name": "White Bread",
+    "category": "Bakery",
+    "full_price": 2.5,
+    "cost_price": 1.5,
+    "shelf_life": 10,
+    "base_stock": 61,
+    "popularity": 0.865503291278113
+  },
+  "05-720-8792": {
+    "name": "Carrot",
+    "category": "Produce",
+    "full_price": 1.5,
+    "cost_price": 0.8999999999999999,
+    "shelf_life": 10,
+    "base_stock": 80,
+    "popularity": 1.3746228743828854
+  },
+  "10-378-9729": {
+    "name": "Cabbage",
+    "category": "Produce",
+    "full_price": 66.55,
+    "cost_price": 39.93,
+    "shelf_life": 10,
+    "base_stock": 69,
+    "popularity": 0.6109434997257268
+  },
+  "53-930-2215": {
+    "name": "Egg (Goose)",
+    "category": "Dairy",
+    "full_price": 2.5,
+    "cost_price": 1.5,
+    "shelf_life": 10,
+    "base_stock": 60,
+    "popularity": 1.3067402633022491
+  },
+  "02-034-6209": {
+    "name": "Sour Cream",
+    "category": "Dairy",
+    "full_price": 4.1,
+    "cost_price": 2.4599999999999995,
+    "shelf_life": 10,
+    "base_stock": 22,
+    "popularity": 0.7636793746571585
+  },
+  "19-021-5024": {
+    "name": "Broccoli",
+    "category": "Produce",
+    "full_price": 4.0,
+    "cost_price": 2.4,
+    "shelf_life": 10,
+    "base_stock": 47,
+    "popularity": 1.28976961053209
+  },
+  "70-542-4269": {
+    "name": "Gouda Cheese",
+    "category": "Dairy",
+    "full_price": 7.0,
+    "cost_price": 4.2,
+    "shelf_life": 10,
+    "base_stock": 41,
+    "popularity": 1.4594761382336807
+  },
+  "52-797-6961": {
+    "name": "Tilapia",
+    "category": "Meat",
+    "full_price": 7.0,
+    "cost_price": 4.2,
+    "shelf_life": 10,
+    "base_stock": 46,
+    "popularity": 1.0521804717498628
+  },
+  "67-130-4114": {
+    "name": "Bell Pepper",
+    "category": "Produce",
+    "full_price": 4.5,
+    "cost_price": 2.6999999999999997,
+    "shelf_life": 10,
+    "base_stock": 84,
+    "popularity": 0.7806500274273176
+  },
+  "32-270-1385": {
+    "name": "Greek Yogurt",
+    "category": "Dairy",
+    "full_price": 42.58,
+    "cost_price": 25.548,
+    "shelf_life": 10,
+    "base_stock": 28,
+    "popularity": 0.8145913329676358
+  },
+  "85-510-2915": {
+    "name": "White Bread",
+    "category": "Bakery",
+    "full_price": 2.5,
+    "cost_price": 1.5,
+    "shelf_life": 10,
+    "base_stock": 62,
+    "popularity": 0.7127674163466813
+  },
+  "00-842-9790": {
+    "name": "Egg (Goose)",
+    "category": "Dairy",
+    "full_price": 2.5,
+    "cost_price": 1.5,
+    "shelf_life": 10,
+    "base_stock": 65,
+    "popularity": 1.1200630828304992
+  },
+  "96-682-8546": {
+    "name": "Egg (Chicken)",
+    "category": "Meat",
+    "full_price": 0.2,
+    "cost_price": 0.12,
+    "shelf_life": 10,
+    "base_stock": 70,
+    "popularity": 1.0521804717498628
+  },
+  "37-064-7275": {
+    "name": "Robusta Coffee",
+    "category": "Beverages",
+    "full_price": 10.0,
+    "cost_price": 6.0,
+    "shelf_life": 10,
+    "base_stock": 20,
+    "popularity": 1.2218869994514536
+  },
+  "43-193-9915": {
+    "name": "Mozzarella Cheese",
+    "category": "Dairy",
+    "full_price": 7.2,
+    "cost_price": 4.32,
+    "shelf_life": 10,
+    "base_stock": 55,
+    "popularity": 0.8145913329676358
+  },
+  "57-394-4703": {
+    "name": "White Tea",
+    "category": "Beverages",
+    "full_price": 25.0,
+    "cost_price": 15.0,
+    "shelf_life": 10,
+    "base_stock": 81,
+    "popularity": 1.2558283049917718
+  },
+  "07-679-1199": {
+    "name": "Onion",
+    "category": "Produce",
+    "full_price": 2.0,
+    "cost_price": 1.2,
+    "shelf_life": 10,
+    "base_stock": 20,
+    "popularity": 0.865503291278113
+  },
+  "47-221-3391": {
+    "name": "Black Coffee",
+    "category": "Beverages",
+    "full_price": 15.0,
+    "cost_price": 9.0,
+    "shelf_life": 10,
+    "base_stock": 78,
+    "popularity": 0.9164152495885902
+  },
+  "80-698-0324": {
+    "name": "Butter Biscuit",
+    "category": "Dairy",
+    "full_price": 6.0,
+    "cost_price": 3.5999999999999996,
+    "shelf_life": 10,
+    "base_stock": 84,
+    "popularity": 0.865503291278113
+  },
+  "42-907-6946": {
+    "name": "Coconut Oil",
+    "category": "Produce",
+    "full_price": 5.0,
+    "cost_price": 3.0,
+    "shelf_life": 10,
+    "base_stock": 90,
+    "popularity": 0.9333859023587493
+  },
+  "96-209-1739": {
+    "name": "Evaporated Milk",
+    "category": "Dairy",
+    "full_price": 2.0,
+    "cost_price": 1.2,
+    "shelf_life": 10,
+    "base_stock": 70,
+    "popularity": 0.4072956664838179
+  },
+  "36-679-4670": {
+    "name": "Bell Pepper",
+    "category": "Produce",
+    "full_price": 4.5,
+    "cost_price": 2.6999999999999997,
+    "shelf_life": 10,
+    "base_stock": 90,
+    "popularity": 1.3746228743828854
+  },
+  "08-637-9335": {
+    "name": "Lettuce",
+    "category": "Produce",
+    "full_price": 2.0,
+    "cost_price": 1.2,
+    "shelf_life": 10,
+    "base_stock": 100,
+    "popularity": 0.44123697202413603
+  },
+  "41-475-5305": {
+    "name": "Rye Bread",
+    "category": "Bakery",
+    "full_price": 3.0,
+    "cost_price": 1.7999999999999998,
+    "shelf_life": 10,
+    "base_stock": 61,
+    "popularity": 1.2049163466812947
+  },
+  "25-911-7736": {
+    "name": "Orange",
+    "category": "Produce",
+    "full_price": 3.0,
+    "cost_price": 1.7999999999999998,
+    "shelf_life": 10,
+    "base_stock": 75,
+    "popularity": 1.6291826659352715
+  },
+  "28-433-8533": {
+    "name": "Multigrain Bread",
+    "category": "Bakery",
+    "full_price": 3.2,
+    "cost_price": 1.92,
+    "shelf_life": 10,
+    "base_stock": 87,
+    "popularity": 1.2388576522216128
+  },
+  "45-634-0679": {
+    "name": "Haddock",
+    "category": "Meat",
+    "full_price": 9.0,
+    "cost_price": 5.3999999999999995,
+    "shelf_life": 10,
+    "base_stock": 98,
+    "popularity": 0.8994445968184311
+  },
+  "93-014-4256": {
+    "name": "Green Beans",
+    "category": "Produce",
+    "full_price": 2.0,
+    "cost_price": 1.2,
+    "shelf_life": 10,
+    "base_stock": 19,
+    "popularity": 0.865503291278113
+  },
+  "24-989-3302": {
+    "name": "Coconut",
+    "category": "Produce",
+    "full_price": 5.0,
+    "cost_price": 3.0,
+    "shelf_life": 10,
+    "base_stock": 85,
+    "popularity": 1.0352098189797039
+  },
+  "31-255-9616": {
+    "name": "Tuna",
+    "category": "Meat",
+    "full_price": 18.0,
+    "cost_price": 10.799999999999999,
+    "shelf_life": 10,
+    "base_stock": 88,
+    "popularity": 0.4751782775644542
+  },
+  "26-799-3714": {
+    "name": "Robusta Coffee",
+    "category": "Beverages",
+    "full_price": 10.0,
+    "cost_price": 6.0,
+    "shelf_life": 10,
+    "base_stock": 74,
+    "popularity": 0.6279141524958859
+  },
+  "64-119-7804": {
+    "name": "Bell Pepper",
+    "category": "Produce",
+    "full_price": 4.5,
+    "cost_price": 2.6999999999999997,
+    "shelf_life": 10,
+    "base_stock": 98,
+    "popularity": 1.4594761382336807
+  },
+  "74-181-4135": {
+    "name": "Egg (Chicken)",
+    "category": "Meat",
+    "full_price": 0.2,
+    "cost_price": 0.12,
+    "shelf_life": 10,
+    "base_stock": 22,
+    "popularity": 1.4934174437739989
+  },
+  "31-157-1822": {
+    "name": "Ricotta Cheese",
+    "category": "Dairy",
+    "full_price": 6.1,
+    "cost_price": 3.6599999999999997,
+    "shelf_life": 10,
+    "base_stock": 96,
+    "popularity": 1.5952413603949533
+  },
+  "27-459-0724": {
+    "name": "Feta Cheese",
+    "category": "Dairy",
+    "full_price": 7.0,
+    "cost_price": 4.2,
+    "shelf_life": 10,
+    "base_stock": 91,
+    "popularity": 0.5430608886450905
+  },
+  "47-441-7682": {
+    "name": "Digestive Biscuit",
+    "category": "Bakery",
+    "full_price": 4.0,
+    "cost_price": 2.4,
+    "shelf_life": 10,
+    "base_stock": 40,
+    "popularity": 0.4751782775644542
+  },
+  "77-959-1018": {
+    "name": "Lettuce",
+    "category": "Produce",
+    "full_price": 2.0,
+    "cost_price": 1.2,
+    "shelf_life": 10,
+    "base_stock": 22,
+    "popularity": 1.0521804717498628
+  },
+  "54-758-4622": {
+    "name": "Chocolate Biscuit",
+    "category": "Bakery",
+    "full_price": 5.0,
+    "cost_price": 3.0,
+    "shelf_life": 10,
+    "base_stock": 99,
+    "popularity": 1.1030924300603402
+  },
+  "92-152-5820": {
+    "name": "Black Tea",
+    "category": "Beverages",
+    "full_price": 5.3,
+    "cost_price": 3.1799999999999997,
+    "shelf_life": 10,
+    "base_stock": 18,
+    "popularity": 1.1030924300603402
+  },
+  "85-835-3445": {
+    "name": "Egg (Goose)",
+    "category": "Dairy",
+    "full_price": 2.45,
+    "cost_price": 1.47,
+    "shelf_life": 10,
+    "base_stock": 50,
+    "popularity": 1.323710916072408
+  },
+  "66-716-8221": {
+    "name": "Cheddar Cheese",
+    "category": "Dairy",
+    "full_price": 9.0,
+    "cost_price": 5.3999999999999995,
+    "shelf_life": 10,
+    "base_stock": 70,
+    "popularity": 1.069151124520022
+  },
+  "01-026-2772": {
+    "name": "Blueberries",
+    "category": "Produce",
+    "full_price": 10.0,
+    "cost_price": 6.0,
+    "shelf_life": 10,
+    "base_stock": 40,
+    "popularity": 1.28976961053209
+  },
+  "80-039-1261": {
+    "name": "Strawberries",
+    "category": "Produce",
+    "full_price": 6.0,
+    "cost_price": 3.5999999999999996,
+    "shelf_life": 10,
+    "base_stock": 26,
+    "popularity": 1.5952413603949533
+  },
+  "48-427-0551": {
+    "name": "Arabica Coffee",
+    "category": "Beverages",
+    "full_price": 20.0,
+    "cost_price": 12.0,
+    "shelf_life": 10,
+    "base_stock": 13,
+    "popularity": 1.1370337356006583
+  },
+  "02-575-1980": {
+    "name": "Plum",
+    "category": "Produce",
+    "full_price": 4.0,
+    "cost_price": 2.4,
+    "shelf_life": 10,
+    "base_stock": 11,
+    "popularity": 1.6800946242457488
+  },
+  "08-519-5579": {
+    "name": "Broccoli",
+    "category": "Produce",
+    "full_price": 4.0,
+    "cost_price": 2.4,
+    "shelf_life": 10,
+    "base_stock": 35,
+    "popularity": 1.527358749314317
+  },
+  "00-641-8691": {
+    "name": "Black Coffee",
+    "category": "Beverages",
+    "full_price": 15.0,
+    "cost_price": 9.0,
+    "shelf_life": 10,
+    "base_stock": 33,
+    "popularity": 1.6291826659352715
+  },
+  "11-338-4598": {
+    "name": "Potato",
+    "category": "Produce",
+    "full_price": 1.2,
+    "cost_price": 0.72,
+    "shelf_life": 10,
+    "base_stock": 72,
+    "popularity": 1.6291826659352715
+  },
+  "82-711-0772": {
+    "name": "Egg (Goose)",
+    "category": "Dairy",
+    "full_price": 2.4,
+    "cost_price": 1.44,
+    "shelf_life": 10,
+    "base_stock": 72,
+    "popularity": 0.6109434997257268
+  },
+  "05-184-4175": {
+    "name": "Black Coffee",
+    "category": "Beverages",
+    "full_price": 15.0,
+    "cost_price": 9.0,
+    "shelf_life": 10,
+    "base_stock": 40,
+    "popularity": 0.5600315414152496
+  },
+  "17-274-6898": {
+    "name": "Whole Wheat Bread",
+    "category": "Bakery",
+    "full_price": 3.5,
+    "cost_price": 2.1,
+    "shelf_life": 10,
+    "base_stock": 36,
+    "popularity": 1.1370337356006583
+  },
+  "00-534-9775": {
+    "name": "Black Coffee",
+    "category": "Beverages",
+    "full_price": 14.9,
+    "cost_price": 8.94,
+    "shelf_life": 10,
+    "base_stock": 87,
+    "popularity": 1.527358749314317
+  },
+  "94-071-2261": {
+    "name": "Pear",
+    "category": "Produce",
+    "full_price": 4.5,
+    "cost_price": 2.6999999999999997,
+    "shelf_life": 10,
+    "base_stock": 79,
+    "popularity": 0.5600315414152496
+  },
+  "94-355-3070": {
+    "name": "Tilapia",
+    "category": "Meat",
+    "full_price": 6.8,
+    "cost_price": 4.08,
+    "shelf_life": 10,
+    "base_stock": 14,
+    "popularity": 1.086121777290181
+  },
+  "17-265-1899": {
+    "name": "Orange",
+    "category": "Produce",
+    "full_price": 3.0,
+    "cost_price": 1.7999999999999998,
+    "shelf_life": 10,
+    "base_stock": 81,
+    "popularity": 1.4594761382336807
+  },
+  "21-890-2826": {
+    "name": "Gouda Cheese",
+    "category": "Dairy",
+    "full_price": 7.0,
+    "cost_price": 4.2,
+    "shelf_life": 10,
+    "base_stock": 48,
+    "popularity": 1.0012685134393857
+  },
+  "05-425-0746": {
+    "name": "Onion",
+    "category": "Produce",
+    "full_price": 2.0,
+    "cost_price": 1.2,
+    "shelf_life": 10,
+    "base_stock": 50,
+    "popularity": 0.6788261108063631
+  },
+  "88-807-8431": {
+    "name": "Haddock",
+    "category": "Meat",
+    "full_price": 9.0,
+    "cost_price": 5.3999999999999995,
+    "shelf_life": 10,
+    "base_stock": 11,
+    "popularity": 1.4594761382336807
+  },
+  "99-961-0767": {
+    "name": "Heavy Cream",
+    "category": "Dairy",
+    "full_price": 4.0,
+    "cost_price": 2.4,
+    "shelf_life": 10,
+    "base_stock": 85,
+    "popularity": 1.6122120131651125
+  },
+  "60-327-4114": {
+    "name": "Egg (Turkey)",
+    "category": "Dairy",
+    "full_price": 2.35,
+    "cost_price": 1.41,
+    "shelf_life": 10,
+    "base_stock": 63,
+    "popularity": 1.323710916072408
+  },
+  "13-409-9040": {
+    "name": "White Tea",
+    "category": "Beverages",
+    "full_price": 25.25,
+    "cost_price": 15.149999999999999,
+    "shelf_life": 10,
+    "base_stock": 35,
+    "popularity": 0.8994445968184311
+  },
+  "75-927-9108": {
+    "name": "Cabbage",
+    "category": "Produce",
+    "full_price": 1.0,
+    "cost_price": 0.6,
+    "shelf_life": 10,
+    "base_stock": 24,
+    "popularity": 0.9333859023587493
+  },
+  "65-780-5622": {
+    "name": "Butter Biscuit",
+    "category": "Dairy",
+    "full_price": 6.0,
+    "cost_price": 3.5999999999999996,
+    "shelf_life": 10,
+    "base_stock": 74,
+    "popularity": 0.865503291278113
+  },
+  "68-973-8812": {
+    "name": "Sweet Potato",
+    "category": "Produce",
+    "full_price": 2.0,
+    "cost_price": 1.2,
+    "shelf_life": 10,
+    "base_stock": 44,
+    "popularity": 1.510388096544158
+  },
+  "49-570-8214": {
+    "name": "Sour Cream",
+    "category": "Dairy",
+    "full_price": 4.0,
+    "cost_price": 2.4,
+    "shelf_life": 10,
+    "base_stock": 81,
+    "popularity": 1.1540043883708173
+  },
+  "72-341-1154": {
+    "name": "Heavy Cream",
+    "category": "Dairy",
+    "full_price": 4.2,
+    "cost_price": 2.52,
+    "shelf_life": 10,
+    "base_stock": 85,
+    "popularity": 1.1030924300603402
+  },
+  "28-986-8001": {
+    "name": "Pomegranate",
+    "category": "Produce",
+    "full_price": 6.0,
+    "cost_price": 3.5999999999999996,
+    "shelf_life": 10,
+    "base_stock": 65,
+    "popularity": 1.3576522216127263
+  },
+  "27-495-1912": {
+    "name": "Potato",
+    "category": "Produce",
+    "full_price": 1.2,
+    "cost_price": 0.72,
+    "shelf_life": 10,
+    "base_stock": 26,
+    "popularity": 1.4255348326933626
+  },
+  "82-538-4809": {
+    "name": "Cabbage",
+    "category": "Produce",
+    "full_price": 1.0,
+    "cost_price": 0.6,
+    "shelf_life": 10,
+    "base_stock": 83,
+    "popularity": 0.5939728469555677
+  },
+  "69-895-3397": {
+    "name": "Cucumber",
+    "category": "Produce",
+    "full_price": 1.8,
+    "cost_price": 1.08,
+    "shelf_life": 10,
+    "base_stock": 28,
+    "popularity": 0.5600315414152496
+  },
+  "44-112-3331": {
+    "name": "Tuna",
+    "category": "Meat",
+    "full_price": 18.0,
+    "cost_price": 10.799999999999999,
+    "shelf_life": 10,
+    "base_stock": 85,
+    "popularity": 1.5613000548546352
+  },
+  "47-221-2470": {
+    "name": "Pomegranate",
+    "category": "Produce",
+    "full_price": 6.0,
+    "cost_price": 3.5999999999999996,
+    "shelf_life": 10,
+    "base_stock": 17,
+    "popularity": 0.6279141524958859
+  },
+  "89-388-3239": {
+    "name": "Grapes",
+    "category": "Produce",
+    "full_price": 5.5,
+    "cost_price": 3.3,
+    "shelf_life": 10,
+    "base_stock": 54,
+    "popularity": 1.3746228743828854
+  },
+  "10-555-5971": {
+    "name": "Sourdough Bread",
+    "category": "Bakery",
+    "full_price": 4.0,
+    "cost_price": 2.4,
+    "shelf_life": 10,
+    "base_stock": 94,
+    "popularity": 0.7976206801974767
+  },
+  "24-228-6840": {
+    "name": "Herbal Tea",
+    "category": "Beverages",
+    "full_price": 30.0,
+    "cost_price": 18.0,
+    "shelf_life": 10,
+    "base_stock": 27,
+    "popularity": 0.5770021941854087
+  },
+  "26-456-1992": {
+    "name": "Tilapia",
+    "category": "Meat",
+    "full_price": 7.0,
+    "cost_price": 4.2,
+    "shelf_life": 10,
+    "base_stock": 56,
+    "popularity": 1.1030924300603402
+  },
+  "62-998-7250": {
+    "name": "Evaporated Milk",
+    "category": "Dairy",
+    "full_price": 2.0,
+    "cost_price": 1.2,
+    "shelf_life": 10,
+    "base_stock": 72,
+    "popularity": 0.8824739440482721
+  },
+  "38-617-7226": {
+    "name": "Mushrooms",
+    "category": "Produce",
+    "full_price": 6.3,
+    "cost_price": 3.78,
+    "shelf_life": 10,
+    "base_stock": 65,
+    "popularity": 0.9164152495885902
+  },
+  "00-366-9496": {
+    "name": "Grapes",
+    "category": "Produce",
+    "full_price": 5.5,
+    "cost_price": 3.3,
+    "shelf_life": 10,
+    "base_stock": 30,
+    "popularity": 1.069151124520022
+  },
+  "76-027-4850": {
+    "name": "Onion",
+    "category": "Produce",
+    "full_price": 2.0,
+    "cost_price": 1.2,
+    "shelf_life": 10,
+    "base_stock": 39,
+    "popularity": 0.42426631925397695
+  },
+  "27-269-5260": {
+    "name": "Pineapple",
+    "category": "Produce",
+    "full_price": 3.5,
+    "cost_price": 2.1,
+    "shelf_life": 10,
+    "base_stock": 14,
+    "popularity": 1.2558283049917718
+  },
+  "40-126-0515": {
+    "name": "Carrot",
+    "category": "Produce",
+    "full_price": 1.5,
+    "cost_price": 0.8999999999999999,
+    "shelf_life": 10,
+    "base_stock": 74,
+    "popularity": 1.5443294020844762
+  },
+  "31-387-5020": {
+    "name": "Parmesan Cheese",
+    "category": "Dairy",
+    "full_price": 11.9,
+    "cost_price": 7.14,
+    "shelf_life": 10,
+    "base_stock": 63,
+    "popularity": 0.6279141524958859
+  },
+  "13-673-7016": {
+    "name": "Peach",
+    "category": "Produce",
+    "full_price": 4.0,
+    "cost_price": 2.4,
+    "shelf_life": 10,
+    "base_stock": 47,
+    "popularity": 0.6109434997257268
+  },
+  "85-212-2729": {
+    "name": "Egg (Turkey)",
+    "category": "Dairy",
+    "full_price": 2.5,
+    "cost_price": 1.5,
+    "shelf_life": 10,
+    "base_stock": 42,
+    "popularity": 1.0352098189797039
+  },
+  "19-112-1616": {
+    "name": "Lettuce",
+    "category": "Produce",
+    "full_price": 2.0,
+    "cost_price": 1.2,
+    "shelf_life": 10,
+    "base_stock": 88,
+    "popularity": 0.42426631925397695
+  },
+  "98-546-7398": {
+    "name": "Yogurt",
+    "category": "Dairy",
+    "full_price": 1.75,
+    "cost_price": 1.05,
+    "shelf_life": 10,
+    "base_stock": 80,
+    "popularity": 0.6957967635765222
+  },
+  "63-874-9747": {
+    "name": "Orange",
+    "category": "Produce",
+    "full_price": 3.0,
+    "cost_price": 1.7999999999999998,
+    "shelf_life": 10,
+    "base_stock": 36,
+    "popularity": 0.42426631925397695
+  },
+  "65-867-4029": {
+    "name": "Peach",
+    "category": "Produce",
+    "full_price": 4.0,
+    "cost_price": 2.4,
+    "shelf_life": 10,
+    "base_stock": 40,
+    "popularity": 1.5613000548546352
+  },
+  "24-478-8277": {
+    "name": "Multigrain Bread",
+    "category": "Bakery",
+    "full_price": 3.25,
+    "cost_price": 1.95,
+    "shelf_life": 10,
+    "base_stock": 47,
+    "popularity": 0.5091195831047723
+  },
+  "91-290-9062": {
+    "name": "Digestive Biscuit",
+    "category": "Bakery",
+    "full_price": 4.0,
+    "cost_price": 2.4,
+    "shelf_life": 10,
+    "base_stock": 29,
+    "popularity": 1.3576522216127263
+  },
+  "44-546-5713": {
+    "name": "Peach",
+    "category": "Produce",
+    "full_price": 4.0,
+    "cost_price": 2.4,
+    "shelf_life": 10,
+    "base_stock": 94,
+    "popularity": 0.4072956664838179
+  },
+  "20-031-0532": {
+    "name": "Mango",
+    "category": "Produce",
+    "full_price": 4.9,
+    "cost_price": 2.94,
+    "shelf_life": 10,
+    "base_stock": 32,
+    "popularity": 1.4255348326933626
+  },
+  "48-242-8445": {
+    "name": "Plum",
+    "category": "Produce",
+    "full_price": 4.0,
+    "cost_price": 2.4,
+    "shelf_life": 10,
+    "base_stock": 40,
+    "popularity": 0.7636793746571585
+  },
+  "33-378-1365": {
+    "name": "Egg (Goose)",
+    "category": "Dairy",
+    "full_price": 2.5,
+    "cost_price": 1.5,
+    "shelf_life": 10,
+    "base_stock": 50,
+    "popularity": 1.28976961053209
+  },
+  "57-763-5501": {
+    "name": "Cod",
+    "category": "Meat",
+    "full_price": 8.0,
+    "cost_price": 4.8,
+    "shelf_life": 10,
+    "base_stock": 72,
+    "popularity": 0.9164152495885902
+  },
+  "71-015-9181": {
+    "name": "Pomegranate",
+    "category": "Produce",
+    "full_price": 6.0,
+    "cost_price": 3.5999999999999996,
+    "shelf_life": 10,
+    "base_stock": 22,
+    "popularity": 0.6957967635765222
+  },
+  "14-115-8371": {
+    "name": "Chocolate Biscuit",
+    "category": "Bakery",
+    "full_price": 5.0,
+    "cost_price": 3.0,
+    "shelf_life": 10,
+    "base_stock": 23,
+    "popularity": 1.6461533187054307
+  },
+  "79-884-8810": {
+    "name": "Cucumber",
+    "category": "Produce",
+    "full_price": 1.75,
+    "cost_price": 1.05,
+    "shelf_life": 10,
+    "base_stock": 12,
+    "popularity": 0.7636793746571585
+  },
+  "50-772-2613": {
+    "name": "Cheddar Cheese",
+    "category": "Dairy",
+    "full_price": 9.0,
+    "cost_price": 5.3999999999999995,
+    "shelf_life": 10,
+    "base_stock": 86,
+    "popularity": 1.6970652770159078
+  },
+  "39-913-2999": {
+    "name": "Evaporated Milk",
+    "category": "Dairy",
+    "full_price": 2.0,
+    "cost_price": 1.2,
+    "shelf_life": 10,
+    "base_stock": 23,
+    "popularity": 1.1540043883708173
+  },
+  "46-911-1159": {
+    "name": "Onion",
+    "category": "Produce",
+    "full_price": 2.0,
+    "cost_price": 1.2,
+    "shelf_life": 10,
+    "base_stock": 98,
+    "popularity": 0.7806500274273176
+  },
+  "15-797-4824": {
+    "name": "Coconut",
+    "category": "Produce",
+    "full_price": 5.0,
+    "cost_price": 3.0,
+    "shelf_life": 10,
+    "base_stock": 32,
+    "popularity": 0.644884805266045
+  },
+  "37-248-6266": {
+    "name": "Pear",
+    "category": "Produce",
+    "full_price": 4.5,
+    "cost_price": 2.6999999999999997,
+    "shelf_life": 10,
+    "base_stock": 84,
+    "popularity": 1.086121777290181
+  },
+  "22-760-4605": {
+    "name": "Yogurt",
+    "category": "Dairy",
+    "full_price": 1.75,
+    "cost_price": 1.05,
+    "shelf_life": 10,
+    "base_stock": 86,
+    "popularity": 1.4085641799232036
+  },
+  "19-610-2236": {
+    "name": "Whole Wheat Bread",
+    "category": "Bakery",
+    "full_price": 3.5,
+    "cost_price": 2.1,
+    "shelf_life": 10,
+    "base_stock": 58,
+    "popularity": 1.6631239714755897
+  },
+  "49-579-4325": {
+    "name": "Ricotta Cheese",
+    "category": "Dairy",
+    "full_price": 6.0,
+    "cost_price": 3.5999999999999996,
+    "shelf_life": 10,
+    "base_stock": 64,
+    "popularity": 0.9333859023587493
+  },
+  "03-597-9488": {
+    "name": "Buttermilk",
+    "category": "Dairy",
+    "full_price": 2.5,
+    "cost_price": 1.5,
+    "shelf_life": 10,
+    "base_stock": 70,
+    "popularity": 0.7976206801974767
+  },
+  "59-725-4038": {
+    "name": "Arabica Coffee",
+    "category": "Beverages",
+    "full_price": 20.5,
+    "cost_price": 12.299999999999999,
+    "shelf_life": 10,
+    "base_stock": 78,
+    "popularity": 1.0521804717498628
+  },
+  "91-426-3204": {
+    "name": "Haddock",
+    "category": "Meat",
+    "full_price": 9.0,
+    "cost_price": 5.3999999999999995,
+    "shelf_life": 10,
+    "base_stock": 67,
+    "popularity": 1.28976961053209
+  },
+  "40-913-9772": {
+    "name": "Egg (Chicken)",
+    "category": "Meat",
+    "full_price": 0.2,
+    "cost_price": 0.12,
+    "shelf_life": 10,
+    "base_stock": 36,
+    "popularity": 1.1540043883708173
+  },
+  "17-236-0566": {
+    "name": "Sweet Potato",
+    "category": "Produce",
+    "full_price": 2.0,
+    "cost_price": 1.2,
+    "shelf_life": 10,
+    "base_stock": 95,
+    "popularity": 1.0352098189797039
+  },
+  "15-846-7959": {
+    "name": "Zucchini",
+    "category": "Produce",
+    "full_price": 2.5,
+    "cost_price": 1.5,
+    "shelf_life": 10,
+    "base_stock": 98,
+    "popularity": 0.8145913329676358
+  },
+  "03-833-3577": {
+    "name": "Cucumber",
+    "category": "Produce",
+    "full_price": 1.8,
+    "cost_price": 1.08,
+    "shelf_life": 10,
+    "base_stock": 67,
+    "popularity": 1.3746228743828854
+  },
+  "47-548-6500": {
+    "name": "Onion",
+    "category": "Produce",
+    "full_price": 2.0,
+    "cost_price": 1.2,
+    "shelf_life": 10,
+    "base_stock": 20,
+    "popularity": 0.3903250137136588
+  },
+  "12-342-4482": {
+    "name": "Trout",
+    "category": "Meat",
+    "full_price": 11.6,
+    "cost_price": 6.96,
+    "shelf_life": 10,
+    "base_stock": 67,
+    "popularity": 1.1200630828304992
+  },
+  "07-834-3320": {
+    "name": "Egg (Quail)",
+    "category": "Dairy",
+    "full_price": 0.8,
+    "cost_price": 0.48,
+    "shelf_life": 10,
+    "base_stock": 94,
+    "popularity": 1.6970652770159078
+  },
+  "16-187-5729": {
+    "name": "Black Tea",
+    "category": "Beverages",
+    "full_price": 5.0,
+    "cost_price": 3.0,
+    "shelf_life": 10,
+    "base_stock": 45,
+    "popularity": 1.527358749314317
+  },
+  "24-975-4231": {
+    "name": "Green Beans",
+    "category": "Produce",
+    "full_price": 2.1,
+    "cost_price": 1.26,
+    "shelf_life": 10,
+    "base_stock": 31,
+    "popularity": 0.9333859023587493
+  },
+  "98-652-9569": {
+    "name": "Butter Biscuit",
+    "category": "Dairy",
+    "full_price": 6.0,
+    "cost_price": 3.5999999999999996,
+    "shelf_life": 10,
+    "base_stock": 12,
+    "popularity": 1.2218869994514536
+  },
+  "25-522-6043": {
+    "name": "Gouda Cheese",
+    "category": "Dairy",
+    "full_price": 7.0,
+    "cost_price": 4.2,
+    "shelf_life": 10,
+    "base_stock": 71,
+    "popularity": 1.3067402633022491
+  },
+  "96-164-0607": {
+    "name": "Coconut Oil",
+    "category": "Produce",
+    "full_price": 5.0,
+    "cost_price": 3.0,
+    "shelf_life": 10,
+    "base_stock": 89,
+    "popularity": 1.5443294020844762
+  },
+  "63-918-8253": {
+    "name": "Mango",
+    "category": "Produce",
+    "full_price": 5.0,
+    "cost_price": 3.0,
+    "shelf_life": 10,
+    "base_stock": 53,
+    "popularity": 0.6957967635765222
+  },
+  "57-167-0669": {
+    "name": "Haddock",
+    "category": "Meat",
+    "full_price": 9.0,
+    "cost_price": 5.3999999999999995,
+    "shelf_life": 10,
+    "base_stock": 19,
+    "popularity": 0.49214893033461327
+  },
+  "52-402-9245": {
+    "name": "Broccoli",
+    "category": "Produce",
+    "full_price": 4.0,
+    "cost_price": 2.4,
+    "shelf_life": 10,
+    "base_stock": 89,
+    "popularity": 1.5782707076247944
+  },
+  "17-647-0503": {
+    "name": "Cod",
+    "category": "Meat",
+    "full_price": 8.0,
+    "cost_price": 4.8,
+    "shelf_life": 10,
+    "base_stock": 96,
+    "popularity": 1.6461533187054307
+  },
+  "67-984-5368": {
+    "name": "Parmesan Cheese",
+    "category": "Dairy",
+    "full_price": 12.0,
+    "cost_price": 7.199999999999999,
+    "shelf_life": 10,
+    "base_stock": 52,
+    "popularity": 0.5260902358749314
+  },
+  "48-789-9187": {
+    "name": "Peach",
+    "category": "Produce",
+    "full_price": 4.0,
+    "cost_price": 2.4,
+    "shelf_life": 10,
+    "base_stock": 45,
+    "popularity": 1.4255348326933626
+  },
+  "60-644-6596": {
+    "name": "Trout",
+    "category": "Meat",
+    "full_price": 12.0,
+    "cost_price": 7.199999999999999,
+    "shelf_life": 10,
+    "base_stock": 89,
+    "popularity": 1.6291826659352715
+  },
+  "58-005-5343": {
+    "name": "Cucumber",
+    "category": "Produce",
+    "full_price": 1.8,
+    "cost_price": 1.08,
+    "shelf_life": 10,
+    "base_stock": 38,
+    "popularity": 1.510388096544158
+  },
+  "67-382-4435": {
+    "name": "Green Beans",
+    "category": "Produce",
+    "full_price": 2.1,
+    "cost_price": 1.26,
+    "shelf_life": 10,
+    "base_stock": 99,
+    "popularity": 0.7806500274273176
+  },
+  "46-496-2930": {
+    "name": "Pomegranate",
+    "category": "Produce",
+    "full_price": 6.0,
+    "cost_price": 3.5999999999999996,
+    "shelf_life": 10,
+    "base_stock": 66,
+    "popularity": 1.4425054854635218
+  },
+  "85-806-8672": {
+    "name": "Black Tea",
+    "category": "Beverages",
+    "full_price": 4.7,
+    "cost_price": 2.82,
+    "shelf_life": 10,
+    "base_stock": 35,
+    "popularity": 0.661855458036204
+  },
+  "54-281-3746": {
+    "name": "Green Beans",
+    "category": "Produce",
+    "full_price": 2.0,
+    "cost_price": 1.2,
+    "shelf_life": 10,
+    "base_stock": 26,
+    "popularity": 0.6109434997257268
+  },
+  "35-257-9312": {
+    "name": "Parmesan Cheese",
+    "category": "Dairy",
+    "full_price": 12.0,
+    "cost_price": 7.199999999999999,
+    "shelf_life": 10,
+    "base_stock": 80,
+    "popularity": 1.6970652770159078
+  },
+  "63-897-8088": {
+    "name": "Zucchini",
+    "category": "Produce",
+    "full_price": 2.5,
+    "cost_price": 1.5,
+    "shelf_life": 10,
+    "base_stock": 63,
+    "popularity": 0.5939728469555677
+  },
+  "24-986-5091": {
+    "name": "Vanilla Biscuit",
+    "category": "Bakery",
+    "full_price": 5.5,
+    "cost_price": 3.3,
+    "shelf_life": 10,
+    "base_stock": 89,
+    "popularity": 1.4085641799232036
+  },
+  "17-504-3699": {
+    "name": "Sweet Potato",
+    "category": "Produce",
+    "full_price": 2.0,
+    "cost_price": 1.2,
+    "shelf_life": 10,
+    "base_stock": 80,
+    "popularity": 1.6631239714755897
+  },
+  "28-107-4953": {
+    "name": "Chocolate Biscuit",
+    "category": "Bakery",
+    "full_price": 5.0,
+    "cost_price": 3.0,
+    "shelf_life": 10,
+    "base_stock": 53,
+    "popularity": 1.3915935271530444
+  },
+  "46-083-7058": {
+    "name": "Haddock",
+    "category": "Meat",
+    "full_price": 9.0,
+    "cost_price": 5.3999999999999995,
+    "shelf_life": 10,
+    "base_stock": 61,
+    "popularity": 0.5770021941854087
+  },
+  "68-436-1268": {
+    "name": "Egg (Duck)",
+    "category": "Dairy",
+    "full_price": 1.0,
+    "cost_price": 0.6,
+    "shelf_life": 10,
+    "base_stock": 70,
+    "popularity": 1.6122120131651125
+  },
+  "93-198-5984": {
+    "name": "Mango",
+    "category": "Produce",
+    "full_price": 5.0,
+    "cost_price": 3.0,
+    "shelf_life": 10,
+    "base_stock": 73,
+    "popularity": 0.8485326385079539
+  },
+  "73-874-7534": {
+    "name": "Pomegranate",
+    "category": "Produce",
+    "full_price": 6.0,
+    "cost_price": 3.5999999999999996,
+    "shelf_life": 10,
+    "base_stock": 88,
+    "popularity": 1.2218869994514536
+  },
+  "83-400-9746": {
+    "name": "Mozzarella Cheese",
+    "category": "Dairy",
+    "full_price": 7.0,
+    "cost_price": 4.2,
+    "shelf_life": 10,
+    "base_stock": 24,
+    "popularity": 0.9842978606692265
+  },
+  "79-494-2472": {
+    "name": "Green Beans",
+    "category": "Produce",
+    "full_price": 2.0,
+    "cost_price": 1.2,
+    "shelf_life": 10,
+    "base_stock": 42,
+    "popularity": 0.661855458036204
+  },
+  "36-177-0573": {
+    "name": "Egg (Turkey)",
+    "category": "Dairy",
+    "full_price": 2.5,
+    "cost_price": 1.5,
+    "shelf_life": 10,
+    "base_stock": 92,
+    "popularity": 1.323710916072408
+  },
+  "79-920-2395": {
+    "name": "Mushrooms",
+    "category": "Produce",
+    "full_price": 6.25,
+    "cost_price": 3.75,
+    "shelf_life": 10,
+    "base_stock": 81,
+    "popularity": 1.5613000548546352
+  },
+  "40-205-8252": {
+    "name": "Multigrain Bread",
+    "category": "Bakery",
+    "full_price": 3.5,
+    "cost_price": 2.1,
+    "shelf_life": 10,
+    "base_stock": 38,
+    "popularity": 0.7636793746571585
+  },
+  "18-107-7886": {
+    "name": "Evaporated Milk",
+    "category": "Dairy",
+    "full_price": 2.0,
+    "cost_price": 1.2,
+    "shelf_life": 10,
+    "base_stock": 64,
+    "popularity": 1.2558283049917718
+  },
+  "21-650-9319": {
+    "name": "White Bread",
+    "category": "Bakery",
+    "full_price": 2.5,
+    "cost_price": 1.5,
+    "shelf_life": 10,
+    "base_stock": 42,
+    "popularity": 1.1370337356006583
+  },
+  "63-168-6018": {
+    "name": "Cucumber",
+    "category": "Produce",
+    "full_price": 1.8,
+    "cost_price": 1.08,
+    "shelf_life": 10,
+    "base_stock": 60,
+    "popularity": 1.2558283049917718
+  },
+  "26-000-1012": {
+    "name": "Parmesan Cheese",
+    "category": "Dairy",
+    "full_price": 12.0,
+    "cost_price": 7.199999999999999,
+    "shelf_life": 10,
+    "base_stock": 65,
+    "popularity": 1.1709750411409765
+  },
+  "13-900-9016": {
+    "name": "Bell Pepper",
+    "category": "Produce",
+    "full_price": 4.5,
+    "cost_price": 2.6999999999999997,
+    "shelf_life": 10,
+    "base_stock": 89,
+    "popularity": 0.644884805266045
+  },
+  "73-997-6251": {
+    "name": "Bell Pepper",
+    "category": "Produce",
+    "full_price": 4.5,
+    "cost_price": 2.6999999999999997,
+    "shelf_life": 10,
+    "base_stock": 94,
+    "popularity": 0.7467087218869994
+  },
+  "89-673-1543": {
+    "name": "Digestive Biscuit",
+    "category": "Bakery",
+    "full_price": 4.0,
+    "cost_price": 2.4,
+    "shelf_life": 10,
+    "base_stock": 72,
+    "popularity": 1.4425054854635218
+  },
+  "56-937-8675": {
+    "name": "Cream",
+    "category": "Dairy",
+    "full_price": 2.5,
+    "cost_price": 1.5,
+    "shelf_life": 10,
+    "base_stock": 62,
+    "popularity": 0.6957967635765222
+  },
+  "07-617-6934": {
+    "name": "Coconut Sugar",
+    "category": "Produce",
+    "full_price": 5.0,
+    "cost_price": 3.0,
+    "shelf_life": 10,
+    "base_stock": 91,
+    "popularity": 0.8145913329676358
+  },
+  "31-403-6234": {
+    "name": "Tuna",
+    "category": "Meat",
+    "full_price": 18.0,
+    "cost_price": 10.799999999999999,
+    "shelf_life": 10,
+    "base_stock": 87,
+    "popularity": 0.3733543609434997
+  },
+  "29-092-3453": {
+    "name": "Spinach",
+    "category": "Produce",
+    "full_price": 2.52,
+    "cost_price": 1.512,
+    "shelf_life": 10,
+    "base_stock": 61,
+    "popularity": 0.5260902358749314
+  },
+  "34-709-9237": {
+    "name": "Carrot",
+    "category": "Produce",
+    "full_price": 1.5,
+    "cost_price": 0.8999999999999999,
+    "shelf_life": 10,
+    "base_stock": 61,
+    "popularity": 0.44123697202413603
+  },
+  "13-962-6263": {
+    "name": "Sweet Potato",
+    "category": "Produce",
+    "full_price": 2.0,
+    "cost_price": 1.2,
+    "shelf_life": 10,
+    "base_stock": 49,
+    "popularity": 1.6461533187054307
+  },
+  "06-731-2162": {
+    "name": "Lemon",
+    "category": "Produce",
+    "full_price": 2.5,
+    "cost_price": 1.5,
+    "shelf_life": 10,
+    "base_stock": 87,
+    "popularity": 1.0352098189797039
+  },
+  "10-768-2443": {
+    "name": "Multigrain Bread",
+    "category": "Bakery",
+    "full_price": 3.25,
+    "cost_price": 1.95,
+    "shelf_life": 10,
+    "base_stock": 93,
+    "popularity": 0.9503565551289084
+  },
+  "34-538-1180": {
+    "name": "Sour Cream",
+    "category": "Dairy",
+    "full_price": 4.0,
+    "cost_price": 2.4,
+    "shelf_life": 10,
+    "base_stock": 29,
+    "popularity": 0.3903250137136588
+  },
+  "98-148-0940": {
+    "name": "Egg (Chicken)",
+    "category": "Meat",
+    "full_price": 0.2,
+    "cost_price": 0.12,
+    "shelf_life": 10,
+    "base_stock": 63,
+    "popularity": 1.1370337356006583
+  },
+  "38-390-2115": {
+    "name": "Potato",
+    "category": "Produce",
+    "full_price": 1.2,
+    "cost_price": 0.72,
+    "shelf_life": 10,
+    "base_stock": 42,
+    "popularity": 0.7297380691168404
+  },
+  "02-974-8526": {
+    "name": "Onion",
+    "category": "Produce",
+    "full_price": 2.0,
+    "cost_price": 1.2,
+    "shelf_life": 10,
+    "base_stock": 74,
+    "popularity": 1.6461533187054307
+  },
+  "84-327-7787": {
+    "name": "Egg (Chicken)",
+    "category": "Meat",
+    "full_price": 0.2,
+    "cost_price": 0.12,
+    "shelf_life": 10,
+    "base_stock": 83,
+    "popularity": 1.5952413603949533
+  },
+  "63-936-0145": {
+    "name": "Plum",
+    "category": "Produce",
+    "full_price": 4.0,
+    "cost_price": 2.4,
+    "shelf_life": 10,
+    "base_stock": 22,
+    "popularity": 1.1879456939111355
+  },
+  "08-196-2703": {
+    "name": "Peas",
+    "category": "Produce",
+    "full_price": 3.0,
+    "cost_price": 1.7999999999999998,
+    "shelf_life": 10,
+    "base_stock": 100,
+    "popularity": 1.4594761382336807
+  },
+  "22-778-3553": {
+    "name": "Cheddar Cheese",
+    "category": "Dairy",
+    "full_price": 9.0,
+    "cost_price": 5.3999999999999995,
+    "shelf_life": 10,
+    "base_stock": 36,
+    "popularity": 0.5091195831047723
+  },
+  "28-968-4195": {
+    "name": "Eggplant",
+    "category": "Produce",
+    "full_price": 3.0,
+    "cost_price": 1.7999999999999998,
+    "shelf_life": 10,
+    "base_stock": 97,
+    "popularity": 0.3733543609434997
+  },
+  "55-680-0982": {
+    "name": "Green Tea",
+    "category": "Beverages",
+    "full_price": 8.0,
+    "cost_price": 4.8,
+    "shelf_life": 10,
+    "base_stock": 64,
+    "popularity": 0.42426631925397695
+  },
+  "54-830-6971": {
+    "name": "Tilapia",
+    "category": "Meat",
+    "full_price": 7.0,
+    "cost_price": 4.2,
+    "shelf_life": 10,
+    "base_stock": 100,
+    "popularity": 1.4425054854635218
+  },
+  "28-146-2641": {
+    "name": "Parmesan Cheese",
+    "category": "Dairy",
+    "full_price": 12.0,
+    "cost_price": 7.199999999999999,
+    "shelf_life": 10,
+    "base_stock": 38,
+    "popularity": 0.5939728469555677
+  },
+  "53-805-9523": {
+    "name": "Sourdough Bread",
+    "category": "Bakery",
+    "full_price": 4.5,
+    "cost_price": 2.6999999999999997,
+    "shelf_life": 10,
+    "base_stock": 40,
+    "popularity": 0.9164152495885902
+  },
+  "82-977-7752": {
+    "name": "Spinach",
+    "category": "Produce",
+    "full_price": 2.5,
+    "cost_price": 1.5,
+    "shelf_life": 10,
+    "base_stock": 88,
+    "popularity": 0.9842978606692265
+  },
+  "62-393-9939": {
+    "name": "Cheddar Cheese",
+    "category": "Dairy",
+    "full_price": 9.0,
+    "cost_price": 5.3999999999999995,
+    "shelf_life": 10,
+    "base_stock": 60,
+    "popularity": 1.6122120131651125
+  },
+  "31-745-6850": {
+    "name": "Cabbage",
+    "category": "Produce",
+    "full_price": 0.9,
+    "cost_price": 0.54,
+    "shelf_life": 10,
+    "base_stock": 94,
+    "popularity": 1.6631239714755897
+  }
+}

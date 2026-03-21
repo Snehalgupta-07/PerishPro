@@ -1,0 +1,20 @@
+[
+  "days_until_expiry",
+  "discount_percentage",
+  "inventory_on_hand",
+  "full_price",
+  "day_of_week",
+  "is_weekend",
+  "urgency_factor",
+  "inventory_pressure",
+  "product_popularity",
+  "discount_x_urgency",
+  "discount_x_inventory",
+  "discount_x_popularity",
+  "category_Produce",
+  "category_Dairy",
+  "category_Meat",
+  "category_Bakery",
+  "category_Frozen",
+  "category_Beverages"
+]
