@@ -4,13 +4,13 @@ const upload = require('../Middlewares/upload');
 const productController = require('../Controllers/product');
 const { isAuthenticated } = require('../Middlewares/auth');
 
-router.get('/', productController.listProducts);
+router.get('/', isAuthenticated, productController.listProducts);
 
 // Waste saved by day/hour (for dashboard chart)
 // NOTE: must be declared BEFORE `/:id` route to avoid being treated as an id.
 router.get('/waste-saved-vs-day', isAuthenticated, productController.getWasteSavedVsDay);
 
-router.get('/:id', productController.getProduct);
+router.get('/:id', isAuthenticated, productController.getProduct);
 
 router.post('/', isAuthenticated, upload.single('image'), productController.addProduct);
 router.put('/:id', isAuthenticated, upload.single('image'), productController.updateProduct);
