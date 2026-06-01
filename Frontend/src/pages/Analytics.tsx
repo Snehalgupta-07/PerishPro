@@ -226,7 +226,7 @@ const Analytics: React.FC = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <StatCard
           title="Total Inventory Value"
-          value={`?${Math.round(totalInventoryValue).toLocaleString()}`}
+          value={`${Math.round(totalInventoryValue).toLocaleString()}`}
           icon={DollarSign}
           color="from-green-500 to-green-600"
         />
@@ -244,7 +244,7 @@ const Analytics: React.FC = () => {
         />
         <StatCard
           title="Total Waste Reduced"
-          value={`?${Math.round(totalWasteReduced).toLocaleString()}`}
+          value={`${Math.round(totalWasteReduced).toLocaleString()}`}
           icon={Target}
           color="from-orange-500 to-orange-600"
         />

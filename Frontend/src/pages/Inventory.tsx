@@ -718,7 +718,7 @@ const InventoryPage: React.FC = () => {
                     <td className="px-6 py-4">
                       <div className="flex flex-col">
                         <div className={`text-sm font-bold ${needsApply ? 'text-green-600' : 'text-gray-900'}`}>
-                          {typeof mlOptimalToShow === 'number' ? `?${mlOptimalToShow.toFixed(2)}` : '—'}
+                          {typeof mlOptimalToShow === 'number' ? `${mlOptimalToShow.toFixed(2)}` : '—'}
                         </div>
                         {typeof product.confidence === 'number' && (
                           <div className="text-xs text-gray-500">{product.confidence}% confidence</div>
@@ -843,8 +843,8 @@ const InventoryPage: React.FC = () => {
                   <p className="text-gray-600 text-xs mb-1">ML Optimal</p>
                   <p className="text-lg font-bold text-green-600">
                     {typeof selectedProduct.optimalPrice === 'number'
-                      ? `?${selectedProduct.optimalPrice.toFixed(2)}`
-                      : (typeof selectedProduct.mlPrice === 'number' ? `?${selectedProduct.mlPrice.toFixed(2)}` : '—')}
+                      ? `${selectedProduct.optimalPrice.toFixed(2)}`
+                      : (typeof selectedProduct.mlPrice === 'number' ? `${selectedProduct.mlPrice.toFixed(2)}` : '—')}
                   </p>
                 </div>
                 <div className="bg-white/60 backdrop-blur-sm rounded-lg p-3 border border-purple-100">

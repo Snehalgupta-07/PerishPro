@@ -332,7 +332,7 @@ const Dashboard: React.FC = () => {
         />
         <StatCard 
           title="Total Wastage Saved" 
-          value={loading ? '—' : `?${totalWasteSaved.toFixed(2)}`} 
+          value={loading ? '—' : `${totalWasteSaved.toFixed(2)}`} 
           change="+12.5%" // This is hardcoded, you can make it dynamic
           trend="up" 
           icon={TrendingUp} 
@@ -341,7 +341,7 @@ const Dashboard: React.FC = () => {
          {/* I've added a 4th card for Total Value, as it's a good metric to have */}
          <StatCard 
             title="Total Inventory Value"
-            value={loading ? '—' : `?${(products.reduce((sum, p) => sum + (p.pricing?.currentPrice ?? 0) * (p.stock?.quantity ?? 0), 0)).toLocaleString('en-US', { maximumFractionDigits: 0 })}`}
+            value={loading ? '—' : `${(products.reduce((sum, p) => sum + (p.pricing?.currentPrice ?? 0) * (p.stock?.quantity ?? 0), 0)).toLocaleString('en-US', { maximumFractionDigits: 0 })}`}
             change=""
             trend="up"
             icon={DollarSign}
@@ -476,12 +476,12 @@ const Dashboard: React.FC = () => {
 
                       {/* Old price (struck-through) */}
                       <span className="text-red-600 line-through">
-                        {alert.oldPrice !== null ? `?${alert.oldPrice.toFixed(2)}` : '—'}
+                        {alert.oldPrice !== null ? `${alert.oldPrice.toFixed(2)}` : '—'}
                       </span>
 
                       {/* New ML price */}
                       <span className="text-green-600 font-semibold">
-                        {alert.mlPrice !== null ? `→ ?${alert.mlPrice.toFixed(2)}` : '→ —'}
+                        {alert.mlPrice !== null ? `→ ${alert.mlPrice.toFixed(2)}` : '→ —'}
                       </span>
 
                       {typeof alert.confidence === 'number' && (

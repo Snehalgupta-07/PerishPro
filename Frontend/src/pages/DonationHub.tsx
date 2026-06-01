@@ -141,7 +141,7 @@ const DonationHub: React.FC = () => {
     doc.text('Total Write-off Value:', 125, 75);
     doc.setFontSize(14);
     doc.setTextColor(22, 163, 74); // Green
-    doc.text(`?${donation.totalWriteOffValue.toFixed(2)}`, 125, 83);
+    doc.text(`${donation.totalWriteOffValue.toFixed(2)}`, 125, 83);
     
     // Table Header
     let y = 105;
@@ -162,7 +162,7 @@ const DonationHub: React.FC = () => {
       doc.text(item.name, 16, y);
       doc.text(item.category, 90, y);
       doc.text(`${item.quantity} ${item.unit}`, 130, y);
-      doc.text(`?${(item.quantity * item.costPrice).toFixed(2)}`, 170, y);
+      doc.text(`${(item.quantity * item.costPrice).toFixed(2)}`, 170, y);
       y += 10;
       doc.setDrawColor(229, 231, 235);
       doc.line(14, y - 5, pageWidth - 14, y - 5);
