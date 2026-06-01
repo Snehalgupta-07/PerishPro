@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
 const { z } = require('zod');
 const Product = require('../Models/Product');
-const cloudinary = require('../lib/cloudinary');
 const streamifier = require('streamifier');
 const axios = require('axios');
 
@@ -33,6 +32,8 @@ const aiMetricsSchema = z
     mlProductId: z.string().min(1).optional(),
     demandScore: z.number().min(0).max(100).optional(),
     spoilageRisk: z.enum(['low', 'medium', 'high', 'critical']).optional(),
+    browningIndex: z.number().min(0).max(100).optional(),
+    annotatedImage: z.string().optional(),
     recommendedPrice: z.number().min(0).optional(),
     confidenceScore: z.number().min(0).max(100).optional(),
     modelVersion: z.string().optional(),
@@ -77,39 +78,6 @@ const toObjectId = (id) => {
   }
 };
 
-const uploadBufferToCloudinary = async (buffer, folder = 'perishpro_products') => {
-  try {
-    if (cloudinary && cloudinary.uploader && typeof cloudinary.uploader.upload_stream === 'function') {
-      return await new Promise((resolve, reject) => {
-        const uploadStream = cloudinary.uploader.upload_stream(
-          { folder, resource_type: 'image' },
-          (error, result) => {
-            if (error) return reject(error);
-            resolve(result);
-          }
-        );
-        streamifier.createReadStream(buffer).pipe(uploadStream);
-      });
-    }
-
-    if (cloudinary && cloudinary.uploader && typeof cloudinary.uploader.upload === 'function') {
-      let mime = 'image/jpeg';
-      if (buffer && buffer.length >= 8) {
-        const header = buffer.slice(0, 8).toString('hex');
-        if (header.startsWith('89504e47')) mime = 'image/png';
-        if (header.startsWith('47494638')) mime = 'image/gif';
-      }
-      const base64 = buffer.toString('base64');
-      const dataUri = `data:${mime};base64,${base64}`;
-      const result = await cloudinary.uploader.upload(dataUri, { folder, resource_type: 'image' });
-      return result;
-    }
-
-    throw new Error('Cloudinary uploader not available');
-  } catch (err) {
-    throw err;
-  }
-};
 
 // ===== LIST PRODUCTS
 const listProducts = async (req, res) => {
@@ -168,20 +136,9 @@ const MS_PER_DAY = 1000 * 60 * 60 * 24;
 // ===== ADD PRODUCT
 const addProduct = async (req, res) => {
   try {
-    // 1) Handle image upload (if any)
+    // 1) Image uploading is disabled.
     if (req.file) {
-      try {
-        if (req.file.buffer) {
-          const uploadResult = await uploadBufferToCloudinary(req.file.buffer);
-          req.body.image = uploadResult.secure_url || uploadResult.url;
-        } else if (req.file.path) {
-          const uploadResult = await cloudinary.uploader.upload(req.file.path, { folder: 'perishpro_products' });
-          req.body.image = uploadResult.secure_url || uploadResult.url;
-        }
-      } catch (uploadErr) {
-        console.error('Cloudinary upload failed', uploadErr);
-        return res.status(500).json({ success: false, message: 'Image upload failed', error: uploadErr.message });
-      }
+      req.body.image = null; // No cloudinary integration
     }
 
     // 2) If client used form-data and sent JSON under 'data', parse it
@@ -247,20 +204,9 @@ const updateProduct = async (req, res) => {
     const oid = req.params.id;
     if (!oid) return res.status(400).json({ success: false, message: 'Invalid product id' });
 
-    // 1) Handle image upload if present
+    // 1) Image uploading is disabled.
     if (req.file) {
-      try {
-        if (req.file.buffer) {
-          const uploadResult = await uploadBufferToCloudinary(req.file.buffer);
-          req.body.image = uploadResult.secure_url || uploadResult.url;
-        } else if (req.file.path) {
-          const uploadResult = await cloudinary.uploader.upload(req.file.path, { folder: 'perishpro_products' });
-          req.body.image = uploadResult.secure_url || uploadResult.url;
-        }
-      } catch (uploadErr) {
-        console.error('Cloudinary upload failed', uploadErr);
-        return res.status(500).json({ success: false, message: 'Image upload failed', error: uploadErr.message });
-      }
+      req.body.image = null; // No cloudinary integration
     }
 
     // 2) Parse form-data 'data' JSON if sent
@@ -743,6 +689,177 @@ const getWasteSavedVsDay = async (req, res) => {
 };
 
 
+// ===== ANALYZE FRESHNESS & RE-OPTIMIZE PRICE
+const analyzeFreshness = async (req, res) => {
+  try {
+    const mongoId = req.params.id;
+    const product = await Product.findById(mongoId);
+    if (!product) {
+      return res.status(404).json({ success: false, message: 'Product not found' });
+    }
+
+    if (!req.file) {
+      return res.status(400).json({ success: false, message: 'Image file is required' });
+    }
+
+    const mlProductId = product.aiMetrics?.mlProductId;
+    if (!mlProductId || typeof mlProductId !== 'string' || !mlProductId.trim()) {
+      return res.status(400).json({ success: false, message: 'ML Product ID not set for this item' });
+    }
+
+    // Convert uploaded image file buffer to base64 Data URL
+    const base64Image = req.file.buffer.toString('base64');
+    const dataUrl = `data:${req.file.mimetype};base64,${base64Image}`;
+
+    // 1. Call Flask ML /analyze-freshness endpoint
+    const freshnessResponse = await axios.post(`${ML_API_URL}/analyze-freshness`, {
+      image: dataUrl,
+      category: product.category || 'Produce',
+      productName: product.name || ''
+    }, { timeout: 15000 });
+
+    const freshnessData = freshnessResponse.data;
+    if (!freshnessData || !freshnessData.success) {
+      return res.status(502).json({ success: false, message: 'Freshness analysis failed or returned invalid response' });
+    }
+
+    const { browningIndex, spoilageRisk, reductionFactor, annotatedImage, warning, explanation } = freshnessData;
+
+    // 2. Compute the adjusted days to expiry
+    let currentDaysToExpiry = product.perishable?.daysToExpiry;
+    if (typeof currentDaysToExpiry !== 'number' || currentDaysToExpiry <= 0) {
+      const today = new Date();
+      const expiry = new Date(product.perishable.expiryDate);
+      currentDaysToExpiry = Math.max(0, Math.ceil((expiry - today) / MS_PER_DAY));
+    }
+
+    let adjustedDaysToExpiry;
+    if (spoilageRisk === 'critical') {
+      adjustedDaysToExpiry = 0;
+      product.status = 'expired';
+    } else {
+      adjustedDaysToExpiry = Math.max(1, Math.round(currentDaysToExpiry * reductionFactor));
+    }
+
+    // Update perishable details
+    product.perishable.daysToExpiry = adjustedDaysToExpiry;
+    product.perishable.expiryDate = new Date(Date.now() + adjustedDaysToExpiry * MS_PER_DAY);
+
+    // Update aiMetrics freshness fields
+    product.aiMetrics = product.aiMetrics || {};
+    product.aiMetrics.spoilageRisk = spoilageRisk;
+    product.aiMetrics.browningIndex = browningIndex;
+    product.aiMetrics.annotatedImage = annotatedImage;
+
+    // 3. Trigger Price Re-optimization using the updated daysToExpiry
+    const stockLevel = Number(product.stock?.quantity ?? 0);
+    const predictPayload = {
+      productId: mlProductId,
+      stockLevel: stockLevel,
+      daysToExpiry: adjustedDaysToExpiry
+    };
+
+    const predictResponse = await axios.post(`${ML_API_URL}/predict`, predictPayload, { timeout: 10000 });
+    const mlData = predictResponse.data || {};
+
+    const newPriceRaw = mlData?.recommendations?.optimalPrice;
+    const newPrice = Number.isFinite(newPriceRaw) ? Number(newPriceRaw) : NaN;
+    if (!Number.isFinite(newPrice)) {
+      return res.status(502).json({ success: false, message: 'ML pricing model failed to return a valid price' });
+    }
+
+    const round2 = (n) => Math.round(n * 100) / 100;
+    const prevPriceRaw = Number(product.pricing?.currentPrice ?? 0);
+    const prevPrice = Number.isFinite(prevPriceRaw) ? round2(prevPriceRaw) : 0;
+    const roundedNew = round2(newPrice);
+
+    // Save previous price and push to priceHistory
+    product.pricing = product.pricing || {};
+    if (prevPrice !== roundedNew) {
+      product.pricing.previousPrice = prevPrice;
+      product.pricing.priceHistory = Array.isArray(product.pricing.priceHistory)
+        ? product.pricing.priceHistory
+        : [];
+
+      product.pricing.priceHistory.unshift({
+        price: prevPrice,
+        changedAt: new Date(),
+        reason: 'ml_optimize_freshness',
+        meta: {
+          mlProductId,
+          daysToExpiry: adjustedDaysToExpiry,
+          stockLevel,
+          browningIndex,
+          spoilageRisk
+        }
+      });
+
+      const MAX_HISTORY = 20;
+      if (product.pricing.priceHistory.length > MAX_HISTORY) {
+        product.pricing.priceHistory = product.pricing.priceHistory.slice(0, MAX_HISTORY);
+      }
+    }
+
+    // Update pricing and ML impact values
+    product.pricing.currentPrice = roundedNew;
+
+    const projectedWasteValue = Number(
+      mlData?.impact?.projectedWasteValue ??
+      mlData?.scenarios?.current?.expectedLoss ??
+      mlData?.scenarios?.current?.expected_loss
+    );
+
+    const optimizedWasteValue = Number(
+      mlData?.impact?.optimizedWasteValue ??
+      mlData?.scenarios?.optimal?.expectedLoss ??
+      mlData?.scenarios?.optimal?.expected_loss
+    );
+
+    const wasteReduction = Number(
+      mlData?.impact?.wasteReduction ??
+      mlData?.impact?.waste_reduction ??
+      mlData?.impact?.wasteReductionPercent
+    );
+
+    product.aiMetrics.recommendedPrice = roundedNew;
+    product.aiMetrics.confidenceScore = Number(mlData?.recommendations?.confidenceScore ?? 0);
+    product.aiMetrics.modelVersion = String(mlData?.algorithm?.version || '');
+    product.aiMetrics.lastPredictionDate = mlData?.predictionDate ? new Date(mlData.predictionDate) : new Date();
+    product.aiMetrics.lastOptimizedAt = new Date();
+    product.aiMetrics.lastOptimization = mlData;
+
+    if (Number.isFinite(projectedWasteValue)) product.aiMetrics.projectedWasteValue = projectedWasteValue;
+    if (Number.isFinite(optimizedWasteValue)) product.aiMetrics.optimizedWasteValue = optimizedWasteValue;
+    if (Number.isFinite(wasteReduction)) product.aiMetrics.wasteReduction = wasteReduction;
+
+    await product.save();
+
+    return res.status(200).json({
+      success: true,
+      message: 'Product freshness analyzed and price re-optimized',
+      product,
+      analysis: {
+        browningIndex,
+        spoilageRisk,
+        originalDaysToExpiry: currentDaysToExpiry,
+        adjustedDaysToExpiry,
+        oldPrice: prevPrice,
+        newPrice: roundedNew,
+        annotatedImage,
+        warning,
+        explanation
+      }
+    });
+
+  } catch (error) {
+    console.error('Freshness analysis or optimization error:', error?.response?.data || error.message || error);
+    const status = error?.response?.status || 500;
+    const msg = error?.response?.data?.error || error?.response?.data?.message || error.message || 'Failed to complete freshness analysis';
+    return res.status(status).json({ success: false, message: msg });
+  }
+};
+
+
 module.exports = {
   listProducts,
   getProduct,
@@ -752,5 +869,6 @@ module.exports = {
   updateStock,
   optimizePrice,
   backfillWasteValues,
-  getWasteSavedVsDay
+  getWasteSavedVsDay,
+  analyzeFreshness
 };

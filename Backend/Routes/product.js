@@ -18,6 +18,7 @@ router.delete('/:id', isAuthenticated, productController.deleteProduct);
 router.put('/:id/stock', isAuthenticated, productController.updateStock);
 
 router.post('/:id/optimize', isAuthenticated, productController.optimizePrice);
+router.post('/:id/analyze-freshness', isAuthenticated, upload.single('image'), productController.analyzeFreshness);
 
 // Backfill projected/optimized waste values for dashboard charts
 router.post('/backfill-waste-values', isAuthenticated, productController.backfillWasteValues);

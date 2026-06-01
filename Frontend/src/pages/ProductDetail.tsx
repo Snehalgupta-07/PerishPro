@@ -12,7 +12,8 @@ import {
   Clock,
   Target,
   Zap,
-  Save
+  Save,
+  Calendar
 } from 'lucide-react';
 import {
   LineChart,
@@ -87,6 +88,16 @@ const ProductDetail: React.FC = () => {
   const [expectedCurrentWaste, setExpectedCurrentWaste] = useState<number | null>(null);
   const [wasteReductionPercent, setWasteReductionPercent] = useState<number | null>(null);
   const [originalUnits, setOriginalUnits] = useState<number | null>(null);
+  const [reorderRecommendation, setReorderRecommendation] = useState<any>(null);
+
+  // Freshness Analysis UI state
+  const [selectedFile, setSelectedFile] = useState<File | null>(null);
+  const [imagePreviewUrl, setImagePreviewUrl] = useState<string | null>(null);
+  const [analysisLoading, setAnalysisLoading] = useState(false);
+  const [analysisResult, setAnalysisResult] = useState<any | null>(null);
+  const [activeImageTab, setActiveImageTab] = useState<'original' | 'annotated'>('original');
+
+  const fileInputRef = useRef<HTMLInputElement>(null);
 
   // ensure we call ML predict only once per product load
   const mlCalledRef = useRef<Record<string, boolean>>({});
@@ -192,25 +203,25 @@ const ProductDetail: React.FC = () => {
         // price & sales history fallback
         if (Array.isArray(p.priceHistory) && p.priceHistory.length > 0) setPriceHistory(p.priceHistory);
         else setPriceHistory([
-          { date: '11-01', price: normalized.originalPrice },
-          { date: '11-03', price: Math.round(normalized.originalPrice * 0.95 * 100) / 100 },
-          { date: '11-05', price: normalized.currentPrice },
-          { date: '11-07', price: Math.round(normalized.currentPrice * 0.88 * 100) / 100 },
+          { date: '', price: normalized.originalPrice },
+          { date: '', price: Math.round(normalized.originalPrice * 0.95 * 100) / 100 },
+          { date: '', price: normalized.currentPrice },
+          { date: '', price: Math.round(normalized.currentPrice * 0.88 * 100) / 100 },
           { date: normalized.expiryDate || 'exp', price: normalized.mlPrice ?? normalized.currentPrice }
         ]);
 
-        if (Array.isArray(p.salesHistory) && p.salesHistory.length > 0) setSalesHistory(p.salesHistory);
-        else setSalesHistory([
-          { date: '11-01', sold: 8 },
-          { date: '11-02', sold: 12 },
-          { date: '11-03', sold: 15 },
-          { date: '11-04', sold: 10 },
-          { date: '11-05', sold: 18 },
-          { date: '11-06', sold: 22 },
-          { date: '11-07', sold: 25 }
-        ]);
+        // if (Array.isArray(p.salesHistory) && p.salesHistory.length > 0) setSalesHistory(p.salesHistory);
+        // else setSalesHistory([
+        //   { date: '11-01', sold: 8 },
+        //   { date: '11-02', sold: 12 },
+        //   { date: '11-03', sold: 15 },
+        //   { date: '11-04', sold: 10 },
+        //   { date: '11-05', sold: 18 },
+        //   { date: '11-06', sold: 22 },
+        //   { date: '11-07', sold: 25 }
+        // ]);
 
-        setEditedPrice(normalized.currentPrice);
+        // setEditedPrice(normalized.currentPrice);
       } catch (err: any) {
         console.error('Failed to load product', err);
         const errorMsg = typeof err === 'string' ? err : (err?.response?.data?.message ?? err?.message ?? 'Failed to load product');
@@ -256,6 +267,10 @@ const ProductDetail: React.FC = () => {
         const data = await resp.json();
         const optimal = data?.recommendations?.optimalPrice;
         const confidence = data?.recommendations?.confidenceScore;
+
+        if (data?.reorderRecommendation) {
+          setReorderRecommendation(data.reorderRecommendation);
+        }
 
         if (typeof optimal === 'number' && !Number.isNaN(optimal)) {
           setLastMlOptimal(Number(optimal));
@@ -348,6 +363,10 @@ const ProductDetail: React.FC = () => {
         mlResponse = await resp.json();
         const optimal = mlResponse?.recommendations?.optimalPrice;
         const confidence = mlResponse?.recommendations?.confidenceScore;
+        
+        if (mlResponse?.reorderRecommendation) {
+          setReorderRecommendation(mlResponse.reorderRecommendation);
+        }
         if (typeof optimal !== 'number' || Number.isNaN(optimal)) {
           throw new Error('Invalid ML response: recommendations.optimalPrice missing');
         }
@@ -461,6 +480,58 @@ const ProductDetail: React.FC = () => {
     } finally {
       setLoadingAction(false);
       setShowDeleteModal(false);
+    }
+  };
+
+  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (e.target.files && e.target.files[0]) {
+      const file = e.target.files[0];
+      setSelectedFile(file);
+      setImagePreviewUrl(URL.createObjectURL(file));
+      setAnalysisResult(null);
+    }
+  };
+
+  const handleResetAnalysis = () => {
+    setSelectedFile(null);
+    setImagePreviewUrl(null);
+    setAnalysisResult(null);
+    setActiveImageTab('original');
+    if (fileInputRef.current) {
+      fileInputRef.current.value = '';
+    }
+  };
+
+  const handleAnalyzeFreshness = async () => {
+    if (!product || !product.id || !selectedFile) return;
+    setAnalysisLoading(true);
+    setErrorMessage('');
+    setSuccessMessage('');
+    try {
+      const data = await productService.analyzeFreshness(String(product.id), selectedFile);
+      if (data && data.success) {
+        setAnalysisResult(data.analysis);
+        setActiveImageTab('annotated');
+        setSuccessMessage('Freshness analyzed and price updated!');
+        
+        // Authoritative state update
+        if (data.product) {
+          const normalized = normalizeProduct(data.product);
+          setProduct(normalized);
+          setEditedPrice(normalized.currentPrice);
+          if (data.product.pricing?.priceHistory) {
+            setPriceHistory(data.product.pricing.priceHistory);
+          }
+          setLastMlOptimal(normalized.currentPrice);
+        }
+      } else {
+        setErrorMessage('Image analysis failed');
+      }
+    } catch (err: any) {
+      console.error(err);
+      setErrorMessage(typeof err === 'string' ? err : 'Freshness analysis failed');
+    } finally {
+      setAnalysisLoading(false);
     }
   };
 
@@ -601,6 +672,53 @@ const ProductDetail: React.FC = () => {
         </motion.div>
       )}
 
+      {/* Inventory Intelligence Banner */}
+      {reorderRecommendation && (
+        <motion.div 
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          className={`p-6 rounded-2xl border shadow-sm flex items-start gap-4 ${
+            reorderRecommendation.status === 'URGENT_REORDER' 
+              ? 'bg-red-50 border-red-200' 
+              : reorderRecommendation.status === 'WARNING'
+              ? 'bg-amber-50 border-amber-200'
+              : 'bg-green-50 border-green-200'
+          }`}
+        >
+          <div className={`p-3 rounded-xl ${
+            reorderRecommendation.status === 'URGENT_REORDER' ? 'bg-red-100' : reorderRecommendation.status === 'WARNING' ? 'bg-amber-100' : 'bg-green-100'
+          }`}>
+            <Package className={
+              reorderRecommendation.status === 'URGENT_REORDER' ? 'text-red-600' : reorderRecommendation.status === 'WARNING' ? 'text-amber-600' : 'text-green-600'
+            } size={28} />
+          </div>
+          <div>
+            <h3 className={`text-xl font-bold mb-1 ${
+              reorderRecommendation.status === 'URGENT_REORDER' ? 'text-red-800' : reorderRecommendation.status === 'WARNING' ? 'text-amber-800' : 'text-green-800'
+            }`}>
+              Inventory Intelligence: {
+                reorderRecommendation.status === 'URGENT_REORDER' ? 'Immediate Reorder Required' 
+                : reorderRecommendation.status === 'WARNING' ? 'Reorder Soon' 
+                : 'Stock is Sufficient'
+              }
+            </h3>
+            <p className="text-gray-700 text-base mb-3">{reorderRecommendation.reasoning}</p>
+            {reorderRecommendation.status !== 'OK' && (
+              <div className="flex gap-4">
+                <div className="bg-white/80 px-4 py-2 rounded-lg border border-black/5 flex items-center gap-2">
+                  <Calendar size={18} className="text-gray-600" />
+                  <span className="font-semibold text-gray-900">Order By: {reorderRecommendation.reorderDate}</span>
+                </div>
+                <div className="bg-white/80 px-4 py-2 rounded-lg border border-black/5 flex items-center gap-2">
+                  <Package size={18} className="text-gray-600" />
+                  <span className="font-semibold text-gray-900">Rec. Qty: {reorderRecommendation.recommendedQuantity} units</span>
+                </div>
+              </div>
+            )}
+          </div>
+        </motion.div>
+      )}
+
       {/* Main Content */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         <div className="lg:col-span-2 space-y-6">
@@ -718,7 +836,7 @@ const ProductDetail: React.FC = () => {
           </div>
 
           {/* Sales Performance */}
-          <div className="bg-white rounded-2xl shadow-lg border border-gray-200 p-6">
+          {/* <div className="bg-white rounded-2xl shadow-lg border border-gray-200 p-6">
             <h3 className="text-lg font-semibold text-gray-900 mb-4">Sales Performance</h3>
             <ResponsiveContainer width="100%" height={250}>
               <LineChart data={salesHistory}>
@@ -749,11 +867,211 @@ const ProductDetail: React.FC = () => {
                 <p className="text-2xl font-bold text-purple-600">69%</p>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* Sidebar */}
         <div className="space-y-6">
+          {/* AI Freshness & Spoilage Analyzer */}
+          <div className="bg-white rounded-2xl shadow-lg border border-gray-200 p-6 overflow-hidden relative">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-blue-500/5 rounded-full blur-2xl pointer-events-none" />
+            
+            <div className="flex items-center gap-2 mb-4 relative z-10">
+              <div className="p-2 bg-blue-50 text-blue-600 rounded-lg">
+                <Sparkles size={20} className="animate-pulse" />
+              </div>
+              <h3 className="text-lg font-bold text-gray-900">AI Freshness Analyzer</h3>
+            </div>
+            
+            <p className="text-sm text-gray-600 mb-4 relative z-10">
+              Upload a photo to detect decay, browning, or mold. AI will adjust expiry and re-optimize pricing.
+            </p>
+
+            <div className="space-y-4 relative z-10">
+              {/* Dropzone / Preview */}
+              {!imagePreviewUrl ? (
+                <div 
+                  onClick={() => fileInputRef.current?.click()}
+                  className="border-2 border-dashed border-gray-300 hover:border-blue-500 rounded-xl p-6 text-center cursor-pointer transition-all hover:bg-blue-50/30 group"
+                >
+                  <input 
+                    type="file" 
+                    ref={fileInputRef} 
+                    onChange={handleFileChange} 
+                    accept="image/*" 
+                    className="hidden" 
+                  />
+                  <div className="flex flex-col items-center gap-2">
+                    <div className="p-3 bg-gray-50 rounded-full group-hover:bg-blue-100/50 group-hover:text-blue-600 transition-colors text-gray-400">
+                      <Package size={24} />
+                    </div>
+                    <p className="text-sm font-semibold text-gray-700">Click to upload photo</p>
+                    <p className="text-xs text-gray-500">Supports PNG, JPG, JPEG up to 5MB</p>
+                  </div>
+                </div>
+              ) : (
+                <div className="space-y-3">
+                  {/* Image Display */}
+                  <div className="relative aspect-square rounded-xl overflow-hidden border border-gray-200 bg-gray-50 flex items-center justify-center">
+                    {analysisResult?.annotatedImage && activeImageTab === 'annotated' ? (
+                      <img 
+                        src={analysisResult.annotatedImage} 
+                        alt="AI Annotated Spoilage Detection" 
+                        className="object-contain w-full h-full"
+                      />
+                    ) : (
+                      <img 
+                        src={imagePreviewUrl} 
+                        alt="Original Product" 
+                        className="object-contain w-full h-full"
+                      />
+                    )}
+                    
+                    {analysisResult?.annotatedImage && (
+                      <div className="absolute bottom-2 left-1/2 -translate-x-1/2 bg-black/60 backdrop-blur-md px-3 py-1 rounded-full flex gap-1 border border-white/10">
+                        <button 
+                          onClick={() => setActiveImageTab('original')}
+                          className={`text-xs px-2.5 py-0.5 rounded-full font-medium transition-colors ${activeImageTab === 'original' ? 'bg-white text-black' : 'text-white hover:bg-white/10'}`}
+                        >
+                          Original
+                        </button>
+                        <button 
+                          onClick={() => setActiveImageTab('annotated')}
+                          className={`text-xs px-2.5 py-0.5 rounded-full font-medium transition-colors ${activeImageTab === 'annotated' ? 'bg-white text-black' : 'text-white hover:bg-white/10'}`}
+                        >
+                          AI Detection
+                        </button>
+                      </div>
+                    )}
+                  </div>
+
+                  <div className="flex gap-2">
+                    <Button 
+                      type="button" 
+                      variant="primary" 
+                      onClick={handleAnalyzeFreshness}
+                      disabled={analysisLoading}
+                      className="flex-1 bg-gradient-to-r from-blue-600 to-indigo-600"
+                    >
+                      {analysisLoading ? 'Analyzing Image...' : 'Run Freshness Scan'}
+                    </Button>
+                    <Button 
+                      type="button" 
+                      variant="secondary" 
+                      onClick={handleResetAnalysis}
+                      disabled={analysisLoading}
+                    >
+                      Reset
+                    </Button>
+                  </div>
+                </div>
+              )}
+
+              {/* Analysis Results Display */}
+              {analysisLoading && (
+                <div className="p-4 bg-blue-50/50 rounded-xl border border-blue-100 flex items-center gap-3">
+                  <div className="animate-spin rounded-full h-5 w-5 border-2 border-blue-600 border-t-transparent" />
+                  <p className="text-sm font-medium text-blue-700 animate-pulse">Running computer vision & price optimizer...</p>
+                </div>
+              )}
+
+              {analysisResult && !analysisLoading && (
+                <motion.div 
+                  initial={{ opacity: 0, height: 0 }}
+                  animate={{ opacity: 1, height: 'auto' }}
+                  className="space-y-4 mt-2"
+                >
+                  {analysisResult.warning && (
+                    <Alert type="warning" message={analysisResult.warning} />
+                  )}
+                  {analysisResult.explanation && (
+                    <div className={`p-4 border rounded-xl space-y-2 ${
+                      ['high', 'critical'].includes(analysisResult.spoilageRisk) 
+                        ? 'bg-red-50 border-red-200' 
+                        : 'bg-green-50 border-green-200'
+                    }`}>
+                      <h4 className={`text-sm font-bold ${
+                        ['high', 'critical'].includes(analysisResult.spoilageRisk) ? 'text-red-800' : 'text-green-800'
+                      }`}>AI Analysis / एआई विश्लेषण</h4>
+                      <p className={`text-sm ${
+                        ['high', 'critical'].includes(analysisResult.spoilageRisk) ? 'text-red-700' : 'text-green-700'
+                      }`}>{analysisResult.explanation.en}</p>
+                      <p className={`text-sm font-medium ${
+                        ['high', 'critical'].includes(analysisResult.spoilageRisk) ? 'text-red-700' : 'text-green-700'
+                      }`}>{analysisResult.explanation.hi}</p>
+                    </div>
+                  )}
+                  <div className="p-4 bg-gray-50 border border-gray-200 rounded-xl space-y-3">
+                    <h4 className="text-sm font-bold text-gray-800 uppercase tracking-wider">Analysis Metrics</h4>
+                    
+                    <div className="flex justify-between items-center">
+                      <span className="text-sm text-gray-600">Browning Index:</span>
+                      <span className="font-bold text-gray-900">{analysisResult.browningIndex.toFixed(1)}%</span>
+                    </div>
+
+                    {/* Browning Progress bar */}
+                    <div className="h-2 bg-gray-200 rounded-full overflow-hidden">
+                      <div 
+                        className={`h-full transition-all duration-500 ${
+                          analysisResult.spoilageRisk === 'critical' ? 'bg-red-600' :
+                          analysisResult.spoilageRisk === 'high' ? 'bg-orange-500' :
+                          analysisResult.spoilageRisk === 'medium' ? 'bg-yellow-500' :
+                          'bg-green-500'
+                        }`}
+                        style={{ width: `${analysisResult.browningIndex}%` }}
+                      />
+                    </div>
+
+                    <div className="flex justify-between items-center">
+                      <span className="text-sm text-gray-600">Spoilage Risk:</span>
+                      <span className={`px-2.5 py-0.5 rounded-full text-xs font-bold uppercase tracking-wider ${
+                        analysisResult.spoilageRisk === 'critical' ? 'bg-red-100 text-red-800 border border-red-200 animate-pulse' :
+                        analysisResult.spoilageRisk === 'high' ? 'bg-orange-100 text-orange-800 border border-orange-200' :
+                        analysisResult.spoilageRisk === 'medium' ? 'bg-yellow-100 text-yellow-800 border border-yellow-200' :
+                        'bg-green-100 text-green-800 border border-green-200'
+                      }`}>
+                        {analysisResult.spoilageRisk}
+                      </span>
+                    </div>
+
+                    <div className="border-t border-gray-200 my-2" />
+
+                    <div className="space-y-1">
+                      <div className="flex justify-between text-sm">
+                        <span className="text-gray-600">Shelf life impact:</span>
+                        <span className="font-semibold text-gray-900">
+                          {analysisResult.originalDaysToExpiry}d → {analysisResult.adjustedDaysToExpiry}d
+                        </span>
+                      </div>
+                      {analysisResult.originalDaysToExpiry !== analysisResult.adjustedDaysToExpiry && (
+                        <p className="text-[11px] text-gray-500 italic">
+                          Estimated remaining shelf-life reduced by {Math.round((1 - (analysisResult.adjustedDaysToExpiry / (analysisResult.originalDaysToExpiry || 1))) * 100)}%
+                        </p>
+                      )}
+                    </div>
+                  </div>
+
+                  {/* Price drop notification alert */}
+                  <motion.div 
+                    initial={{ scale: 0.95 }}
+                    animate={{ scale: 1 }}
+                    className="p-4 bg-gradient-to-br from-green-50 to-emerald-50 border border-green-200 rounded-xl flex gap-3"
+                  >
+                    <div className="p-2 bg-green-100 text-green-700 rounded-lg shrink-0">
+                      <Zap size={18} className="animate-bounce" />
+                    </div>
+                    <div>
+                      <h4 className="text-sm font-bold text-green-800 mb-0.5">Dynamic Price Adjustment</h4>
+                      <p className="text-xs text-green-700 leading-relaxed">
+                        Price optimized from <span className="line-through font-semibold">${analysisResult.oldPrice.toFixed(2)}</span> to <span className="font-bold">${analysisResult.newPrice.toFixed(2)}</span> due to adjusted shelf life.
+                      </p>
+                    </div>
+                  </motion.div>
+                </motion.div>
+              )}
+            </div>
+          </div>
+
           <div className="bg-white rounded-2xl shadow-lg border border-gray-200 p-6">
             <h3 className="text-lg font-semibold text-gray-900 mb-4">Product Details</h3>
             <div className="space-y-3">

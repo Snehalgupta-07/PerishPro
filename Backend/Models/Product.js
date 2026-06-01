@@ -86,7 +86,12 @@ const ProductSchema = new Schema(
       optimizedWasteValue: { type: Number },
 
       // Helpful for UI/debugging (ML returns this as a percent)
-      wasteReduction: { type: Number }
+      wasteReduction: { type: Number },
+
+      // CV Freshness Analysis fields
+      spoilageRisk: { type: String, enum: ['low', 'medium', 'high', 'critical'] },
+      browningIndex: { type: Number },
+      annotatedImage: { type: String }
     },
 
     pricing: {

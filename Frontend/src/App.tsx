@@ -12,6 +12,7 @@ import PricePredictor from './pages/PricePredictor';
 import SettingsPage from './pages/Settings';
 import Logout from './pages/Logout';
 import NotFound from './pages/NotFound';
+import DonationHub from './pages/DonationHub';
 
 function App() {
   return (
@@ -71,6 +72,16 @@ function App() {
             <ProtectedRoute>
               <AppLayout>
                 <Analytics />
+              </AppLayout>
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/donation-hub"
+          element={
+            <ProtectedRoute>
+              <AppLayout>
+                <DonationHub />
               </AppLayout>
             </ProtectedRoute>
           }

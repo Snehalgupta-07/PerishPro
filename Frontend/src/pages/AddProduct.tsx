@@ -16,33 +16,174 @@ import Button from '../components/common/Button';
 import Alert from '../components/common/Alert';
 import { addProduct } from '../services/productService';
 
-// 🏭 Factory Pattern for Product Creation
-const ProductFactory = {
-  create(data: any) {
-    switch (data.category) {
+// 🏭 TRUE Factory Pattern Implementation
+// Base Product Class
+abstract class BaseProduct {
+  constructor(
+    public name: string,
+    public category: string,
+    public basePrice: number,
+    public stock: number
+  ) {}
+
+  // Abstract methods that each product type must implement
+  abstract getShelfLife(): number;
+  abstract getStorageRequirements(): string;
+  abstract getSpoilageRisk(): 'low' | 'medium' | 'high';
+  abstract getPricingStrategy(): { discountFactor: number; urgencyMultiplier: number };
+  abstract getOptimalDiscount(daysToExpiry: number): number;
+
+  // Common methods
+  getDaysToExpiry(expiryDate: Date): number {
+    const now = new Date();
+    const diffTime = expiryDate.getTime() - now.getTime();
+    return Math.max(0, Math.ceil(diffTime / (1000 * 60 * 60 * 24)));
+  }
+
+  getProductData() {
+    return {
+      name: this.name,
+      category: this.category,
+      shelfLifeHint: this.getShelfLife(),
+      storage: this.getStorageRequirements(),
+      spoilageRisk: this.getSpoilageRisk(),
+      pricingStrategy: this.getPricingStrategy()
+    };
+  }
+}
+
+// Concrete Product Classes
+class DairyProduct extends BaseProduct {
+  getShelfLife(): number { return 7; }
+  getStorageRequirements(): string { return "Cold Storage"; }
+  getSpoilageRisk(): 'low' | 'medium' | 'high' { return 'medium'; }
+
+  getPricingStrategy() {
+    return { discountFactor: 0.15, urgencyMultiplier: 1.8 };
+  }
+
+  getOptimalDiscount(daysToExpiry: number): number {
+    if (daysToExpiry <= 1) return 0.25;
+    if (daysToExpiry <= 3) return 0.15;
+    return 0.05;
+  }
+}
+
+class ProduceProduct extends BaseProduct {
+  getShelfLife(): number { return 3; }
+  getStorageRequirements(): string { return "Room Temperature"; }
+  getSpoilageRisk(): 'low' | 'medium' | 'high' { return 'high'; }
+
+  getPricingStrategy() {
+    return { discountFactor: 0.25, urgencyMultiplier: 2.2 };
+  }
+
+  getOptimalDiscount(daysToExpiry: number): number {
+    if (daysToExpiry <= 1) return 0.40;
+    if (daysToExpiry <= 2) return 0.25;
+    return 0.10;
+  }
+}
+
+class MeatProduct extends BaseProduct {
+  getShelfLife(): number { return 5; }
+  getStorageRequirements(): string { return "Refrigerated"; }
+  getSpoilageRisk(): 'low' | 'medium' | 'high' { return 'high'; }
+
+  getPricingStrategy() {
+    return { discountFactor: 0.20, urgencyMultiplier: 2.0 };
+  }
+
+  getOptimalDiscount(daysToExpiry: number): number {
+    if (daysToExpiry <= 1) return 0.35;
+    if (daysToExpiry <= 3) return 0.20;
+    return 0.08;
+  }
+}
+
+class BakeryProduct extends BaseProduct {
+  getShelfLife(): number { return 2; }
+  getStorageRequirements(): string { return "Dry Place"; }
+  getSpoilageRisk(): 'low' | 'medium' | 'high' { return 'high'; }
+
+  getPricingStrategy() {
+    return { discountFactor: 0.30, urgencyMultiplier: 2.5 };
+  }
+
+  getOptimalDiscount(daysToExpiry: number): number {
+    if (daysToExpiry <= 1) return 0.50;
+    if (daysToExpiry <= 2) return 0.30;
+    return 0.15;
+  }
+}
+
+class FrozenProduct extends BaseProduct {
+  getShelfLife(): number { return 30; }
+  getStorageRequirements(): string { return "Freezer"; }
+  getSpoilageRisk(): 'low' | 'medium' | 'high' { return 'low'; }
+
+  getPricingStrategy() {
+    return { discountFactor: 0.10, urgencyMultiplier: 1.3 };
+  }
+
+  getOptimalDiscount(daysToExpiry: number): number {
+    if (daysToExpiry <= 7) return 0.15;
+    if (daysToExpiry <= 14) return 0.10;
+    return 0.05;
+  }
+}
+
+class BeverageProduct extends BaseProduct {
+  getShelfLife(): number { return 60; }
+  getStorageRequirements(): string { return "Cool & Dry"; }
+  getSpoilageRisk(): 'low' | 'medium' | 'high' { return 'low'; }
+
+  getPricingStrategy() {
+    return { discountFactor: 0.08, urgencyMultiplier: 1.2 };
+  }
+
+  getOptimalDiscount(daysToExpiry: number): number {
+    if (daysToExpiry <= 14) return 0.12;
+    if (daysToExpiry <= 30) return 0.08;
+    return 0.03;
+  }
+}
+
+// 🏭 TRUE Factory Pattern - Creates different product types
+class ProductFactory {
+  static createProduct(name: string, category: string, basePrice: number, stock: number): BaseProduct {
+    switch (category) {
       case "Dairy":
-        return { ...data, shelfLifeHint: 7, storage: "Cold Storage" };
+        return new DairyProduct(name, category, basePrice, stock);
 
       case "Produce":
-        return { ...data, shelfLifeHint: 3, storage: "Room Temperature" };
+        return new ProduceProduct(name, category, basePrice, stock);
 
       case "Meat":
-        return { ...data, shelfLifeHint: 5, storage: "Refrigerated" };
+        return new MeatProduct(name, category, basePrice, stock);
 
       case "Bakery":
-        return { ...data, shelfLifeHint: 2, storage: "Dry Place" };
+        return new BakeryProduct(name, category, basePrice, stock);
 
       case "Frozen":
-        return { ...data, shelfLifeHint: 30, storage: "Freezer" };
+        return new FrozenProduct(name, category, basePrice, stock);
 
       case "Beverages":
-        return { ...data, shelfLifeHint: 60, storage: "Cool & Dry" };
+        return new BeverageProduct(name, category, basePrice, stock);
 
       default:
-        return data;
+        // Fallback to Dairy as default
+        console.warn(`Unknown category "${category}", defaulting to Dairy`);
+        return new DairyProduct(name, category, basePrice, stock);
     }
   }
-};
+
+  // Factory method for creating product data for API
+  static createProductData(name: string, category: string, basePrice: number, stock: number) {
+    const product = this.createProduct(name, category, basePrice, stock);
+    return product.getProductData();
+  }
+}
 
 const AddProduct: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -97,6 +238,42 @@ const AddProduct: React.FC = () => {
 
   const shelfLife = calculateShelfLife();
 
+  // 🏭 Demonstrate Factory Pattern: Get product-specific insights
+  const getProductInsights = () => {
+    if (!formData.name || !formData.category) return null;
+
+    try {
+      const mrpNum = parseFloat(formData.mrp) || 0;
+      const stockNum = Number(formData.stock) || 0;
+
+      const product = ProductFactory.createProduct(
+        formData.name.trim(),
+        formData.category,
+        mrpNum,
+        stockNum
+      );
+
+      const expiryDate = formData.expiryDate ? new Date(formData.expiryDate) : new Date();
+      const daysToExpiry = product.getDaysToExpiry(expiryDate);
+      const optimalDiscount = product.getOptimalDiscount(daysToExpiry);
+
+      return {
+        shelfLife: product.getShelfLife(),
+        storage: product.getStorageRequirements(),
+        spoilageRisk: product.getSpoilageRisk(),
+        pricingStrategy: product.getPricingStrategy(),
+        daysToExpiry,
+        optimalDiscount: (optimalDiscount * 100).toFixed(1),
+        recommendedPrice: (mrpNum * (1 - optimalDiscount)).toFixed(2)
+      };
+    } catch (error) {
+      console.error('Error creating product insights:', error);
+      return null;
+    }
+  };
+
+  const productInsights = getProductInsights();
+
   const validateForm = () => {
     if (!formData.name.trim()) return 'Product name is required';
     if (!formData.category) return 'Category is required';
@@ -143,20 +320,17 @@ const AddProduct: React.FC = () => {
       const mrpNum = parseFloat(formData.mrp);
       const stockNum = Number(formData.stock);
 
-      // const payload: any = {
-      //   name: formData.name.trim(),
-      //   category: formData.category,
-      //   description: '',
-      const baseData = {
-  name: formData.name.trim(),
-  category: formData.category
-};
+      // 🏭 Use TRUE Factory Pattern to create product with category-specific behavior
+      const factoryData = ProductFactory.createProductData(
+        formData.name.trim(),
+        formData.category,
+        mrpNum,
+        stockNum
+      );
 
-const factoryData = ProductFactory.create(baseData);
-
-const payload: any = {
-  ...factoryData,
-  description: '',
+      const payload: any = {
+        ...factoryData,
+        description: '',
 
         pricing: {
           costPrice: Number((mrpNum * 0.4).toFixed(2)),
@@ -305,6 +479,58 @@ const payload: any = {
                     </select>
                   </div>
                 </div>
+
+                {/* 🏭 Factory Pattern Demo: Product Insights */}
+                {productInsights && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    className="col-span-2 bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-lg p-4"
+                  >
+                    <div className="flex items-center gap-2 mb-3">
+                      <Package className="text-blue-600" size={20} />
+                      <h3 className="font-semibold text-blue-800">🏭 Factory Pattern: Product Intelligence</h3>
+                    </div>
+
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+                      <div className="bg-white p-3 rounded-lg border">
+                        <div className="text-gray-600">Shelf Life</div>
+                        <div className="font-semibold text-lg">{productInsights.shelfLife} days</div>
+                      </div>
+
+                      <div className="bg-white p-3 rounded-lg border">
+                        <div className="text-gray-600">Storage</div>
+                        <div className="font-semibold text-sm">{productInsights.storage}</div>
+                      </div>
+
+                      <div className="bg-white p-3 rounded-lg border">
+                        <div className="text-gray-600">Spoilage Risk</div>
+                        <div className={`font-semibold px-2 py-1 rounded text-xs inline-block ${
+                          productInsights.spoilageRisk === 'high' ? 'bg-red-100 text-red-800' :
+                          productInsights.spoilageRisk === 'medium' ? 'bg-yellow-100 text-yellow-800' :
+                          'bg-green-100 text-green-800'
+                        }`}>
+                          {productInsights.spoilageRisk.toUpperCase()}
+                        </div>
+                      </div>
+
+                      {/* <div className="bg-white p-3 rounded-lg border">
+                        <div className="text-gray-600">Optimal Discount</div>
+                        <div className="font-semibold text-lg text-green-600">
+                          {productInsights.optimalDiscount}%
+                        </div>
+                        <div className="text-xs text-gray-500">
+                          ${productInsights.recommendedPrice} price
+                        </div>
+                      </div> */}
+                    </div>
+
+                    {/* <div className="mt-3 text-xs text-gray-600">
+                      <strong>Factory Pattern Benefit:</strong> Each product category gets its own class with specialized behavior,
+                      pricing strategies, and spoilage calculations - not just different property values!
+                    </div> */}
+                  </motion.div>
+                )}
 
                 {/* ML Product ID */}
                 <div>

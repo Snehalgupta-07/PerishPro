@@ -7,4 +7,5 @@ joblib
 Flask
 flask-cors
 gunicorn
-
+opencv-python-headless
+Pillow

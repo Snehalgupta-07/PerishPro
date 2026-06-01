@@ -62,6 +62,29 @@ type MlResponse = {
     };
   };
   forecast?: ForecastPoint[];
+  algorithmComparison?: {
+    xgboost?: {
+      accuracy?: number;
+      wasteSavedValue?: number;
+      netProfit?: number;
+    };
+    randomForest?: {
+      accuracy?: number;
+      wasteSavedValue?: number;
+      netProfit?: number;
+    };
+    xgboostAdvantage?: {
+      extraWasteSaved?: number;
+      extraProfit?: number;
+    };
+  };
+  reorderRecommendation?: {
+    status?: 'URGENT_REORDER' | 'WARNING' | 'OK';
+    reorderDate?: string | null;
+    daysUntilStockout?: number | null;
+    recommendedQuantity?: number;
+    reasoning?: string;
+  };
 };
 
 const FLASK_URL =
@@ -211,7 +234,7 @@ const PricePredictor: React.FC = () => {
               </div>
 
               <div>
-                <label className="block text-sm text-gray-700 mb-2">Current Price ($)</label>
+                <label className="block text-sm text-gray-700 mb-2">Current Price (?)</label>
                 <div className="relative">
                   <DollarSign className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" size={18} />
                   <input
@@ -304,6 +327,52 @@ const PricePredictor: React.FC = () => {
           transition={{ delay: 0.1 }}
           className="lg:col-span-2 space-y-6"
         >
+          {result?.reorderRecommendation && (
+            <motion.div 
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              className={`p-5 rounded-xl border flex items-start gap-4 ${
+                result.reorderRecommendation.status === 'URGENT_REORDER' 
+                  ? 'bg-red-50 border-red-200' 
+                  : result.reorderRecommendation.status === 'WARNING'
+                  ? 'bg-amber-50 border-amber-200'
+                  : 'bg-green-50 border-green-200'
+              }`}
+            >
+              <div className={`p-2 rounded-lg ${
+                result.reorderRecommendation.status === 'URGENT_REORDER' ? 'bg-red-100' : result.reorderRecommendation.status === 'WARNING' ? 'bg-amber-100' : 'bg-green-100'
+              }`}>
+                <Package className={
+                  result.reorderRecommendation.status === 'URGENT_REORDER' ? 'text-red-600' : result.reorderRecommendation.status === 'WARNING' ? 'text-amber-600' : 'text-green-600'
+                } size={24} />
+              </div>
+              <div>
+                <h3 className={`text-lg font-semibold ${
+                  result.reorderRecommendation.status === 'URGENT_REORDER' ? 'text-red-800' : result.reorderRecommendation.status === 'WARNING' ? 'text-amber-800' : 'text-green-800'
+                }`}>
+                  Inventory Intelligence: {
+                    result.reorderRecommendation.status === 'URGENT_REORDER' ? 'Immediate Reorder Required' 
+                    : result.reorderRecommendation.status === 'WARNING' ? 'Reorder Soon' 
+                    : 'Stock is Sufficient'
+                  }
+                </h3>
+                <p className="text-gray-700 mt-1">{result.reorderRecommendation.reasoning}</p>
+                {result.reorderRecommendation.status !== 'OK' && (
+                  <div className="flex gap-4 mt-3">
+                    <div className="bg-white/60 px-3 py-1.5 rounded-md border border-black/5 flex items-center gap-2">
+                      <Calendar size={14} className="text-gray-500" />
+                      <span className="text-sm font-medium text-gray-800">Order By: {result.reorderRecommendation.reorderDate}</span>
+                    </div>
+                    <div className="bg-white/60 px-3 py-1.5 rounded-md border border-black/5 flex items-center gap-2">
+                      <Package size={14} className="text-gray-500" />
+                      <span className="text-sm font-medium text-gray-800">Rec. Qty: {result.reorderRecommendation.recommendedQuantity} units</span>
+                    </div>
+                  </div>
+                )}
+              </div>
+            </motion.div>
+          )}
+
           {!result ? (
             <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl border border-blue-200 p-12 flex flex-col items-center justify-center text-center min-h-[600px]">
               <motion.div
@@ -364,7 +433,7 @@ const PricePredictor: React.FC = () => {
                     <div>
                       <p className="text-sm text-gray-600">Projected Revenue (Optimal)</p>
                       <p className="text-2xl text-gray-800">
-                        $
+                        ?
                         {Number(
                           result.scenarios?.optimal?.expectedRevenue ??
                             (Number(optimalPrice ?? 0) * Number(formData.stockQuantity || 0))
@@ -433,6 +502,71 @@ const PricePredictor: React.FC = () => {
                   </p>
                 </div>
               </div>
+
+              {/* NEW: Algorithm Comparison Section */}
+              {result.algorithmComparison && (
+                <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6 mt-6">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="p-2 bg-indigo-100 rounded-lg">
+                      <BarChart3 className="text-indigo-600" size={20} />
+                    </div>
+                    <div>
+                      <h3 className="text-gray-800">Algorithm Performance Comparison</h3>
+                      <p className="text-sm text-gray-500">Proving the superiority of XGBoost over a Baseline (Random Forest)</p>
+                    </div>
+                  </div>
+
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    {/* XGBoost Column */}
+                    <div className="border border-green-200 bg-green-50/50 rounded-xl p-5 relative overflow-hidden">
+                      <div className="absolute top-0 right-0 bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">WINNER</div>
+                      <h4 className="font-semibold text-gray-800 mb-3 flex items-center gap-2">
+                        <Sparkles className="text-green-600" size={16} /> XGBoost Model
+                      </h4>
+                      <div className="space-y-3">
+                        <div className="flex justify-between">
+                          <span className="text-sm text-gray-600">Model Accuracy:</span>
+                          <span className="font-medium text-gray-800">{result.algorithmComparison.xgboost?.accuracy?.toFixed(1)}%</span>
+                        </div>
+                        <div className="flex justify-between">
+                          <span className="text-sm text-gray-600">Waste Saved:</span>
+                          <span className="font-medium text-green-600">${result.algorithmComparison.xgboost?.wasteSavedValue?.toFixed(2)}</span>
+                        </div>
+                        <div className="flex justify-between border-t border-green-200 pt-2">
+                          <span className="text-sm text-gray-600">Optimized Net Profit:</span>
+                          <span className="font-semibold text-gray-800">${result.algorithmComparison.xgboost?.netProfit?.toFixed(2)}</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Random Forest Column */}
+                    <div className="border border-gray-200 bg-gray-50 rounded-xl p-5">
+                      <h4 className="font-semibold text-gray-800 mb-3">Baseline (Random Forest)</h4>
+                      <div className="space-y-3">
+                        <div className="flex justify-between">
+                          <span className="text-sm text-gray-600">Model Accuracy:</span>
+                          <span className="font-medium text-gray-800">{result.algorithmComparison.randomForest?.accuracy?.toFixed(1)}%</span>
+                        </div>
+                        <div className="flex justify-between">
+                          <span className="text-sm text-gray-600">Waste Saved:</span>
+                          <span className="font-medium text-amber-600">${result.algorithmComparison.randomForest?.wasteSavedValue?.toFixed(2)}</span>
+                        </div>
+                        <div className="flex justify-between border-t border-gray-200 pt-2">
+                          <span className="text-sm text-gray-600">Optimized Net Profit:</span>
+                          <span className="font-semibold text-gray-800">${result.algorithmComparison.randomForest?.netProfit?.toFixed(2)}</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="mt-5 p-4 bg-gradient-to-r from-indigo-50 to-blue-50 border border-indigo-100 rounded-lg text-center">
+                    <p className="text-gray-800 font-medium">
+                       By using XGBoost, we save an <span className="text-indigo-600 font-bold text-lg">additional ${result.algorithmComparison.xgboostAdvantage?.extraWasteSaved?.toFixed(2)}</span> in waste 
+                      and generate <span className="text-green-600 font-bold">${result.algorithmComparison.xgboostAdvantage?.extraProfit?.toFixed(2)} more profit</span> compared to the Random Forest baseline!
+                    </p>
+                  </div>
+                </div>
+              )}
             </>
           )}
         </motion.div>

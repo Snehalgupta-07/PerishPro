@@ -1,2 +1,49 @@
-/Frontend/node_modules
-/Backend/node_modules
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-error.log*
+yarn-debug.log*
+.pnpm-debug.log*
+
+# Environment Variables (CRITICAL SECURITY)
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+*.env
+
+# Python (Machine Learning Model)
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+ENV/
+.pytest_cache/
+*.sqlite3
+
+# Build Outputs (Frontend/Backend)
+dist/
+build/
+out/
+coverage/
+
+# OS/Editor Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Project specific
+logs/
+*.log
+scratch/

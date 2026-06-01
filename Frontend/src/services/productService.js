@@ -166,6 +166,24 @@ export const getWasteSavedVsDay = async (range = '7d') => {
 };
 
 
+export const analyzeFreshness = async (id, file) => {
+  try {
+    const formData = new FormData();
+    formData.append('image', file);
+    const response = await api.post(`/products/${id}/analyze-freshness`, formData, {
+      headers: { 'Content-Type': 'multipart/form-data' },
+    });
+    return response.data;
+  } catch (error) {
+    const message =
+      error?.response?.data?.message ||
+      error?.response?.data ||
+      error?.message ||
+      'Failed to analyze freshness';
+    throw message;
+  }
+};
+
 export default {
   listProducts,
   getProduct,
@@ -175,5 +193,6 @@ export default {
   updateStock,
   optimizeProduct,
   backfillWasteValues,
-  getWasteSavedVsDay
+  getWasteSavedVsDay,
+  analyzeFreshness
 };

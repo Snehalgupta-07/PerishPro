@@ -1,15 +1,16 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { motion } from 'motion/react';
-import { LayoutDashboard, Package, PlusCircle, BarChart3, TrendingUp, Settings, Zap } from 'lucide-react';
+import { LayoutDashboard, Package, PlusCircle, BarChart3, TrendingUp, Settings, Zap, HeartHandshake } from 'lucide-react';
 
 const Sidebar: React.FC = () => {
   const navItems = [
     { path: '/dashboard', label: 'Dashboard', icon: LayoutDashboard, badge: null },
     { path: '/inventory', label: 'Inventory', icon: Package },
     { path: '/add-product', label: 'Add Product', icon: PlusCircle, badge: null },
-    // { path: '/analytics', label: 'Analytics', icon: BarChart3, badge: 'New' },
+    { path: '/analytics', label: 'Analytics', icon: BarChart3, badge: 'New' },
     { path: '/price-predictor', label: 'Price Predictor', icon: TrendingUp, badge: 'AI' },
+    { path: '/donation-hub', label: 'Donation Hub', icon: HeartHandshake, badge: 'Charity' },
     { path: '/settings', label: 'Settings', icon: Settings, badge: null }
   ];
   
