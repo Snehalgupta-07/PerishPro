@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const donationController = require('../Controllers/donation');
-const { isAuthenticated } = require('../middlewares/auth');
+const { isAuthenticated } = require('../Middlewares/auth');
 
 router.get('/', isAuthenticated, donationController.listDonations);
 router.get('/:id', isAuthenticated, donationController.getDonation);

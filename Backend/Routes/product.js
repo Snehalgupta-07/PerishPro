@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const upload = require('../Middlewares/upload'); 
 const productController = require('../Controllers/product');
-const { isAuthenticated } = require('../middlewares/auth');
+const { isAuthenticated } = require('../Middlewares/auth');
 
 router.get('/', productController.listProducts);
 
