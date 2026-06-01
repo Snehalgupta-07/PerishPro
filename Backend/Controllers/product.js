@@ -65,7 +65,8 @@ const createProductSchema = z.object({
   aiMetrics: aiMetricsSchema,
   sales: salesSchema,
   status: z.enum(['active', 'low-stock', 'expiring-soon', 'expired', 'discontinued']).optional(),
-  updatedBy: z.string().optional()
+  updatedBy: z.string().optional(),
+  createdBy: z.string().optional()
 });
 
 const updateProductSchema = createProductSchema.partial();
@@ -96,6 +97,11 @@ const listProducts = async (req, res) => {
     }
     if (search) filter.$text = { $search: String(search) };
 
+    // Strict user isolation: Only fetch products created by the logged-in user
+    if (req.user && req.user._id) {
+      filter.createdBy = req.user._id;
+    }
+
     const sort = {};
     if (sortBy) {
       sort[String(sortBy)] = sortOrder === 'asc' ? 1 : -1;
@@ -121,8 +127,11 @@ const getProduct = async (req, res) => {
     const oid = req.params.id;
     if (!oid) return res.status(400).json({ success: false, message: 'Invalid product id' });
 
-    const product = await Product.findById(oid).lean();
-    if (!product) return res.status(404).json({ success: false, message: 'Product not found' });
+    const query = { _id: oid };
+    if (req.user && req.user._id) query.createdBy = req.user._id;
+    
+    const product = await Product.findOne(query).lean();
+    if (!product) return res.status(404).json({ success: false, message: 'Product not found or unauthorized' });
 
     return res.status(200).json({ success: true, product });
   } catch (err) {
@@ -179,9 +188,12 @@ const addProduct = async (req, res) => {
       return res.status(400).json({ success: false, message });
     }
 
-    // 5) Attach updatedBy if authenticated
+    // 5) Attach updatedBy and createdBy if authenticated
     const payload = parsed.data;
-    if (req.user && req.user._id) payload.updatedBy = req.user._id;
+    if (req.user && req.user._id) {
+      payload.updatedBy = req.user._id;
+      payload.createdBy = req.user._id;
+    }
 
     // 6) Save
     const product = new Product(payload);
@@ -244,16 +256,19 @@ const updateProduct = async (req, res) => {
       return res.status(400).json({ success: false, message });
     }
 
-    const updates = parsed.data;
-    if (req.user && req.user._id) updates.updatedBy = req.user._id;
+    const payload = parsed.data;
+    if (req.user && req.user._id) payload.updatedBy = req.user._id;
 
     // 5) Apply update
-    const updated = await Product.findByIdAndUpdate(
-      oid,
-      { $set: updates },
-      { new: true, runValidators: true, context: 'query' }
+    const query = { _id: oid };
+    if (req.user && req.user._id) query.createdBy = req.user._id;
+
+    const updated = await Product.findOneAndUpdate(
+      query,
+      { $set: payload },
+      { new: true, runValidators: true }
     );
-    if (!updated) return res.status(404).json({ success: false, message: 'Product not found' });
+    if (!updated) return res.status(404).json({ success: false, message: 'Product not found or unauthorized' });
 
     return res.status(200).json({ success: true, message: 'Product updated', product: updated });
   } catch (err) {
@@ -322,9 +337,12 @@ const deleteProduct = async (req, res) => {
 
     if (force) {
       // Hard delete
-      const removed = await Product.findByIdAndDelete(oid);
-      if (!removed) {
-        return res.status(404).json({ success: false, message: 'Product not found' });
+      const query = { _id: oid };
+      if (req.user && req.user._id) query.createdBy = req.user._id;
+
+      const deleted = await Product.findOneAndDelete(query);
+      if (!deleted) {
+        return res.status(404).json({ success: false, message: 'Product not found or unauthorized' });
       }
       return res.status(200).json({ success: true, message: 'Product permanently deleted' });
     }

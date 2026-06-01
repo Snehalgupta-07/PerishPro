@@ -8,6 +8,11 @@ const ProductSchema = new Schema(
       ref: 'Store',
       required: false
     },
+    createdBy: {
+      type: Schema.Types.ObjectId,
+      ref: 'User',
+      required: false
+    },
     sku: {
       type: String,
       trim: true,
