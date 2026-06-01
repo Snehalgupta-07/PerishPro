@@ -7,93 +7,97 @@
 <br />
 
 <div align="center">
-  <h1 align="center">PerishPro ♻️</h1>
+  <h1 align="center">PerishPro</h1>
   <p align="center">
     <strong>AI-Driven Grocery Spoilage Management & Dynamic Pricing Platform</strong>
     <br />
-    Reduce food waste, maximize revenue, and automate Corporate Social Responsibility (CSR).
+    Reduce food waste, maximize revenue, and automate Corporate Social Responsibility (CSR) workflows.
   </p>
 </div>
 
 <hr />
 
-## 📖 Table of Contents
+## Table of Contents
 - [About the Project](#about-the-project)
-- [Key Features](#key-features)
-- [Architecture & Tech Stack](#architecture--tech-stack)
-- [Project Structure](#project-structure)
+- [System Architecture](#system-architecture)
+- [Core Features](#core-features)
+- [Technology Stack](#technology-stack)
 - [Getting Started](#getting-started)
 - [Environment Variables](#environment-variables)
-- [Contact](#contact)
+- [License](#license)
 
 ---
 
-## 🌟 About the Project
+## About the Project
 
-**PerishPro** is an enterprise-grade retail management solution designed specifically for supermarkets and grocery stores to combat the global food waste crisis. 
+PerishPro is an enterprise-grade retail management solution engineered specifically for supermarkets and grocery chains to combat the financial and environmental impacts of food waste. 
 
-By leveraging **Machine Learning (XGBoost)** and **Computer Vision (OpenCV)**, the platform actively monitors inventory freshness, automatically applies dynamic discounts to aging stock to stimulate sales, and routes unsellable (but safe) food to local charities. This creates a sustainable cycle that reduces landfill waste, boosts retailer profitability, and supports community welfare.
-
----
-
-## 🚀 Key Features
-
-### 1. 🔍 Computer Vision Mould Detection (Freshness Analysis)
-Upload an image of produce directly from the dashboard. The Python Flask ML server uses OpenCV to evaluate the **Browning Index** and **Spoilage Risk**. The system instantly adjusts the calculated shelf-life and automatically flags items as 'expired' or 'critical' if deemed unsafe for consumption.
-
-### 2. 📉 AI-Powered Price Optimization
-Uses a trained **XGBoost** regression model to analyze:
-- **Days to Expiry**
-- **Inventory Stock Levels**
-- **Historical Popularity**
-
-It predicts the exact optimal discount percentage required to maximize "Sell-Through Rate" while minimizing financial losses. Retailers can simulate different pricing scenarios directly from the UI.
-
-### 3. 🤝 Corporate CSR Donation Hub
-When products are visually imperfect (e.g., heavily bruised) but completely safe to eat, managers can dispatch them to the **Donation Hub**.
-- **Automated Dispatching:** Deducts stock instantly and uses `Nodemailer` to fire HTML email alerts to partner NGOs (e.g., Feeding India Hub).
-- **Tax Compliance Manifests:** Automatically generates in-browser **PDF Manifests** using `jsPDF`, detailing the CSR Write-off Value for strict accounting and tax deduction purposes.
-
-### 4. 🔔 Smart Inventory & Alerts
-Tracks the lifecycle of perishable goods. The system evaluates current stock against baseline popularity and generates **Restocking Alerts** to prevent stockouts while aggressively highlighting items nearing expiration.
-
-### 5. 📊 Real-Time Analytics Dashboard
-Comprehensive data visualization (built with Recharts) showcasing Total Revenue, Projected Waste Values, Inventory Status, and Total Wastage Saved natively. 
+By integrating Machine Learning (XGBoost) and Computer Vision (OpenCV) within a microservices architecture, the platform actively monitors inventory freshness, automatically calculates and applies dynamic discounts to aging stock, and routes unsellable (but safe) food to local charities. This creates a sustainable operational lifecycle that reduces landfill waste, boosts retailer profitability, and ensures rigorous compliance with CSR accounting standards.
 
 ---
 
-## 🏗️ Architecture & Tech Stack
+## System Architecture
 
 ```mermaid
 graph TD
-    UI[React Frontend UI] -->|REST / JSON| BE[Node.js Express Backend]
+    UI[React Frontend Application] -->|HTTP / REST| BE[Node.js Express Backend]
     
-    subgraph Data Layer
+    subgraph Data Persistence
         BE -->|Mongoose ODM| DB[(MongoDB Atlas)]
     end
     
-    subgraph Machine Learning Service
+    subgraph Machine Learning Microservice
         BE -->|Axios HTTP POST| ML[Python Flask Server]
         ML -->|Image Processing| CV[OpenCV / Spoilage Detection]
         ML -->|Demand Forecasting| XGB[XGBoost Optimization Model]
     end
     
     subgraph External Integrations
-        BE -->|SMTP Trigger| Mail[Nodemailer Dispatch]
-        Mail -.-> NGO[NGO / Charity Inboxes]
+        BE -->|SMTP Trigger| Mail[Nodemailer Dispatcher]
+        Mail -.-> NGO[Partner NGO Inboxes]
     end
 ```
 
-### 💻 Technology Stack
-- **Frontend:** React, TypeScript, Vite, TailwindCSS, Framer Motion, Lucide-React, Recharts, jsPDF.
-- **Backend:** Node.js, Express.js, MongoDB (Mongoose), JWT Auth, Nodemailer, Multer.
-- **Machine Learning:** Python, Flask, XGBoost, OpenCV, Scikit-Learn, Pandas.
+---
+
+## Core Features
+
+### 1. Computer Vision Freshness Analysis
+A dedicated computer vision pipeline for automated quality assurance.
+- **Image Processing:** Store managers upload images of produce via the dashboard. The backend proxies the image buffer securely to the Python Flask microservice.
+- **Spoilage Classification:** The model utilizes OpenCV (GrabCut algorithms and HSV color space thresholding) to isolate the product from the background and calculate a precise "Browning Index".
+- **Dynamic Metadata Adjustment:** Based on the calculated index, the system assigns a Spoilage Risk (Low, Medium, High, Critical) and applies a reduction factor to the product's remaining shelf-life. If the risk is deemed 'Critical', the database strictly flags the item as 'expired' to prevent consumer purchase.
+
+### 2. AI-Powered Price Optimization
+A robust dynamic pricing engine designed to balance inventory clearance with profit maximization.
+- **XGBoost Regression Model:** Trained on historical retail datasets, the model ingests base product features (full price, base stock levels, historical popularity) alongside real-time operational data (current inventory count, exact days to expiry).
+- **Demand Forecasting:** The ML model predicts the optimal discount percentage required to maximize the "Sell-Through Rate" for aging goods.
+- **Financial Projections:** The system calculates and exposes both the "Projected Waste Value" (if left at full price) and the "Optimized Waste Value", explicitly showing the financial impact of the AI's recommendation before execution.
+
+### 3. Corporate Social Responsibility (CSR) Donation Hub
+An integrated logistics and accounting module for surplus food redistribution.
+- **Automated Dispatching:** Managers utilize a multi-step UI wizard to select visually imperfect but completely safe inventory. Upon confirmation, the backend handles transactional database updates to instantly deduct the specific stock quantities.
+- **SMTP Notification System:** Nodemailer is configured to automatically generate and dispatch professional HTML email alerts to partner NGOs (e.g., Feeding India Hub) containing pickup logistics and a detailed tabular manifest of the donated goods.
+- **Tax Compliance Manifests:** To adhere to rigorous accounting standards, the frontend leverages jsPDF to generate client-side PDF manifests. These receipts document the exact CSR write-off valuation based on the original cost price, providing necessary documentation for tax deductions.
+
+### 4. Smart Inventory Tracking and Actionable Analytics
+A comprehensive operational dashboard for store managers.
+- **Proactive Alerts:** The system continuously evaluates current stock against baseline popularity metrics to generate automated Restocking Alerts, preventing stockouts while highlighting items nearing their expiration date.
+- **Data Visualization:** Built with Recharts, the analytics page aggregates historical pricing actions, visualizing critical performance indicators such as Total Revenue and Total Waste Value Saved across the retail lifecycle.
 
 ---
 
-## ⚙️ Getting Started
+## Technology Stack
 
-Follow these steps to set up the project locally on your machine.
+- **Frontend:** React, TypeScript, Vite, TailwindCSS, Framer Motion, Lucide-React, Recharts, jsPDF.
+- **Backend:** Node.js, Express.js, MongoDB (Mongoose), JSON Web Tokens (JWT), Nodemailer, Multer.
+- **Machine Learning:** Python, Flask, XGBoost, OpenCV, Scikit-Learn, Pandas, Joblib.
+
+---
+
+## Getting Started
+
+Follow these instructions to configure and run the project locally.
 
 ### Prerequisites
 - [Node.js](https://nodejs.org/en/) (v18 or higher)
@@ -106,7 +110,7 @@ git clone https://github.com/Snehalgupta-07/SDA_Project.git
 cd SDA_Project
 ```
 
-### 2. Set up the Python ML Server
+### 2. Configure the Python ML Server
 ```bash
 cd Model
 # Create a virtual environment (optional but recommended)
@@ -119,7 +123,7 @@ pip install -r requirements.txt
 python app.py
 ```
 
-### 3. Set up the Node.js Backend
+### 3. Configure the Node.js Backend
 ```bash
 # Open a new terminal
 cd Backend
@@ -127,9 +131,8 @@ npm install
 # Start the server (runs on port 5000 by default)
 npm start
 ```
-*(Ensure you have created a `.env` file in the Backend directory based on the Environment Variables section below).*
 
-### 4. Set up the React Frontend
+### 4. Configure the React Frontend
 ```bash
 # Open a new terminal
 cd Frontend
@@ -140,9 +143,9 @@ npm run dev
 
 ---
 
-## 🔐 Environment Variables
+## Environment Variables
 
-You will need to create a `.env` file inside the `Backend/` directory. Use the following template:
+Create a `.env` file inside the `Backend/` directory. Use the following template to configure your deployment:
 
 ```env
 # Backend Configuration
@@ -166,5 +169,5 @@ ML_API_URL=http://127.0.0.1:8000
 ---
 
 <div align="center">
-  <p>Built with ❤️ for a more sustainable future.</p>
+  <p>Built for a more sustainable retail future.</p>
 </div>
